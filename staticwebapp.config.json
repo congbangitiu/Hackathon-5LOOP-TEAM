@@ -1,9 +1,0 @@
-{
-  "version": "1.0.0",
-  "build": {
-    "app_build_command": "pnpm run build",
-    "app_location": "/",
-    "api_location": "",
-    "output_location": "build"
-  }
-}
