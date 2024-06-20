@@ -5,41 +5,41 @@ import Header from "../components/header/Header";
 import NewsletterContent from "../components/newsletter/NewsletterContent";
 
 const Newsletter = () => {
-    return(
-        <>
-            <Header />
-            
-            <Breadcrumb 
-                breadcrumbTitle="Newsletter" 
-                breadcrumbNav={[
-                    {
-                        navText: "Home",
-                        path: "/"
-                    }
-                ]}
-            />
+  return (
+    <>
+      <Header />
 
-            <Divider />
+      <Breadcrumb
+        breadcrumbTitle="Newsletter"
+        breadcrumbNav={[
+          {
+            navText: "Home",
+            path: "/",
+          },
+        ]}
+      />
 
-            <NewsletterContent 
-                title="Subscribe to our newsletter" 
-                subTitle="We will notify you when we are live." 
-                formInfo={[
-                    {
-                        inputPlaceholder: "Type your mail",
-                        helperText: "We'll never share your email with anyone else.",
-                        helperIcon: "bi-lock",
-                        buttonColor: "primary",
-                        buttonText: "Subscribe Now"
-                    }
-                ]}
-            />
+      <Divider />
 
-            <Divider />
+      <NewsletterContent
+        title="Subscribe to our newsletter"
+        subTitle="We will notify you when we are live."
+        formInfo={[
+          {
+            inputPlaceholder: "Type your mail",
+            helperText: "We'll never share your email with anyone else.",
+            helperIcon: "bi-lock",
+            buttonColor: "primary",
+            buttonText: "Subscribe Now",
+          },
+        ]}
+      />
 
-            <Footer />
-        </>
-    )
-}
+      <Divider />
+
+      <Footer />
+    </>
+  );
+};
 
 export default Newsletter;

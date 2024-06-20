@@ -1,18 +1,18 @@
-import {useLayoutEffect, useState} from "react";
+import { useLayoutEffect, useState } from "react";
 
 export default function useStickyHeader(offset = 0) {
-    const [sticky, setSticky] = useState(false);
-  
-    const handleScroll = () => {
-      setSticky(window.scrollY > offset);
+  const [sticky, setSticky] = useState(false);
+
+  const handleScroll = () => {
+    setSticky(window.scrollY > offset);
+  };
+
+  useLayoutEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
     };
-    
-    useLayoutEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-            return(() => {
-                window.removeEventListener('scroll', handleScroll);
-        });
-    });
-    
-    return sticky;
+  });
+
+  return sticky;
 }

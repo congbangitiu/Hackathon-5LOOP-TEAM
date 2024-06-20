@@ -1,41 +1,41 @@
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
 import LoginContent from "../components/authentification/Login";
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 import Divider from "../components/divider/Divider";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
 
 export default function Login() {
-    return(
-        <>
-            <Header />
+  return (
+    <>
+      <Header />
 
-            <Breadcrumb 
-                breadcrumbTitle="Login" 
-                breadcrumbNav={[
-                    {
-                        navText: "Home",
-                        path: "/"
-                    }
-                ]}
-            />
+      <Breadcrumb
+        breadcrumbTitle="Login"
+        breadcrumbNav={[
+          {
+            navText: "Home",
+            path: "/",
+          },
+        ]}
+      />
 
-            <Divider />
+      <Divider />
 
-            <LoginContent
-                title="Welcome Back!" 
-                subTitle="Didn't have an account?" 
-                button={[
-                    {
-                        text: "Register now!",
-                        path: "/register"
-                    }
-                ]} 
-                image="img/illustrator/4.png"
-            />
+      <LoginContent
+        title="Welcome Back!"
+        subTitle="Didn't have an account?"
+        button={[
+          {
+            text: "Register now!",
+            path: "/register",
+          },
+        ]}
+        image="img/illustrator/4.png"
+      />
 
-            <Divider />
+      <Divider />
 
-            <Footer />
-        </>
-    )
+      <Footer />
+    </>
+  );
 }

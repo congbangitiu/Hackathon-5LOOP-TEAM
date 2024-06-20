@@ -1,31 +1,31 @@
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 import CreateNewContent from "../components/createNew/CreateNewContent";
 import Divider from "../components/divider/Divider";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
 
 export default function CreateNew() {
-    return(
-        <>
-            <Header />
+  return (
+    <>
+      <Header />
 
-            <Breadcrumb 
-                breadcrumbTitle="Create New" 
-                breadcrumbNav={[
-                    {
-                        navText: "Home",
-                        path: "/"
-                    }
-                ]}
-            />
+      <Breadcrumb
+        breadcrumbTitle="Create New"
+        breadcrumbNav={[
+          {
+            navText: "Home",
+            path: "/",
+          },
+        ]}
+      />
 
-            <Divider />
+      <Divider />
 
-            <CreateNewContent />
-            
-            <Divider />
+      <CreateNewContent />
 
-            <Footer />
-        </>
-    )
+      <Divider />
+
+      <Footer />
+    </>
+  );
 }

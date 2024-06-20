@@ -1,33 +1,33 @@
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
 import BlogContent from "../components/blog/BlogContent";
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 import Divider from "../components/divider/Divider";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
 
 const Blog = () => {
-    return(
-        <>
-            <Header />
+  return (
+    <>
+      <Header />
 
-            <Breadcrumb 
-                breadcrumbTitle="Blog" 
-                breadcrumbNav={[
-                    {
-                        navText: "Home",
-                        path: "/"
-                    }
-                ]}
-            />
+      <Breadcrumb
+        breadcrumbTitle="Blog"
+        breadcrumbNav={[
+          {
+            navText: "Home",
+            path: "/",
+          },
+        ]}
+      />
 
-            <Divider />
+      <Divider />
 
-            <BlogContent />
+      <BlogContent />
 
-            <Divider />
+      <Divider />
 
-            <Footer />
-        </>
-    )
-}
+      <Footer />
+    </>
+  );
+};
 
 export default Blog;
