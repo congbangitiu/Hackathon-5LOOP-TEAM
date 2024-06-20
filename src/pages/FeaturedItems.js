@@ -166,7 +166,7 @@ const FeaturedItems = () => {
       <Header />
 
       <Breadcrumb
-        breadcrumbTitle="Featured"
+        breadcrumbTitle="Featured study NFT pass"
         breadcrumbNav={[
           {
             navText: "Home",

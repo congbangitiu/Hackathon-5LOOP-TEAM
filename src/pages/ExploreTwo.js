@@ -31,7 +31,7 @@ const ExploreTwo = () => {
   const selectItems = useRef();
   const selectISortBy = useRef();
   const selectRatings = useRef();
-  const selectChains = useRef();
+  const selectToken = useRef();
 
   useEffect(() => {
     $(selectStatus.current).niceSelect();
@@ -54,7 +54,7 @@ const ExploreTwo = () => {
   }, []);
 
   useEffect(() => {
-    $(selectChains.current).niceSelect();
+    $(selectToken.current).niceSelect();
   }, []);
 
   const DiscoverNFTCards = countSlice.map((elem, index) => (
@@ -202,7 +202,7 @@ const ExploreTwo = () => {
       <Header />
 
       <Breadcrumb
-        breadcrumbTitle="Explore Two"
+        breadcrumbTitle="Explore study NFT pass"
         breadcrumbNav={[
           {
             navText: "Home",
@@ -222,9 +222,7 @@ const ExploreTwo = () => {
                 ref={selectStatus}
                 className="filter-select bg-gray w-100 mb-4"
               >
-                <option value="buy-now">Buy Now</option>
-                <option value="on-auction">On Auction</option>
-                <option value="new">New</option>
+                <option value="new">Newly Listed</option>
                 <option value="featured">Featured</option>
               </select>
 
@@ -233,16 +231,11 @@ const ExploreTwo = () => {
                 ref={selectCategories}
                 className="filter-select bg-gray w-100 mb-4"
               >
-                <option value={1}>Art</option>
-                <option value={2}>Cards</option>
-                <option value={3}>Collectibles</option>
-                <option value={4}>Domain</option>
-                <option value={5}>Music</option>
-                <option value={6}>Memes</option>
-                <option value={7}>Photos</option>
-                <option value={8}>Sports</option>
-                <option value={9}>Videos</option>
-                <option value={10}>Vitual Worlds</option>
+                <option value={1}>Slides</option>
+                <option value={2}>Exam Papers</option>
+                <option value={3}>Exercises</option>
+                <option value={4}>Books</option>
+                <option value={5}>Summary Records</option>
               </select>
 
               <h5>Items</h5>
@@ -250,9 +243,8 @@ const ExploreTwo = () => {
                 ref={selectItems}
                 className="filter-select bg-gray w-100 mb-4"
               >
-                <option value={1}>All</option>
-                <option value={2}>Single</option>
-                <option value={3}>Bundle</option>
+                <option value={1}>Single</option>
+                <option value={2}>Bundle</option>
               </select>
 
               <h5>Sort By</h5>
@@ -262,7 +254,6 @@ const ExploreTwo = () => {
               >
                 <option value={1}>Recently Added</option>
                 <option value={2}>Recently Sold</option>
-                <option value={3}>Ending Soon</option>
               </select>
 
               <h5>Ratings</h5>
@@ -277,14 +268,13 @@ const ExploreTwo = () => {
                 <option value={5}>1 Star & Above</option>
               </select>
 
-              <h5>Chains</h5>
+              <h5>Payment</h5>
               <select
-                ref={selectChains}
+                ref={selectToken}
                 className="filter-select bg-gray w-100 mb-4"
               >
-                <option value={1}>Bitcoin</option>
-                <option value={2}>Ethereum</option>
-                <option value={3}>Tether</option>
+                <option value={1}>$SOL</option>
+                <option value={2}>$USDC</option>
               </select>
 
               <button

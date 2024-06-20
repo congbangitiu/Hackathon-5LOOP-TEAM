@@ -81,7 +81,7 @@ const TopSeller = () => {
       <Header />
 
       <Breadcrumb
-        breadcrumbTitle="Top Seller"
+        breadcrumbTitle="Top Creators"
         breadcrumbNav={[
           {
             navText: "Home",

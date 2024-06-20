@@ -10,7 +10,7 @@ export default function Collections() {
       <Header />
 
       <Breadcrumb
-        breadcrumbTitle="Collection"
+        breadcrumbTitle="Course Collection"
         breadcrumbNav={[
           {
             navText: "Home",
