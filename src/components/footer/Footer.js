@@ -141,7 +141,7 @@ export default function Footer() {
           <div className="copywrite-text text-center text-lg-start mb-3 mb-lg-0">
             <p className="mb-0">
               {new Date().getFullYear()} © All rights reserved by{" "}
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="." target="_blank" rel="noreferrer">
                 @BStudy Official
               </a>
             </p>

@@ -8,23 +8,19 @@ import "./assets/css/animate.css";
 import "./assets/css/bootstrap-icons.css";
 import "./assets/scss/style.scss";
 
-import HomeOne from "./pages/HomeOne";
 import HomeTwo from "./pages/HomeTwo";
 import DemoPage from "./pages/Index";
 
 import DiscoverNFTDetails from "./components/discover/DiscoverNFTDetails";
 import FeaturedNFTDetails from "./components/featuredNFT/FeaturedNFTDetails";
-import LiveAuctionDetails from "./components/liveAuction/LiveAuctionDetails";
+
 import Collections from "./pages/Collections";
-import ExploreOne from "./pages/ExploreOne";
 import ExploreTwo from "./pages/ExploreTwo";
 import FeaturedItems from "./pages/FeaturedItems";
-import LiveBidding from "./pages/LiveBidding";
 import TopBuyer from "./pages/TopBuyer";
 import TopSeller from "./pages/TopSeller";
 
 import Dashboard from "./dashboard/Dashboard";
-import DashboardLiveBids from "./dashboard/LiveBids";
 import DashboardCollection from "./dashboard/MyCollection";
 import DashboardWallet from "./dashboard/MyWallet";
 import DashboardNotificationDetails from "./dashboard/NotificationDetails";
@@ -36,10 +32,6 @@ import Author from "./pages/Author";
 import ConnectWallet from "./pages/ConnectWallet";
 import CreateNew from "./pages/CreateNew";
 import RankingTable from "./pages/Ranking";
-
-import ForgetPassword from "./pages/ForgetPassword";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
 
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
@@ -60,17 +52,15 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" index element={<DemoPage />} />
-        <Route path="/home1" element={<HomeOne />} />
         <Route path="/home2" element={<HomeTwo />} />
 
-        <Route path="/explore1" element={<ExploreOne />} />
         <Route path="/explore2" element={<ExploreTwo />} />
         <Route path="/featured-items" element={<FeaturedItems />} />
-        <Route path="/live-bidding" element={<LiveBidding />} />
+
         <Route path="/collections" element={<Collections />} />
         <Route path="/top-seller" element={<TopSeller />} />
         <Route path="/top-buyer" element={<TopBuyer />} />
-        <Route path="/live-bid/:BIDSID" element={<LiveAuctionDetails />} />
+
         <Route
           path="/featured-items/:FEATUREDID"
           element={<FeaturedNFTDetails />}
@@ -81,7 +71,7 @@ function App() {
         />
 
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/live-bids" element={<DashboardLiveBids />} />
+
         <Route path="/my-collection" element={<DashboardCollection />} />
         <Route path="/my-wallet" element={<DashboardWallet />} />
         <Route path="/notifications" element={<DashboardNotification />} />
@@ -96,10 +86,6 @@ function App() {
         <Route path="/create-new" element={<CreateNew />} />
         <Route path="/connet-wallet" element={<ConnectWallet />} />
         <Route path="/author/:AUTHORUSERNAME" element={<Author />} />
-
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/forget-password" element={<ForgetPassword />} />
 
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog-details/:POSTID" element={<BlogDetails />} />

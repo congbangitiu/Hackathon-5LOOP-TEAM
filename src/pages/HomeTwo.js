@@ -1,11 +1,10 @@
-import AppDownload from "../components/appDownload/AppDownload";
 import CTA from "../components/cta/CTA";
 import DiscoverTwo from "../components/discover/DiscoverTwo";
 import Divider from "../components/divider/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import HeroTwo from "../components/hero/HeroTwo";
-import LiveAuction from "../components/liveAuction/LiveAuction";
+
 import PopularCollection from "../components/popularCollection/PopularCollection";
 import Process from "../components/process/Process";
 import TodaysDrop from "../components/todaysDrop/TodaysDrop";
@@ -28,15 +27,6 @@ export default function HomeTwo() {
             btnIcon: "bi-grid-3x3-gap",
           },
         ]}
-      />
-
-      <LiveAuction
-        backgroundColor=""
-        spinnerColor="danger"
-        title="Live Bid"
-        buttonText="View All Bids"
-        buttonURL="/live-bidding"
-        buttonColor="primary"
       />
 
       <Process />
@@ -91,25 +81,6 @@ export default function HomeTwo() {
       />
 
       <Divider />
-
-      <AppDownload
-        heading="Stay connected <br /> to all your devices."
-        subHeading="Download our mobile apps today."
-        qrCodeImage="img/core-img/qr-code.svg"
-        appDownloadButtons={[
-          {
-            id: 1,
-            icon: "img/core-img/google-play.png",
-            path: "#",
-          },
-          {
-            id: 2,
-            icon: "img/core-img/app-store.png",
-            path: "#",
-          },
-        ]}
-        rightSideImage="img/illustrator/2.png"
-      />
 
       <Divider />
 
