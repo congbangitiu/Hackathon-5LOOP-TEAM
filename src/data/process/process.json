@@ -1,30 +1,30 @@
 [
-    {
-        "id": 1,
-        "heading": "Create your account & add wallet",
-        "subTitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "image": "img/illustrator/4.png",
-        "animationDelay": 400
-    },
-    {
-        "id": 2,
-        "heading": "Get approval from our review team",
-        "subTitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "image": "img/illustrator/2.png",
-        "animationDelay": 600
-    },
-    {
-        "id": 3,
-        "heading": "Create your NFT's & list them for sale",
-        "subTitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "image": "img/illustrator/3.png",
-        "animationDelay": 800
-    },
-    {
-        "id": 4,
-        "heading": "Now sale your items & earn rewards",
-        "subTitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        "image": "img/illustrator/1.png",
-        "animationDelay": 1000
-    }
+  {
+    "id": 1,
+    "heading": "Connect Solana Wallet",
+    "subTitle": "",
+    "image": "img/illustrator/4.png",
+    "animationDelay": 400
+  },
+  {
+    "id": 2,
+    "heading": "Trade Study NFT Pass",
+    "subTitle": "",
+    "image": "img/illustrator/2.png",
+    "animationDelay": 600
+  },
+  {
+    "id": 3,
+    "heading": "Access your materials",
+    "subTitle": "",
+    "image": "img/illustrator/3.png",
+    "animationDelay": 800
+  },
+  {
+    "id": 4,
+    "heading": "AI Personalized learning",
+    "subTitle": "",
+    "image": "img/illustrator/1.png",
+    "animationDelay": 1000
+  }
 ]

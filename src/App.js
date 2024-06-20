@@ -8,11 +8,9 @@ import "./assets/css/animate.css";
 import "./assets/css/bootstrap-icons.css";
 import "./assets/scss/style.scss";
 
-import HomeTwo from "./pages/HomeTwo";
-import DemoPage from "./pages/Index";
-
 import DiscoverNFTDetails from "./components/discover/DiscoverNFTDetails";
 import FeaturedNFTDetails from "./components/featuredNFT/FeaturedNFTDetails";
+import HomeTwo from "./pages/HomeTwo";
 
 import Collections from "./pages/Collections";
 import ExploreTwo from "./pages/ExploreTwo";
@@ -51,8 +49,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" index element={<DemoPage />} />
-        <Route path="/home2" element={<HomeTwo />} />
+        <Route path="/" index element={<HomeTwo />} />
 
         <Route path="/explore2" element={<ExploreTwo />} />
         <Route path="/featured-items" element={<FeaturedItems />} />

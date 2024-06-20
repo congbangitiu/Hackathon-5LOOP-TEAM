@@ -1,10 +1,8 @@
 import CTA from "../components/cta/CTA";
-import DiscoverTwo from "../components/discover/DiscoverTwo";
 import Divider from "../components/divider/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import HeroTwo from "../components/hero/HeroTwo";
-
 import PopularCollection from "../components/popularCollection/PopularCollection";
 import Process from "../components/process/Process";
 import TodaysDrop from "../components/todaysDrop/TodaysDrop";
@@ -17,27 +15,20 @@ export default function HomeTwo() {
       <Header />
 
       <HeroTwo
-        heading="Digital arts are trends now. Welcome to the world of NFTs."
-        subHeading="It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable template."
+        heading="Exchange for better study. Welcome to NFT-BStudy"
+        subHeading="Unlock the potential of your study materials. Earn and learn with NFT-BStudy's innovative NFT marketplace made possible by Solana."
         buttonInfo={[
           {
             btnColor: "primary",
-            btnText: "View All Collections",
+            btnText: "Explore collections",
             btnURL: "/explore2",
             btnIcon: "bi-grid-3x3-gap",
           },
         ]}
       />
-
-      <Process />
-
       <Divider />
 
-      <PopularCollection title="Popular items in last" />
-
-      <Divider />
-
-      <DiscoverTwo title="Discover Items" />
+      <PopularCollection title="Trending in the last" />
 
       <Divider />
 
@@ -51,14 +42,12 @@ export default function HomeTwo() {
               buttonText="View All Drops"
               buttonURL="featured-items"
             />
-
             {/* Data: data > topSeller > top-seller.json */}
             <TopSeller
               heading="Top Seller"
               buttonText="View All Seller's"
               buttonURL="top-seller"
             />
-
             {/* Data: data > topBuyer > top-buyer.json */}
             <TopBuyer
               heading="Top Buyer"
@@ -68,19 +57,20 @@ export default function HomeTwo() {
           </div>
         </div>
       </div>
+      <Divider />
+
+      <Process />
 
       <Divider />
 
       <CTA
         backgroundColor="primary" // try 'success', 'warning', 'danger', 'info' etc
-        text="Resources for getting started with Funto."
-        buttonText="Get Started"
-        buttonColor="warning"
+        text="Getting started with NFT-BStudy platform"
+        buttonText="Read the docs"
+        buttonColor="info"
         buttonURL="/help-center"
         buttonIcon=""
       />
-
-      <Divider />
 
       <Divider />
 
