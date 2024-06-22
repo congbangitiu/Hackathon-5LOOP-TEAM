@@ -44,7 +44,7 @@ export default function Footer() {
                 url: "/",
               },
             ]}
-            newsletterVisibility="hidden" // try 'visible' or 'hidden'
+            newsletterVisibility="visible" // try 'visible' or 'hidden'
           />
 
           {/* Footer Widget */}
@@ -55,24 +55,20 @@ export default function Footer() {
                 widgetTitle="Explore"
                 navList={[
                   {
-                    text: "By University",
-                    url: "/explore1",
-                  },
-                  {
-                    text: "By Creator",
-                    url: "/explore2",
+                    text: "Explore Pass",
+                    url: "/explore",
                   },
                   {
                     text: "Featured Pass",
                     url: "/featured-items",
                   },
                   {
-                    text: "Courses Collections",
+                    text: "Course Collections",
                     url: "/collections",
                   },
                   {
                     text: "Top Creator",
-                    url: "/top-seller",
+                    url: "/top-creator",
                   },
                   {
                     text: "Top Buyer",
@@ -113,16 +109,16 @@ export default function Footer() {
                 widgetTitle="About"
                 navList={[
                   {
-                    text: "Docs",
-                    url: "#",
+                    text: "About us",
+                    url: "/about",
                   },
                   {
                     text: "Blog",
-                    url: "#",
+                    url: "/blog",
                   },
                   {
                     text: "Licenses Notice",
-                    url: "#",
+                    url: "/license",
                   },
                   {
                     text: "Careers",
