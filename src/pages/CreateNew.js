@@ -10,7 +10,7 @@ export default function CreateNew() {
       <Header />
 
       <Breadcrumb
-        breadcrumbTitle="Create New"
+        breadcrumbTitle="Create New Study NFT Pass"
         breadcrumbNav={[
           {
             navText: "Home",

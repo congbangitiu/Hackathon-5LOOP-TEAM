@@ -1,194 +1,82 @@
 [
-    {
-        "id": 1,
-        "image": "img/bg-img/5.jpg",
-        "largeImage": "img/bg-img/5.jpg",
-        "title": "The beginner's guide to creating & selling digital art NFTs.",
-        "postDate": "Oct 19, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "popular",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/28.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/19.jpg' alt='' /></div></div>",
+  {
+    "id": 1,
+    "image": "img/bg-img/5.jpg",
+    "largeImage": "img/bg-img/5.jpg",
+    "title": "The beginner's guide to preparing study materials.",
+    "postDate": "May 19, 2024",
+    "excerpt": "Crafted with the latest educational techniques and modern approaches.",
+    "category": "popular",
+    "body": [
+      "<div class='col-10'><p>Preparing effective study materials requires careful planning and understanding of the subject. This guide will help you get started with some key tips and strategies.</p> <p>1. Understand your audience: Know the learning level and needs of the students who will use the materials.</p> <p>2. Use clear and concise language: Avoid jargon and overly complex sentences.</p> <p>3. Include practical examples: Real-world examples help in understanding abstract concepts better.</p> <h2 class='mb-3'>10 tips for effective study material preparation.</h2> <p class='mb-4'>4. Utilize visual aids: Diagrams, charts, and images can greatly enhance understanding.</p> <p>5. Organize content logically: Present information in a logical sequence, with clear headings and subheadings.</p> <p>6. Include interactive elements: Quizzes and exercises can reinforce learning.</p> <p>7. Provide summaries: Summaries at the end of each section can help in quick revision.</p> <p>8. Keep updating: Regularly update the materials to keep them relevant.</p> <p>9. Get feedback: Encourage students to give feedback and improve accordingly.</p> <p>10. Review and revise: Continuously review and revise the materials to ensure accuracy and clarity.</p> </div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 2,
-        "image": "img/bg-img/24.jpg",
-        "largeImage": "img/bg-img/24.jpg",
-        "title": "12 reasons to sell your NFTs.",
-        "postDate": "Oct 14, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/2.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/3.jpg' alt='' /></div></div>",
+      "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/28.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/19.jpg' alt='' /></div></div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 3,
-        "image": "img/bg-img/22.jpg",
-        "largeImage": "img/bg-img/22.jpg",
-        "title": "10 tips for avoiding scams and staying safe.",
-        "postDate": "Oct 11, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "popular",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/6.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/8.jpg' alt='' /></div></div>",
+      "<div class='col-10'><p>By following these tips, you can create study materials that are both effective and engaging for students. Happy teaching!</p></div>"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "img/bg-img/24.jpg",
+    "largeImage": "img/bg-img/24.jpg",
+    "title": "Guide to selling NFT Pass on NFT-BStudy.",
+    "postDate": "May 14, 2024",
+    "excerpt": "Master the art of selling your educational NFT Pass.",
+    "category": "",
+    "body": [
+      "<div class='col-10'><p>Selling your NFT Pass on NFT-BStudy can be a rewarding experience if done right. This guide will walk you through the process.</p> <p>1. Create a high-quality NFT Pass: Ensure your NFT Pass is well-designed and offers value to potential buyers.</p> <p>2. Set a competitive price: Research similar NFT Passes and set a price that is both competitive and fair.</p> <p>3. Promote your NFT Pass: Use social media and other platforms to promote your NFT Pass and reach a wider audience.</p> <h2 class='mb-3'>10 steps to successfully sell your NFT Pass.</h2> <p class='mb-4'>4. Provide clear descriptions: Clearly describe what the NFT Pass offers and how it can benefit the buyer.</p> <p>5. Offer bonuses: Consider offering bonuses or additional content to make your NFT Pass more attractive.</p> <p>6. Engage with your audience: Respond to queries and engage with potential buyers to build trust.</p> <p>7. Use secure platforms: Ensure you use secure and reputable platforms for selling your NFT Pass.</p> <p>8. Keep track of transactions: Maintain a record of all transactions for future reference.</p> <p>9. Seek feedback: Ask buyers for feedback and use it to improve your future NFT Passes.</p> <p>10. Stay updated: Keep up with the latest trends and updates in the NFT market to stay ahead.</p> </div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 4,
-        "image": "img/bg-img/27.jpg",
-        "largeImage": "img/bg-img/27.jpg",
-        "title": "How to updates for listing your NFTs",
-        "postDate": "Oct 7, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/9.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/11.jpg' alt='' /></div></div>",
+      "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/2.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/3.jpg' alt='' /></div></div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 5,
-        "image": "img/bg-img/13.jpg",
-        "largeImage": "img/bg-img/13.jpg",
-        "title": "Funto annual tour 2022 report",
-        "postDate": "Jun 22, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "popular",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/15.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/16.jpg' alt='' /></div></div>",
+      "<div class='col-10'><p>Following these steps can help you successfully sell your NFT Pass on NFT-BStudy and maximize your earnings.</p></div>"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "img/bg-img/22.jpg",
+    "largeImage": "img/bg-img/22.jpg",
+    "title": "10 tips for avoiding scams and staying safe in NFT-BStudy.",
+    "postDate": "May 11, 2024",
+    "excerpt": "Stay safe with these essential tips.",
+    "category": "popular",
+    "body": [
+      "<div class='col-10'><p>With the rise of NFTs, it's important to stay vigilant and avoid scams. Here are 10 tips to help you stay safe on NFT-BStudy.</p> <p>1. Do your research: Before buying or selling, research the platform and the people involved.</p> <p>2. Use secure wallets: Ensure you use secure wallets to store your NFTs and private keys.</p> <p>3. Verify sources: Always verify the sources of information and transactions.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>4. Avoid suspicious links: Do not click on suspicious links or download unknown files.</p> <p>5. Use strong passwords: Use strong and unique passwords for your accounts.</p> <p>6. Enable two-factor authentication: Add an extra layer of security by enabling two-factor authentication.</p> <p>7. Be cautious with personal information: Avoid sharing personal information that could be used for fraudulent activities.</p> <p>8. Stay informed: Keep yourself updated with the latest security practices and scams.</p> <p>9. Report suspicious activities: Report any suspicious activities to the platform administrators.</p> <p>10. Trust your instincts: If something feels off, it probably is. Trust your instincts and proceed with caution.</p> </div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 6,
-        "image": "img/bg-img/18.jpg",
-        "largeImage": "img/bg-img/18.jpg",
-        "title": "A brand new marketplace place for your NFTs.",
-        "postDate": "Sep 29, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "popular",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/24.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/27.jpg' alt='' /></div></div>",
+      "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/6.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/8.jpg' alt='' /></div></div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 7,
-        "image": "img/bg-img/5.jpg",
-        "largeImage": "img/bg-img/5.jpg",
-        "title": "The beginner's guide to creating & selling digital art NFTs.",
-        "postDate": "Oct 19, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/28.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/19.jpg' alt='' /></div></div>",
+      "<div class='col-10'><p>By following these tips, you can protect yourself from scams and have a safer experience on NFT-BStudy.</p></div>"
+    ]
+  },
+  {
+    "id": 4,
+    "image": "img/bg-img/27.jpg",
+    "largeImage": "img/bg-img/27.jpg",
+    "title": "How to update your NFT listings effectively.",
+    "postDate": "May 7, 2024",
+    "excerpt": "Keep your listings fresh and engaging with these tips.",
+    "category": "",
+    "body": [
+      "<div class='col-10'><p>Regularly updating your NFT listings can help keep them relevant and attractive to potential buyers. Here are some tips on how to do it effectively.</p> <p>1. Update images: Use high-quality and recent images to make your listings more appealing.</p> <p>2. Refresh descriptions: Update the descriptions to reflect any new features or changes.</p> <p>3. Adjust prices: Regularly review and adjust prices to stay competitive.</p> <h2 class='mb-3'>10 tips for updating your NFT listings.</h2> <p class='mb-4'>4. Highlight key benefits: Clearly highlight the key benefits of your NFTs.</p> <p>5. Use tags and keywords: Use relevant tags and keywords to improve visibility.</p> <p>6. Share updates on social media: Promote your updated listings on social media platforms.</p> <p>7. Offer limited-time discounts: Consider offering limited-time discounts to attract buyers.</p> <p>8. Monitor analytics: Use analytics to track the performance of your listings and make necessary adjustments.</p> <p>9. Engage with your audience: Respond to queries and engage with potential buyers.</p> <p>10. Keep experimenting: Try different strategies and see what works best for your listings.</p> </div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 8,
-        "image": "img/bg-img/24.jpg",
-        "largeImage": "img/bg-img/24.jpg",
-        "title": "12 reasons to sell your NFTs.",
-        "postDate": "Oct 14, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/2.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/3.jpg' alt='' /></div></div>",
+      "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/9.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/11.jpg' alt='' /></div></div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 9,
-        "image": "img/bg-img/22.jpg",
-        "largeImage": "img/bg-img/22.jpg",
-        "title": "10 tips for avoiding scams and staying safe.",
-        "postDate": "Oct 11, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "popular",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/6.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/8.jpg' alt='' /></div></div>",
+      "<div class='col-10'><p>By regularly updating your NFT listings, you can keep them fresh and engaging, increasing the chances of making a sale.</p></div>"
+    ]
+  },
+  {
+    "id": 5,
+    "image": "img/bg-img/13.jpg",
+    "largeImage": "img/bg-img/13.jpg",
+    "title": "Platform tips for BetterStudy.",
+    "postDate": "May 22, 2024",
+    "excerpt": "Maximize your learning experience with these platform tips.",
+    "category": "popular",
+    "body": [
+      "<div class='col-10'><p>BetterStudy is a comprehensive platform for enhancing your learning experience. Here are some tips to make the most of it.</p> <p>1. Utilize all features: Explore all the features available on BetterStudy to enhance your learning.</p> <p>2. Create a study schedule: Use the scheduling tools to plan your study sessions.</p> <p>3. Participate in discussions: Engage in community discussions to gain new insights.</p> <h2 class='mb-3'>10 tips for maximizing your BetterStudy experience.</h2> <p class='mb-4'>4. Access premium content: Consider subscribing to access premium study materials.</p> <p>5. Use the mobile app: Download the BetterStudy mobile app for learning on the go.</p> <p>6. Track your progress: Use the progress tracking features to monitor your learning journey.</p> <p>7. Customize your dashboard: Customize your dashboard to suit your study needs.</p> <p>8. Engage with mentors: Connect with mentors for personalized guidance and support.</p> <p>9. Take quizzes: Regularly take quizzes to test your knowledge and identify areas for improvement.</p> <p>10. Stay updated: Keep an eye on platform updates and new features to enhance your learning experience.</p> </div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 10,
-        "image": "img/bg-img/27.jpg",
-        "largeImage": "img/bg-img/27.jpg",
-        "title": "How to updates for listing your NFTs",
-        "postDate": "Oct 7, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/9.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/11.jpg' alt='' /></div></div>",
+      "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/15.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/16.jpg' alt='' /></div></div>",
 
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 11,
-        "image": "img/bg-img/13.jpg",
-        "largeImage": "img/bg-img/13.jpg",
-        "title": "Funto annual tour 2022 report",
-        "postDate": "Jun 22, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/15.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/16.jpg' alt='' /></div></div>",
-
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    },
-    {
-        "id": 12,
-        "image": "img/bg-img/18.jpg",
-        "largeImage": "img/bg-img/18.jpg",
-        "title": "A brand new marketplace place for your NFTs.",
-        "postDate": "Sep 29, 2022",
-        "excerpt": "It's crafted with the latest trend of design with all modern approaches.",
-        "catagory": "popular",
-        "body": [
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, animi, numquam. Nam suscipit iste enim deleniti vitae facere earum doloribus, tempora alias quas voluptatibus aut, voluptates qui nihil, quisquam quos.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quibusdam, nam porro cupiditate itaque doloribus commodi aut mollitia repellendus. Cum consequuntur nihil, itaque numquam aspernatur nisi quo soluta tempora rem?</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore officia, ab, pariatur harum quae cupiditate quia nisi atque qui tempora quis neque, molestiae doloribus repudiandae excepturi cum vero similique, aliquid laboriosam. Tempore vitae, quod rem architecto eum a dolores eveniet dolor aperiam hic alias suscipit, animi.</p> <h2 class='mb-3'>10 tips for avoiding scams and staying safe.</h2> <p class='mb-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente enim eligendi natus ratione, quia, illo reiciendis voluptas nostrum expedita eum libero. Officiis sapiente non, totam numquam dolor. Dolores qui impedit voluptatem accusamus odio modi mollitia reiciendis quod tenetur accusantium optio soluta excepturi adipisci quidem nobis, totam reprehenderit consectetur omnis, nemo ea voluptatum.</p> </div>",
-            
-            "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/24.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/27.jpg' alt='' /></div></div>",
-
-            "<div class='col-10'><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aliquam mollitia accusantium debitis dolore soluta temporibus, laborum, fuga tempora adipisci molestias. Nobis similique nulla eveniet incidunt reprehenderit nam, accusantium asperiores iure. Quas voluptatem, facere facilis repellat!</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores, quo suscipit quaerat deserunt ullam et ab, dolor, architecto totam culpa temporibus. Quo, quidem. Molestiae, deserunt impedit neque.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sed explicabo! Debitis harum ut dolore cupiditate quidem tempore eos aut beatae sint quis nostrum, quas necessitatibus fugiat suscipit a veritatis laudantium?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea eveniet impedit eius facere eos distinctio temporibus sit.</p></div>"
-        ]
-    }
+      "<div class='col-10'><p>By following these tips, you can maximize your learning experience on BetterStudy and achieve your academic goals more effectively.</p></div>"
+    ]
+  }
 ]

@@ -1,80 +1,82 @@
 [
-    {
-        "id": 1,
-        "bgImage": "img/bg-img/1.jpg",
-        "thumbnail": "img/bg-img/u1.jpg",
-        "name": "Designing World",
-        "username": "designing_world",
-        "shortDesc": "We are designing and developing the best website for you. We are constantly creating awesome templates & themes by using modern technology to give you the best experience.",
-        "followBtnInfo": [
-            {
-                "style": "warning",
-                "text": "Follow"
-            }
-        ],
-        "authorDesc": [
-            "<p>We are designing and developing the best website for you. We are constantly creating awesome templates & themes by using modern technology to give you the best experience.",
-            "<p>When you purchased an item, we provide six months of free support. We provide customer support via email. For support, you can contact us via the profile page or item support tab.</p>"
-        ],
-        "owners": "86",
-        "followers": "49"
-    },
-    {
-        "id": 2,
-        "bgImage": "img/bg-img/44.jpg",
-        "thumbnail": "img/bg-img/u2.jpg",
-        "name": "Creative World",
-        "username": "creative_world",
-        "shortDesc": "Thanks for viewing our profile. For support or pre-sale questions, you can contact us via email.",
-        "followBtnInfo": [
-            {
-                "style": "warning",
-                "text": "Follow"
-            }
-        ],
-        "authorDesc": [
-            "<p>We are designing and developing the best website for you. We are constantly creating awesome templates & themes by using modern technology to give you the best experience."
-        ],
-        "owners": "52",
-        "followers": "33"
-    },
-    {
-        "id": 3,
-        "bgImage": "img/bg-img/1.jpg",
-        "thumbnail": "img/bg-img/u3.jpg",
-        "name": "NFT Fun",
-        "username": "nft_fun",
-        "shortDesc": "When you purchased an item, we provide six months of free support. We provide customer support via email. For support, you can contact us via the profile page or item support tab.",
-        "followBtnInfo": [
-            {
-                "style": "warning",
-                "text": "Follow"
-            }
-        ],
-        "authorDesc": [
-            "<p>We are designing and developing the best website for you. We are constantly creating awesome templates & themes by using modern technology to give you the best experience.",
-            "<p>When you purchased an item, we provide six months of free support. We provide customer support via email. For support, you can contact us via the profile page or item support tab.</p>"
-        ],
-        "owners": "112",
-        "followers": "64"
-    },
-    {
-        "id": 4,
-        "bgImage": "img/bg-img/44.jpg",
-        "thumbnail": "img/bg-img/u4.jpg",
-        "name": "Creative Art",
-        "username": "creative_art",
-        "shortDesc": "We are designing and developing the best website for you. We are constantly creating awesome templates & themes by using modern technology to give you the best experience.",
-        "followBtnInfo": [
-            {
-                "style": "warning",
-                "text": "Follow"
-            }
-        ],
-        "authorDesc": [
-            "<p>When you purchased an item, we provide six months of free support. We provide customer support via email. For support, you can contact us via the profile page or item support tab.</p>"
-        ],
-        "owners": "63",
-        "followers": "21"
-    }
+  {
+    "id": 1,
+    "bgImage": "img/bg-img/1.jpg",
+    "thumbnail": "img/bg-img/u1.jpg",
+    "name": "StudyGenius",
+    "username": "study_genius",
+    "shortDesc": "We create comprehensive study materials to help you excel academically. Our team members have high GPAs and are experienced in Solana Web3 development.",
+    "followBtnInfo": [
+      {
+        "style": "success",
+        "text": "Follow"
+      }
+    ],
+    "authorDesc": [
+      "<p>We specialize in creating comprehensive and easy-to-understand study materials across various subjects. Our team members are top students with high GPAs and extensive experience in Solana Web3 development.",
+      "<p>We offer ongoing support for our study materials and are always available to answer any questions you may have. Contact us via email for any inquiries.</p>"
+    ],
+    "owners": "150",
+    "followers": "120"
+  },
+  {
+    "id": 2,
+    "bgImage": "img/bg-img/44.jpg",
+    "thumbnail": "img/bg-img/u2.jpg",
+    "name": "EduWeb",
+    "username": "edu_web",
+    "shortDesc": "Thanks for checking out our profile! We offer top-notch study materials and have a team with high academic achievements and Solana Web3 expertise.",
+    "followBtnInfo": [
+      {
+        "style": "success",
+        "text": "Follow"
+      }
+    ],
+    "authorDesc": [
+      "<p>At EduWeb, we are dedicated to providing high-quality study resources. Our team members have achieved high GPAs and have significant experience in Solana Web3 projects.",
+      "<p>For any support or questions about our materials, feel free to contact us via email. We are here to help you succeed academically.</p>"
+    ],
+    "owners": "200",
+    "followers": "175"
+  },
+  {
+    "id": 3,
+    "bgImage": "img/bg-img/1.jpg",
+    "thumbnail": "img/bg-img/u3.jpg",
+    "name": "AceAcademics",
+    "username": "ace_academics",
+    "shortDesc": "Our study materials are crafted by top students with high GPAs and expertise in Solana Web3. Join us to enhance your learning experience.",
+    "followBtnInfo": [
+      {
+        "style": "success",
+        "text": "Follow"
+      }
+    ],
+    "authorDesc": [
+      "<p>We at AceAcademics focus on delivering premium study content created by students who excel academically and have profound knowledge in Solana Web3.",
+      "<p>We provide six months of support for our study materials. Reach out to us via email for any assistance or queries.</p>"
+    ],
+    "owners": "180",
+    "followers": "160"
+  },
+  {
+    "id": 4,
+    "bgImage": "img/bg-img/44.jpg",
+    "thumbnail": "img/bg-img/u4.jpg",
+    "name": "SmartStudy",
+    "username": "smart_study",
+    "shortDesc": "Providing the best study guides developed by high-achieving students with Solana Web3 experience. Follow us for excellent academic resources.",
+    "followBtnInfo": [
+      {
+        "style": "success",
+        "text": "Follow"
+      }
+    ],
+    "authorDesc": [
+      "<p>SmartStudy offers top-tier study guides designed by students with outstanding academic records and expertise in Solana Web3. We ensure our materials are effective and easy to understand.",
+      "<p>We are available for support through email. Feel free to contact us for any questions or additional help with our study materials.</p>"
+    ],
+    "owners": "140",
+    "followers": "110"
+  }
 ]

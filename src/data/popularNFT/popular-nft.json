@@ -1,155 +1,272 @@
 [
-    {
-        "id": 1,
-        "title": "Trees Growing Seedlings",
-        "image": "img/bg-img/25.jpg",
-        "currentPrice": "0.06 ETH",
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": "img/core-img/fire.png"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Flower Crafts #24",
-        "image": "img/bg-img/26.jpg",
-        "currentPrice": "0.01 ETH",
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u2.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": ""
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "title": "NFT Text",
-        "image": "img/bg-img/27.jpg",
-        "currentPrice": "0.06 ETH",
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u3.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": ""
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Norwegian Fjords Winter",
-        "image": "img/bg-img/28.jpg",
-        "currentPrice": "0.61 ETH",
-        "authorName": "creative_art",
-        "authorAvater": "img/bg-img/u4.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": "img/core-img/fire.png"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Red Rose Flower Ilustration",
-        "image": "img/bg-img/29.jpg",
-        "currentPrice": "0.11 ETH",
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": ""
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Venice Canel",
-        "image": "img/bg-img/30.jpg",
-        "currentPrice": "0.13 ETH",
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u2.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": ""
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "title": "VR Glasses Metaverse",
-        "image": "img/bg-img/31.jpg",
-        "currentPrice": "0.11 ETH",
-        "authorName": "creative_art",
-        "authorAvater": "img/bg-img/u3.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": "img/core-img/fire.png"
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "title": "Wow Emoji",
-        "image": "img/bg-img/32.jpg",
-        "currentPrice": "01 ETH",
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u4.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": ""
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "title": "Banana Pixel Art",
-        "image": "img/bg-img/33.jpg",
-        "currentPrice": "0.06 ETH",
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonInfo": [
-            {
-                "style": "minimal",
-                "text": "Place Bid",
-                "url": "#",
-                "icon": ""
-            }
-        ]
-    }
+  {
+    "id": 1,
+    "title": "Summary Midterm IU #321",
+    "image": "img/bg-img/25.jpg",
+    "currentPrice": "0.06 SOL",
+    "authorName": "StudyGenius",
+    "authorAvater": "img/bg-img/u1.jpg",
+    "authorVerified": "true",
+    "category": "Object-Oriented Programming",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": "img/core-img/fire.png"
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "A concise summary for the midterm exam covering key concepts in Object-Oriented Programming."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes notes and explanations on classes, inheritance, polymorphism, and encapsulation.</p>",
+      "<p>Perfect for quick review before the exam. Covers fundamental OOP principles.</p>",
+      "<ul><li>Classes and Objects</li><li>Inheritance</li><li>Polymorphism</li><li>Encapsulation</li></ul>",
+      "<p className='mb-0'>Gain a solid understanding of OOP to excel in your midterms.</p>"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Exercise Final IU #742",
+    "image": "img/bg-img/26.jpg",
+    "currentPrice": "0.01 SOL",
+    "authorName": "EduWeb",
+    "authorAvater": "img/bg-img/u2.jpg",
+    "authorVerified": "true",
+    "category": "Data Structures and Algorithms",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": ""
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Practice exercises for the final exam in Data Structures and Algorithms, focusing on problem-solving and implementation."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes a variety of problems to help master data structures and algorithms.</p>",
+      "<p>Topics covered: arrays, linked lists, trees, graphs, sorting, and searching algorithms.</p>",
+      "<ul><li>Array Operations</li><li>Tree Traversal</li><li>Graph Algorithms</li></ul>",
+      "<p className='mb-0'>Enhance your problem-solving skills for the final exams.</p>"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Note Midterm IU #983",
+    "image": "img/bg-img/27.jpg",
+    "currentPrice": "0.06 SOL",
+    "authorName": "AceAcademics",
+    "authorAvater": "img/bg-img/u3.jpg",
+    "authorVerified": "true",
+    "category": "Data Science and Data Visualization",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": ""
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Detailed notes for the midterm exam in Data Science and Data Visualization, covering critical topics and techniques."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes notes on data analysis, visualization techniques, and tools like Python and R.</p>",
+      "<p>Covers data cleaning, exploratory data analysis, and visualization best practices.</p>",
+      "<ul><li>Python & R</li><li>Data Cleaning</li><li>Data Visualization</li></ul>",
+      "<p className='mb-0'>Prepare thoroughly for your midterms with these detailed notes.</p>"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Summary Final IU #453",
+    "image": "img/bg-img/28.jpg",
+    "currentPrice": "0.61 SOL",
+    "authorName": "SmartStudy",
+    "authorAvater": "img/bg-img/u4.jpg",
+    "authorVerified": "true",
+    "category": "Principle of Database Management",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": "img/core-img/fire.png"
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "A detailed summary for the final exam in Principle of Database Management, covering all key concepts."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes notes on relational databases, SQL, and database design.</p>",
+      "<p>Covers essential database management principles and practices.</p>",
+      "<ul><li>Relational Databases</li><li>SQL Queries</li><li>Database Design</li></ul>",
+      "<p className='mb-0'>Prepare effectively for your final exams with this comprehensive summary.</p>"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Exercise Final IU #127",
+    "image": "img/bg-img/29.jpg",
+    "currentPrice": "0.11 SOL",
+    "authorName": "StudyGenius",
+    "authorAvater": "img/bg-img/u1.jpg",
+    "authorVerified": "true",
+    "category": "Data Mining",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": ""
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Practice exercises for the final exam in Data Mining, focusing on techniques and algorithms."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes exercises on various data mining techniques and algorithms.</p>",
+      "<p>Topics covered: classification, clustering, and association rule mining.</p>",
+      "<ul><li>Classification</li><li>Clustering</li><li>Association Rule Mining</li></ul>",
+      "<p className='mb-0'>Enhance your data mining skills and prepare thoroughly for the finals.</p>"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Note Midterm IU #334",
+    "image": "img/bg-img/30.jpg",
+    "currentPrice": "0.13 SOL",
+    "authorName": "EduWeb",
+    "authorAvater": "img/bg-img/u2.jpg",
+    "authorVerified": "true",
+    "category": "Digital Logic Design",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": ""
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Detailed notes for the midterm exam in Digital Logic Design, covering key concepts and principles."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes notes on logic gates, combinational circuits, and sequential circuits.</p>",
+      "<p>Covers essential topics for understanding digital logic design.</p>",
+      "<ul><li>Logic Gates</li><li>Combinational Circuits</li><li>Sequential Circuits</li></ul>",
+      "<p className='mb-0'>Prepare thoroughly for your midterms with these detailed notes.</p>"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Summary Final IU #789",
+    "image": "img/bg-img/31.jpg",
+    "currentPrice": "0.11 SOL",
+    "authorName": "AceAcademics",
+    "authorAvater": "img/bg-img/u3.jpg",
+    "authorVerified": "true",
+    "category": "Calculus 1",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": "img/core-img/fire.png"
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "A comprehensive summary for the final exam in Calculus 1, covering fundamental concepts and problems."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes notes on limits, derivatives, integrals, and applications of calculus.</p>",
+      "<p>Covers essential topics for understanding Calculus 1.</p>",
+      "<ul><li>Limits</li><li>Derivatives</li><li>Integrals</li></ul>",
+      "<p className='mb-0'>Prepare thoroughly for your final exams with this comprehensive summary.</p>"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Exercise Midterm IU #542",
+    "image": "img/bg-img/32.jpg",
+    "currentPrice": "0.01 SOL",
+    "authorName": "SmartStudy",
+    "authorAvater": "img/bg-img/u4.jpg",
+    "authorVerified": "true",
+    "category": "Mobile App Development",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": ""
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Practice exercises for the midterm exam in Mobile App Development, focusing on practical examples and concepts."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes exercises on Android and iOS development, app architecture, and best practices.</p>",
+      "<p>Topics covered: user interface design, database integration, and network communication.</p>",
+      "<ul><li>Android Development</li><li>iOS Development</li><li>App Architecture</li></ul>",
+      "<p className='mb-0'>Enhance your skills and prepare thoroughly for your midterms.</p>"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Note Final IU #643",
+    "image": "img/bg-img/33.jpg",
+    "currentPrice": "0.06 SOL",
+    "authorName": "StudyGenius",
+    "authorAvater": "img/bg-img/u1.jpg",
+    "authorVerified": "true",
+    "category": "Computer Network",
+    "buttonInfo": [
+      {
+        "style": "minimal",
+        "text": "Place Bid",
+        "url": "#",
+        "icon": ""
+      }
+    ],
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Detailed notes for the final exam in Computer Network, covering key concepts and protocols."
+      }
+    ],
+    "firstTabContent": [
+      "<p>Includes notes on network layers, protocols, and communication models.</p>",
+      "<p>Covers essential topics for understanding computer networks.</p>",
+      "<ul><li>Network Layers</li><li>Protocols</li><li>Communication Models</li></ul>",
+      "<p className='mb-0'>Prepare thoroughly for your final exams with these detailed notes.</p>"
+    ]
+  }
 ]

@@ -10,7 +10,7 @@ const StudyGoal = () => {
       <Header />
 
       <Breadcrumb
-        breadcrumbTitle="Newsletter"
+        breadcrumbTitle="Study Goal Creator"
         breadcrumbNav={[
           {
             navText: "Home",
@@ -22,15 +22,16 @@ const StudyGoal = () => {
       <Divider />
 
       <NewsletterContent
-        title="Subscribe to our newsletter"
-        subTitle="We will notify you when we are live."
+        title="Create your perfect study goal plan"
+        subTitle="We will notify you based on Spaced repetition technique"
         formInfo={[
           {
-            inputPlaceholder: "Type your mail",
-            helperText: "We'll never share your email with anyone else.",
+            inputPlaceholder:
+              "Type your exam type, courses, and date in one line",
+            helperText: "We'll never share your information with anyone.",
             helperIcon: "bi-lock",
             buttonColor: "primary",
-            buttonText: "Subscribe Now",
+            buttonText: "Remind Me",
           },
         ]}
       />

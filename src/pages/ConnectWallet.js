@@ -26,8 +26,8 @@ const ConnectWallet = () => {
         walletCard={[
           {
             id: 1,
-            name: "Metamask",
-            image: "img/bg-img/metamask.png",
+            name: "Phantom",
+            image: "img/bg-img/phantom.jpeg",
             badgeText: "Hot",
             buttonInfo: [
               {
@@ -54,8 +54,8 @@ const ConnectWallet = () => {
           },
           {
             id: 3,
-            name: "Kaikas",
-            image: "img/bg-img/kaikas.png",
+            name: "OKX Wallet",
+            image: "img/bg-img/okx.png",
             badgeText: "",
             buttonInfo: [
               {
@@ -68,8 +68,8 @@ const ConnectWallet = () => {
           },
           {
             id: 4,
-            name: "Venly",
-            image: "img/bg-img/venly.png",
+            name: "Solflare",
+            image: "img/bg-img/solflare.png",
             badgeText: "",
             buttonInfo: [
               {

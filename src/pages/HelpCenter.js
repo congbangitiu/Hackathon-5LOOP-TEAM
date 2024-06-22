@@ -74,7 +74,7 @@ export default function HelpCenter() {
 
       <div className="help-center-wrapper">
         {/* Search Form */}
-        <HelpSearchForm heading="How can I help you?" />
+        <HelpSearchForm heading="Tell us what you want to do!" />
 
         <h5 className="my-5 text-center">Or Browse Catagories</h5>
 

@@ -7,8 +7,8 @@ window.jQuery = window.$ = $;
 require("jquery-nice-select");
 
 const CreateNewContent = () => {
-  const [inputTitle, setInputTitle] = useState("Macaw Bird");
-  const [inputPrice, setInputPrice] = useState("0.324 ETH");
+  const [inputTitle, setInputTitle] = useState("OOAD IU #8543");
+  const [inputPrice, setInputPrice] = useState("0.324 SOL");
   const [inputImage, setInputImage] = useState("img/bg-img/17.jpg");
   const ImagehandleChange = (event) => {
     setInputImage(URL.createObjectURL(event.target.files[0]));
@@ -27,7 +27,7 @@ const CreateNewContent = () => {
           <div className="col-12 col-lg-8">
             {/* Create New Form */}
             <div className="create-new-form border shadow-sm p-4 p-sm-5">
-              <h2 className="mb-4">Create new NFT</h2>
+              <h2 className="mb-4">Create New Study NFT Pass</h2>
 
               <Form>
                 <div className="row align-items-center">
@@ -62,16 +62,8 @@ const CreateNewContent = () => {
                       <Form.Check
                         inline
                         type="radio"
-                        label="Unlock Purchased"
+                        label="Smart price"
                         id="UnlockPurchased"
-                        name="inlineRadioOptions"
-                      />
-
-                      <Form.Check
-                        inline
-                        type="radio"
-                        label="Open for bids"
-                        id="Openforbids"
                         name="inlineRadioOptions"
                       />
                     </Form.Group>
@@ -124,11 +116,11 @@ const CreateNewContent = () => {
                       ref={selectCata}
                       className="filter-select bg-gray w-100 mb-4"
                     >
-                      <option value={1}>Art</option>
-                      <option value={2}>Cards</option>
-                      <option value={3}>Collectibles</option>
-                      <option value={4}>Domain</option>
-                      <option value={5}>Music</option>
+                      <option value={1}>Slide</option>
+                      <option value={2}>Exam Papers</option>
+                      <option value={3}>Exercises</option>
+                      <option value={4}>Books</option>
+                      <option value={5}>Records</option>
                     </select>
                   </div>
 

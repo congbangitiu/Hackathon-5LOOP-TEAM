@@ -10,7 +10,6 @@ import HeroCard from "../components/dashboard/hero/HeroCard";
 import TodaysPick from "../components/dashboard/todaysPick/TodaysPick";
 import TopAuthor from "../components/dashboard/topAuthor/TopAuthor";
 import TopBuyer from "../components/dashboard/topBuyer/TopBuyer";
-import TrendingAuction from "../components/dashboard/trendingAuction/TrendingAuction";
 
 const Dashboard = () => {
   return (
@@ -56,12 +55,6 @@ const Dashboard = () => {
 
             {/* Activity Tab */}
             <ActivityTab />
-
-            {/* Trending Auctions */}
-            <TrendingAuction
-              title="Trending Auctions"
-              icon="img/core-img/fire2.png"
-            />
 
             <FeaturedCard
               title="Top NFTs"

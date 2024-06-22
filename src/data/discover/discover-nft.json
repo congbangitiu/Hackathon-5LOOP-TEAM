@@ -1,2618 +1,656 @@
 [
-    {
-        "id": 1,
-        "title": "Monkey Arts #114",
-        "image": "img/bg-img/13.jpg",
-        "catagory": "cards",
-        "currentPrice": "0.861 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "primary",
-                "text": "Featured",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.861 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "125",
-        "viewsNow": "1245",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "1 min ago"
-            },
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "8 min ago"
-            },
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "15 min ago"
-            },
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "22 min ago"
-            },
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Two Monkey's Fun",
-        "image": "img/bg-img/14.jpg",
-        "catagory": "cards",
-        "currentPrice": "2.961 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 2.961 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_art",
-        "authorAvater": "img/bg-img/u2.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "74",
-        "viewsNow": "634",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Kings with Bitcoin",
-        "image": "img/bg-img/15.jpg",
-        "catagory": "collectibles",
-        "currentPrice": "0.06 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "primary",
-                "text": "Featured",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.06 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u3.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "63",
-        "viewsNow": "674",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Pixel Plane",
-        "image": "img/bg-img/16.jpg",
-        "catagory": "collectibles",
-        "currentPrice": "0.01 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "dark",
-                "text": "New Bid",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.01 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u4.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "741",
-        "viewsNow": "301",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "hidden",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "title": "Macaw Bird",
-        "image": "img/bg-img/17.jpg",
-        "catagory": "photos",
-        "currentPrice": "0.861 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "dark",
-                "text": "Hot bid",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.324 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_art",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "221",
-        "viewsNow": "521",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "title": "Sculpture Human Face",
-        "image": "img/bg-img/18.jpg",
-        "catagory": "collectibles",
-        "currentPrice": "9.32 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 9.32 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u2.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "121",
-        "viewsNow": "6478",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "title": "Sculpture Human Face",
-        "image": "img/bg-img/19.jpg",
-        "catagory": "cards",
-        "currentPrice": "0.061 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.061 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u3.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "321",
-        "viewsNow": "123",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "hidden",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "title": "Diamond Crawling Spider",
-        "image": "img/bg-img/20.jpg",
-        "catagory": "collectibles",
-        "currentPrice": "0.01 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 2.58 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u4.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "11",
-        "viewsNow": "647",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "title": "Diamond Rabbit",
-        "image": "img/bg-img/21.jpg",
-        "catagory": "art",
-        "currentPrice": "0.861 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "dark",
-                "text": "Sold",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 789 USD",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "99",
-        "viewsNow": "234",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "title": "Diamond Cat",
-        "image": "img/bg-img/22.jpg",
-        "catagory": "photos",
-        "currentPrice": "0.061 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.061 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u2.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "142",
-        "viewsNow": "639",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "hidden",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 11,
-        "title": "Abstract Oil Painting",
-        "image": "img/bg-img/23.jpg",
-        "catagory": "cards",
-        "currentPrice": "0.99 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "danger",
-                "text": "Newbie",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.99 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u3.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "324",
-        "viewsNow": "445",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 12,
-        "title": "Cute Fox",
-        "image": "img/bg-img/24.jpg",
-        "catagory": "art",
-        "currentPrice": "2 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 2 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u4.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "3",
-        "viewsNow": "145",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 13,
-        "title": "Monkey Arts #114",
-        "image": "img/bg-img/13.jpg",
-        "catagory": "cards",
-        "currentPrice": "0.861 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "primary",
-                "text": "Featured",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.861 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "125",
-        "viewsNow": "1245",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "1 min ago"
-            },
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "8 min ago"
-            },
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "15 min ago"
-            },
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "22 min ago"
-            },
-            {
-                "firstData": "Monkey Arts #114",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 14,
-        "title": "Two Monkey's Fun",
-        "image": "img/bg-img/14.jpg",
-        "catagory": "cards",
-        "currentPrice": "2.961 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 2.961 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_art",
-        "authorAvater": "img/bg-img/u2.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "74",
-        "viewsNow": "634",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Two Monkey's Fun",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 15,
-        "title": "Kings with Bitcoin",
-        "image": "img/bg-img/15.jpg",
-        "catagory": "collectibles",
-        "currentPrice": "0.06 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "primary",
-                "text": "Featured",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.06 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u3.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "63",
-        "viewsNow": "674",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Kings with Bitcoin",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 16,
-        "title": "Pixel Plane",
-        "image": "img/bg-img/16.jpg",
-        "catagory": "collectibles",
-        "currentPrice": "0.01 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "dark",
-                "text": "New Bid",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.01 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u4.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "741",
-        "viewsNow": "301",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "hidden",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 17,
-        "title": "Macaw Bird",
-        "image": "img/bg-img/17.jpg",
-        "catagory": "photos",
-        "currentPrice": "0.861 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "dark",
-                "text": "Hot bid",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.324 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_art",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "221",
-        "viewsNow": "521",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Macaw Bird",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 18,
-        "title": "Sculpture Human Face",
-        "image": "img/bg-img/18.jpg",
-        "catagory": "collectibles",
-        "currentPrice": "9.32 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 9.32 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u2.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "121",
-        "viewsNow": "6478",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Sculpture Human Face",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 19,
-        "title": "Sculpture Human Face",
-        "image": "img/bg-img/19.jpg",
-        "catagory": "cards",
-        "currentPrice": "0.061 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.061 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "nft_fun",
-        "authorAvater": "img/bg-img/u3.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "321",
-        "viewsNow": "123",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "hidden",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 20,
-        "title": "Diamond Crawling Spider",
-        "image": "img/bg-img/20.jpg",
-        "catagory": "collectibles",
-        "currentPrice": "0.01 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 2.58 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u4.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "11",
-        "viewsNow": "647",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Crawling Spider",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 21,
-        "title": "Diamond Rabbit",
-        "image": "img/bg-img/21.jpg",
-        "catagory": "art",
-        "currentPrice": "0.861 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "dark",
-                "text": "Sold",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 789 USD",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u1.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "99",
-        "viewsNow": "234",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Diamond Rabbit",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 22,
-        "title": "Diamond Cat",
-        "image": "img/bg-img/22.jpg",
-        "catagory": "photos",
-        "currentPrice": "0.061 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.061 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u2.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "142",
-        "viewsNow": "639",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "hidden",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "NFT Logo",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 23,
-        "title": "Abstract Oil Painting",
-        "image": "img/bg-img/23.jpg",
-        "catagory": "cards",
-        "currentPrice": "0.99 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "",
-                "color": "danger",
-                "text": "Newbie",
-                "icon": "img/core-img/fire.png"
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 0.99 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "designing_world",
-        "authorAvater": "img/bg-img/u3.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "324",
-        "viewsNow": "445",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Abstract Oil Painting",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    },
-    {
-        "id": 24,
-        "title": "Cute Fox",
-        "image": "img/bg-img/24.jpg",
-        "catagory": "art",
-        "currentPrice": "2 ETH",
-        "priceText": "Current Bid",
-        "badgeInfo": [
-            {
-                "visibility": "hidden",
-                "color": "",
-                "text": "",
-                "icon": ""
-            }
-        ],
-        "dropdownVisibility": "",
-        "dropdownInfo": [
-            {
-                "dropdownItemText": "Share",
-                "dropdownItemIcon": "bi-share",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Report",
-                "dropdownItemIcon": "bi-flag",
-                "dropdownItemURL": "#"
-            },
-            {
-                "dropdownItemText": "Bookmark",
-                "dropdownItemIcon": "bi-bookmark",
-                "dropdownItemURL": "#"
-            }
-        ],
-        "topLevelInfo": [
-            {
-                "text": "Hightest bid 2 ETH",
-                "icon": "bi-arrow-up"
-            }
-        ],
-        "authorName": "creative_world",
-        "authorAvater": "img/bg-img/u4.jpg",
-        "authorVerified": "true",
-        "buttonGroup": [
-            {
-                "leftButtonStyle": "primary",
-                "leftButtonText": "Place Bid",
-                "leftButtonURL": "#",
-                "leftButtonIcon": ""
-            },
-            {
-                "rightButtonStyle": "minimal",
-                "rightButtonText": "Activity",
-                "rightButtonURL": "/activity",
-                "rightButtonIcon": "bi-activity"
-            }
-        ],
-        "wishlistCount": "3",
-        "viewsNow": "145",
-        "shortDesc": [
-            {
-                "heading": "Short Description",
-                "body": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut veniam consectetur magnam libero, natus eius numquam reprehenderit hic at, excepturi repudiandae magni optio odio doloribus?"
-            }
-        ],
-        "tabVisibility": "",
-        "firstTabContent": [
-            "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi ut, debitis delectus deserunt ipsa ullam necessitatibus expedita laboriosam mollitia veniam rerum error iste, tempora vitae. Quasi totam exercitationem odit.</p>",
-            "<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam consectetur aliquid accusantium aut. A, veritatis voluptates. Blanditiis ut repellat, reprehenderit rem ab cum cumque veniam nulla officiis, quo maxime facilis aut eius labore quisquam nemo ea illum! Reprehenderit officia illo ipsa.</p>",
-            "<ul><li>Bootstrap 5</li><li>Vanilla JS </li><li>Creative Design</li></ul>",
-            "<p className='mb-0'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe eveniet optio minima, minus quas distinctio iste laudantium in voluptates, corporis labore. Debitis saepe et laudantium, dolor necessitatibus eius porro reiciendis?</p>"
-        ],
-        "secondTabContent": [
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            },
-            {
-                "firstData": "Cute Fox",
-                "secondData": "0.235 ETH",
-                "thirdData": "creative_art",
-                "fourthData": "Sales",
-                "fiveData": "29 min ago"
-            }
-        ]
-    }
+  {
+    "id": 1,
+    "title": "Summary Midterm IU #132",
+    "image": "img/bg-img/13.jpg",
+    "catagory": "Digital Logic Design",
+    "currentPrice": "0.861 SOL",
+    "priceText": "Current Bid",
+    "badgeInfo": [
+      {
+        "visibility": "",
+        "color": "primary",
+        "text": "Featured",
+        "icon": "img/core-img/fire.png"
+      }
+    ],
+    "dropdownVisibility": "",
+    "dropdownInfo": [
+      {
+        "dropdownItemText": "Share",
+        "dropdownItemIcon": "bi-share",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Report",
+        "dropdownItemIcon": "bi-flag",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Bookmark",
+        "dropdownItemIcon": "bi-bookmark",
+        "dropdownItemURL": "#"
+      }
+    ],
+    "topLevelInfo": [
+      {
+        "text": "Highest bid 0.861 SOL",
+        "icon": "bi-arrow-up"
+      }
+    ],
+    "authorName": "StudyGenius",
+    "authorAvater": "img/bg-img/u1.jpg",
+    "authorVerified": "true",
+    "buttonGroup": [
+      {
+        "leftButtonStyle": "primary",
+        "leftButtonText": "Place Bid",
+        "leftButtonURL": "#",
+        "leftButtonIcon": ""
+      },
+      {
+        "rightButtonStyle": "minimal",
+        "rightButtonText": "Activity",
+        "rightButtonURL": "/activity",
+        "rightButtonIcon": "bi-activity"
+      }
+    ],
+    "wishlistCount": "125",
+    "viewsNow": "1245",
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "A concise summary for the midterm exam covering the key concepts and theories in Digital Logic Design."
+      }
+    ],
+    "tabVisibility": "",
+    "firstTabContent": [
+      "<p>This summary includes essential notes and explanations for understanding digital circuits and logic gates.</p>",
+      "<p>Perfect for students who need a quick review before exams. Covers the fundamental topics in Digital Logic Design.</p>",
+      "<ul><li>Logic Gates</li><li>Combinational Circuits</li><li>Sequential Circuits</li></ul>",
+      "<p className='mb-0'>Gain a solid understanding of digital logic to excel in your midterms. Detailed yet concise.</p>"
+    ],
+    "secondTabContent": [
+      {
+        "firstData": "Summary Midterm IU #132",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "1 min ago"
+      },
+      {
+        "firstData": "Summary Midterm IU #132",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "8 min ago"
+      },
+      {
+        "firstData": "Summary Midterm IU #132",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "15 min ago"
+      },
+      {
+        "firstData": "Summary Midterm IU #132",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "22 min ago"
+      },
+      {
+        "firstData": "Summary Midterm IU #132",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Note Final IU #245",
+    "image": "img/bg-img/14.jpg",
+    "catagory": "Object-Oriented Programming",
+    "currentPrice": "2.961 SOL",
+    "priceText": "Current Bid",
+    "badgeInfo": [
+      {
+        "visibility": "hidden",
+        "color": "",
+        "text": "",
+        "icon": ""
+      }
+    ],
+    "dropdownVisibility": "",
+    "dropdownInfo": [
+      {
+        "dropdownItemText": "Share",
+        "dropdownItemIcon": "bi-share",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Report",
+        "dropdownItemIcon": "bi-flag",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Bookmark",
+        "dropdownItemIcon": "bi-bookmark",
+        "dropdownItemURL": "#"
+      }
+    ],
+    "topLevelInfo": [
+      {
+        "text": "Highest bid 2.961 SOL",
+        "icon": "bi-arrow-up"
+      }
+    ],
+    "authorName": "EduWeb",
+    "authorAvater": "img/bg-img/u2.jpg",
+    "authorVerified": "true",
+    "buttonGroup": [
+      {
+        "leftButtonStyle": "primary",
+        "leftButtonText": "Place Bid",
+        "leftButtonURL": "#",
+        "leftButtonIcon": ""
+      },
+      {
+        "rightButtonStyle": "minimal",
+        "rightButtonText": "Activity",
+        "rightButtonURL": "/activity",
+        "rightButtonIcon": "bi-activity"
+      }
+    ],
+    "wishlistCount": "74",
+    "viewsNow": "634",
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Detailed notes for the final exam in Object-Oriented Programming, covering all the critical concepts and examples."
+      }
+    ],
+    "tabVisibility": "",
+    "firstTabContent": [
+      "<p>These notes provide a comprehensive overview of Object-Oriented Programming principles and practices.</p>",
+      "<p>Includes class diagrams, code snippets, and explanations of key concepts such as inheritance, polymorphism, and encapsulation.</p>",
+      "<ul><li>Class Diagrams</li><li>Code Examples</li><li>Design Patterns</li></ul>",
+      "<p className='mb-0'>Ideal for final exam preparation, ensuring you grasp all essential topics in OOP.</p>"
+    ],
+    "secondTabContent": [
+      {
+        "firstData": "Note Final IU #245",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Note Final IU #245",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Note Final IU #245",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Note Final IU #245",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Note Final IU #245",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Exercise Midterm IU #876",
+    "image": "img/bg-img/15.jpg",
+    "catagory": "Data Structures and Algorithms",
+    "currentPrice": "0.06 SOL",
+    "priceText": "Current Bid",
+    "badgeInfo": [
+      {
+        "visibility": "hidden",
+        "color": "primary",
+        "text": "Featured",
+        "icon": "img/core-img/fire.png"
+      }
+    ],
+    "dropdownVisibility": "",
+    "dropdownInfo": [
+      {
+        "dropdownItemText": "Share",
+        "dropdownItemIcon": "bi-share",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Report",
+        "dropdownItemIcon": "bi-flag",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Bookmark",
+        "dropdownItemIcon": "bi-bookmark",
+        "dropdownItemURL": "#"
+      }
+    ],
+    "topLevelInfo": [
+      {
+        "text": "Highest bid 0.06 SOL",
+        "icon": "bi-arrow-up"
+      }
+    ],
+    "authorName": "AceAcademics",
+    "authorAvater": "img/bg-img/u3.jpg",
+    "authorVerified": "true",
+    "buttonGroup": [
+      {
+        "leftButtonStyle": "primary",
+        "leftButtonText": "Place Bid",
+        "leftButtonURL": "#",
+        "leftButtonIcon": ""
+      },
+      {
+        "rightButtonStyle": "minimal",
+        "rightButtonText": "Activity",
+        "rightButtonURL": "/activity",
+        "rightButtonIcon": "bi-activity"
+      }
+    ],
+    "wishlistCount": "63",
+    "viewsNow": "674",
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Practice exercises for the midterm exam in Data Structures and Algorithms, focusing on problem-solving and code implementation."
+      }
+    ],
+    "tabVisibility": "",
+    "firstTabContent": [
+      "<p>Includes a variety of problems and solutions to help you master data structures and algorithms.</p>",
+      "<p>Topics covered: arrays, linked lists, trees, graphs, sorting, and searching algorithms.</p>",
+      "<ul><li>Array Operations</li><li>Tree Traversal</li><li>Graph Algorithms</li></ul>",
+      "<p className='mb-0'>Enhance your problem-solving skills and prepare effectively for your midterms.</p>"
+    ],
+    "secondTabContent": [
+      {
+        "firstData": "Exercise Midterm IU #876",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Exercise Midterm IU #876",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Exercise Midterm IU #876",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Exercise Midterm IU #876",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Exercise Midterm IU #876",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Summary Final IU #543",
+    "image": "img/bg-img/16.jpg",
+    "catagory": "Mobile App Development",
+    "currentPrice": "0.01 SOL",
+    "priceText": "Current Bid",
+    "badgeInfo": [
+      {
+        "visibility": "",
+        "color": "dark",
+        "text": "New Bid",
+        "icon": "img/core-img/fire.png"
+      }
+    ],
+    "dropdownVisibility": "",
+    "dropdownInfo": [
+      {
+        "dropdownItemText": "Share",
+        "dropdownItemIcon": "bi-share",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Report",
+        "dropdownItemIcon": "bi-flag",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Bookmark",
+        "dropdownItemIcon": "bi-bookmark",
+        "dropdownItemURL": "#"
+      }
+    ],
+    "topLevelInfo": [
+      {
+        "text": "Highest bid 0.01 SOL",
+        "icon": "bi-arrow-up"
+      }
+    ],
+    "authorName": "SmartStudy",
+    "authorAvater": "img/bg-img/u4.jpg",
+    "authorVerified": "true",
+    "buttonGroup": [
+      {
+        "leftButtonStyle": "primary",
+        "leftButtonText": "Place Bid",
+        "leftButtonURL": "#",
+        "leftButtonIcon": ""
+      },
+      {
+        "rightButtonStyle": "minimal",
+        "rightButtonText": "Activity",
+        "rightButtonURL": "/activity",
+        "rightButtonIcon": "bi-activity"
+      }
+    ],
+    "wishlistCount": "741",
+    "viewsNow": "301",
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "A detailed summary for the final exam in Mobile App Development, covering key concepts and practical examples."
+      }
+    ],
+    "tabVisibility": "hidden",
+    "firstTabContent": [
+      "<p>This summary covers all essential topics in mobile app development, including Android and iOS development.</p>",
+      "<p>Includes code snippets, app architecture designs, and best practices for mobile app development.</p>",
+      "<ul><li>Android Development</li><li>iOS Development</li><li>App Architecture</li></ul>",
+      "<p className='mb-0'>Prepare effectively for your final exams with this comprehensive summary.</p>"
+    ],
+    "secondTabContent": [
+      {
+        "firstData": "NFT Logo",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "NFT Logo",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "NFT Logo",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "NFT Logo",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "NFT Logo",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Exercise Final IU #987",
+    "image": "img/bg-img/17.jpg",
+    "catagory": "Web App Development",
+    "currentPrice": "0.861 SOL",
+    "priceText": "Current Bid",
+    "badgeInfo": [
+      {
+        "visibility": "",
+        "color": "dark",
+        "text": "Hot bid",
+        "icon": "img/core-img/fire.png"
+      }
+    ],
+    "dropdownVisibility": "",
+    "dropdownInfo": [
+      {
+        "dropdownItemText": "Share",
+        "dropdownItemIcon": "bi-share",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Report",
+        "dropdownItemIcon": "bi-flag",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Bookmark",
+        "dropdownItemIcon": "bi-bookmark",
+        "dropdownItemURL": "#"
+      }
+    ],
+    "topLevelInfo": [
+      {
+        "text": "Highest bid 0.324 SOL",
+        "icon": "bi-arrow-up"
+      }
+    ],
+    "authorName": "StudyGenius",
+    "authorAvater": "img/bg-img/u1.jpg",
+    "authorVerified": "true",
+    "buttonGroup": [
+      {
+        "leftButtonStyle": "primary",
+        "leftButtonText": "Place Bid",
+        "leftButtonURL": "#",
+        "leftButtonIcon": ""
+      },
+      {
+        "rightButtonStyle": "minimal",
+        "rightButtonText": "Activity",
+        "rightButtonURL": "/activity",
+        "rightButtonIcon": "bi-activity"
+      }
+    ],
+    "wishlistCount": "221",
+    "viewsNow": "521",
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "Practice exercises for the final exam in Web App Development, focusing on both front-end and back-end development."
+      }
+    ],
+    "tabVisibility": "",
+    "firstTabContent": [
+      "<p>Includes a variety of exercises covering HTML, CSS, JavaScript, and back-end development with Node.js.</p>",
+      "<p>Topics covered: responsive design, RESTful APIs, and database integration.</p>",
+      "<ul><li>HTML & CSS</li><li>JavaScript & Node.js</li><li>Database Integration</li></ul>",
+      "<p className='mb-0'>Strengthen your web development skills and prepare thoroughly for your finals.</p>"
+    ],
+    "secondTabContent": [
+      {
+        "firstData": "Exercise Final IU #987",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Exercise Final IU #987",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Exercise Final IU #987",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Exercise Final IU #987",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Exercise Final IU #987",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Summary Final IU #458",
+    "image": "img/bg-img/18.jpg",
+    "catagory": "Machine Learning Platforms",
+    "currentPrice": "9.32 SOL",
+    "priceText": "Current Bid",
+    "badgeInfo": [
+      {
+        "visibility": "hidden",
+        "color": "",
+        "text": "",
+        "icon": ""
+      }
+    ],
+    "dropdownVisibility": "",
+    "dropdownInfo": [
+      {
+        "dropdownItemText": "Share",
+        "dropdownItemIcon": "bi-share",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Report",
+        "dropdownItemIcon": "bi-flag",
+        "dropdownItemURL": "#"
+      },
+      {
+        "dropdownItemText": "Bookmark",
+        "dropdownItemIcon": "bi-bookmark",
+        "dropdownItemURL": "#"
+      }
+    ],
+    "topLevelInfo": [
+      {
+        "text": "Highest bid 9.32 SOL",
+        "icon": "bi-arrow-up"
+      }
+    ],
+    "authorName": "EduWeb",
+    "authorAvater": "img/bg-img/u2.jpg",
+    "authorVerified": "true",
+    "buttonGroup": [
+      {
+        "leftButtonStyle": "primary",
+        "leftButtonText": "Place Bid",
+        "leftButtonURL": "#",
+        "leftButtonIcon": ""
+      },
+      {
+        "rightButtonStyle": "minimal",
+        "rightButtonText": "Activity",
+        "rightButtonURL": "/activity",
+        "rightButtonIcon": "bi-activity"
+      }
+    ],
+    "wishlistCount": "121",
+    "viewsNow": "6478",
+    "shortDesc": [
+      {
+        "heading": "Short Description",
+        "body": "A comprehensive summary for the final exam in Machine Learning Platforms, covering key algorithms and tools."
+      }
+    ],
+    "tabVisibility": "",
+    "firstTabContent": [
+      "<p>This summary includes detailed notes on various machine learning platforms and tools such as TensorFlow and PyTorch.</p>",
+      "<p>Includes practical examples and explanations of key machine learning algorithms and their applications.</p>",
+      "<ul><li>TensorFlow</li><li>PyTorch</li><li>ML Algorithms</li></ul>",
+      "<p className='mb-0'>Prepare effectively for your final exams with this detailed summary.</p>"
+    ],
+    "secondTabContent": [
+      {
+        "firstData": "Summary Final IU #458",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Summary Final IU #458",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Summary Final IU #458",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Summary Final IU #458",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      },
+      {
+        "firstData": "Summary Final IU #458",
+        "secondData": "0.235 SOL",
+        "thirdData": "creative_art",
+        "fourthData": "Sales",
+        "fiveData": "29 min ago"
+      }
+    ]
+  }
 ]

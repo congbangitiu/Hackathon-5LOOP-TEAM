@@ -12,7 +12,7 @@ export default function FuntoNavbar() {
       <NavDropdown className="ft-dd" title="Explore" id="Explore">
         <NavLink to="/explore">Explore Pass</NavLink>
         <NavLink to="/featured-items">Featured Pass</NavLink>
-        <NavLink to="/collections">Course Collections</NavLink>
+        <NavLink to="/collections">Course Collection</NavLink>
       </NavDropdown>
 
       <NavDropdown className="ft-dd" title="Study Tools" id="Tools" drop="end">

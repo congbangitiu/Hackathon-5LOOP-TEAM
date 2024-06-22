@@ -32,7 +32,6 @@ import CreateNew from "./pages/CreateNew";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import License from "./pages/License";
 import NotFound from "./pages/NotFound";
@@ -92,7 +91,6 @@ function App() {
         <Route path="/create-new" element={<CreateNew />} />
         <Route path="/connect-wallet" element={<ConnectWallet />} />
 
-        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/license" element={<License />} />
         <Route path="/newsletter" element={<Newsletter />} />

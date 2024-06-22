@@ -109,10 +109,6 @@ export default function Footer() {
                 widgetTitle="About"
                 navList={[
                   {
-                    text: "About us",
-                    url: "/about",
-                  },
-                  {
                     text: "Blog",
                     url: "/blog",
                   },
