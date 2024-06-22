@@ -7,7 +7,6 @@ require("jquery-nice-select");
 
 const CreateNewContent = () => {
   const [inputTitle, setInputTitle] = useState("OOAD IU #8543");
-  const [inputPrice, setInputPrice] = useState("0.324 SOL");
   const [inputImage, setInputImage] = useState("img/bg-img/17.jpg");
   const ImagehandleChange = (event) => {
     setInputImage(URL.createObjectURL(event.target.files[0]));
