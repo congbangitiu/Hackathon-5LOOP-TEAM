@@ -51,12 +51,13 @@ function App() {
       <Routes>
         <Route path="/" index element={<HomeTwo />} />
 
-        <Route path="/explore2" element={<ExploreTwo />} />
-        <Route path="/featured-items" element={<FeaturedItems />} />
-
-        <Route path="/collections" element={<Collections />} />
-        <Route path="/top-seller" element={<TopSeller />} />
+        <Route path="/ranking" element={<RankingTable />} />
+        <Route path="/top-creator" element={<TopSeller />} />
         <Route path="/top-buyer" element={<TopBuyer />} />
+
+        <Route path="/explore" element={<ExploreTwo />} />
+        <Route path="/featured-items" element={<FeaturedItems />} />
+        <Route path="/collections" element={<Collections />} />
 
         <Route
           path="/featured-items/:FEATUREDID"
@@ -79,9 +80,9 @@ function App() {
         <Route path="/settings" element={<DashboardSettings />} />
 
         <Route path="/activity" element={<Activity />} />
-        <Route path="/ranking" element={<RankingTable />} />
+
         <Route path="/create-new" element={<CreateNew />} />
-        <Route path="/connet-wallet" element={<ConnectWallet />} />
+        <Route path="/connect-wallet" element={<ConnectWallet />} />
         <Route path="/author/:AUTHORUSERNAME" element={<Author />} />
 
         <Route path="/blog" element={<Blog />} />

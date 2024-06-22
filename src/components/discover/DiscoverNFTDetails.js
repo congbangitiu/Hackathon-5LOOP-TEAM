@@ -31,23 +31,7 @@ const DiscoverNFTDetails = () => {
   const socialData = [
     {
       path: "#",
-      icon: "img/core-img/icons8-facebook.svg",
-    },
-    {
-      path: "#",
       icon: "img/core-img/icons8-twitter.svg",
-    },
-    {
-      path: "#",
-      icon: "img/core-img/icons8-instagram.svg",
-    },
-    {
-      path: "#",
-      icon: "img/core-img/icons8-slack.svg",
-    },
-    {
-      path: "#",
-      icon: "img/core-img/icons8-player.svg",
     },
   ];
 

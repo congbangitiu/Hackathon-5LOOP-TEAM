@@ -54,13 +54,13 @@ export default function Header() {
                 toggleIcon="bi-three-dots"
                 dropdownList={[
                   {
-                    text: "Dashboard",
+                    text: "My Dashboard",
                     url: "/dashboard",
                     icon: "bi-speedometer2",
                   },
                   {
-                    text: "Collections",
-                    url: "/collections",
+                    text: "My Collections",
+                    url: "/my-collections",
                     icon: "bi-collection",
                   },
                   {
@@ -80,7 +80,7 @@ export default function Header() {
               <CreateNewButton
                 buttonColor="btn-warning"
                 buttonURL="/create-new"
-                buttonText="Create New"
+                buttonText="Connect Wallet"
               />
             </div>
           </Navbar.Collapse>
