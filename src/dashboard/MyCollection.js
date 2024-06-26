@@ -1,8 +1,7 @@
-import {useState} from "react";
-import {Link} from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import CreateNewButton from "../components/dashboard/createNew/CreateNewButton";
-import DashboardHeader from "../components/dashboard/header/DashboardHeader";
+import DashboardHeader from "../components/dashboard/DashboardHeader";
 import MyCollectionData from "../data/dashboard/collection-data.json";
 
 const DashboardCollection = () => {
@@ -75,8 +74,6 @@ const DashboardCollection = () => {
   return (
     <>
       <DashboardHeader />
-
-      <CreateNewButton />
 
       <div className="admin-wrapper">
         <div className="container">

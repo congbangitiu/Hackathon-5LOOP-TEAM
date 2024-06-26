@@ -6,7 +6,7 @@ import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import HelpSearchForm from "./HelpSearchForm";
 
-import HelpData from "../../data/helpCenter/help-all-questions.json";
+import HelpData from "../../data/help-all-questions.json";
 
 const CatagoryQuestions = () => {
   const questionCatagory = useParams().CATAGORY;

@@ -10,8 +10,8 @@ import { Link, useParams } from "react-router-dom";
 import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import AuthorData from "../data/author/authors-data.json";
-import DiscoverNFTData from "../data/discover/discover-nft.json";
+import AuthorData from "../data/authors-data.json";
+import DiscoverNFTData from "../data/discover-nft.json";
 
 import $ from "jquery";
 

@@ -1,5 +1,5 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import ProcessData from "../data/process/process.json";
+import ProcessData from "../data/process.json";
 
 export default function Process() {
   const ProcessCards = ProcessData.map((elem, index) => (

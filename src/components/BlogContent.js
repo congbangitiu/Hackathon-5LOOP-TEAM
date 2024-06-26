@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import BlogCardData from "../data/blog/blog-list.json";
+import BlogCardData from "../data/blog-list.json";
 
 export default function BlogContent() {
   const [count, setCount] = useState(9);

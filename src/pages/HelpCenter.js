@@ -4,7 +4,7 @@ import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import CatagoryCard from "../components/helpCenter/CatagoryCard";
 import HelpSearchForm from "../components/helpCenter/HelpSearchForm";
-import HelpCatagoryData from "../data/helpCenter/help-all-questions.json";
+import HelpCatagoryData from "../data/help-all-questions.json";
 
 export default function HelpCenter() {
   const AllItems = HelpCatagoryData;

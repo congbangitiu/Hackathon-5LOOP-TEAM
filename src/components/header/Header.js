@@ -74,8 +74,8 @@ export default function Header() {
               {/* Create New Button */}
               <CreateNewButton
                 buttonColor="btn-primary"
-                buttonURL=""
-                buttonText="Connect Wallet"
+                buttonURL="/activity"
+                buttonText="Visit Dashboard"
               />
             </div>
           </Navbar.Collapse>

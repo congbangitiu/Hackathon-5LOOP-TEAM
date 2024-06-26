@@ -1,13 +1,14 @@
-import {useState} from "react";
-import {Link, NavLink} from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
-import NotificationData from "../../../data/dashboard/notification-data.json";
-import useStickyHeader from "../../header/StickyHeader";
+import NotificationData from "../../data/dashboard/notification-data.json";
+import useStickyHeader from "../header/StickyHeader";
+import Wallet from "../WalletButton";
 
 const DashboardHeader = () => {
-  const BrandLogo = "img/core-img/dashboard-logo.png";
+  const BrandLogo = "img/core-img/db-logo.png";
 
   let [check] = useState(true);
   const sticky = useStickyHeader(10);
@@ -18,24 +19,6 @@ const DashboardHeader = () => {
   const handleToggle = () => {
     setActive(!isActive);
   };
-
-  const userDropdownData = [
-    {
-      path: "/dashboard",
-      icon: "bi-person-circle",
-      text: "Dashboard",
-    },
-    {
-      path: "/my-collection",
-      icon: "bi-collection",
-      text: "Collection",
-    },
-    {
-      path: "/settings",
-      icon: "bi-gear",
-      text: "Settings",
-    },
-  ];
 
   const userInfo = [
     {
@@ -48,7 +31,7 @@ const DashboardHeader = () => {
   const balanceCard = [
     {
       title: "Current balance",
-      icon: "img/core-img/ethereum.png",
+      icon: "img/core-img/solana-icon.svg",
       balance: 4.0678,
       balanceType: "SOL",
     },
@@ -57,9 +40,15 @@ const DashboardHeader = () => {
   const AdminNav = [
     {
       id: 1,
-      path: "/dashboard",
-      icon: "bi-speedometer",
-      text: "Dashboard",
+      path: "/activity",
+      icon: "bi-person-circle",
+      text: "My Activity",
+    },
+    {
+      id: 2,
+      path: "/create-new",
+      icon: "bi-hammer",
+      text: "Creator Studio",
     },
     {
       id: 3,
@@ -69,26 +58,11 @@ const DashboardHeader = () => {
     },
     {
       id: 4,
-      path: "/my-wallet",
-      icon: "bi-wallet2",
-      text: "My Wallet",
-    },
-    {
-      id: 5,
       path: "/notifications",
       icon: "bi-bell",
       text: "Notifications",
     },
   ];
-
-  const userDropdownList = userDropdownData.map((elem, index) => (
-    <li key={index}>
-      <Link className="dropdown-item" to={elem.path}>
-        <i className={`me-2 bi ${elem.icon}`} />
-        {elem.text}
-      </Link>
-    </li>
-  ));
 
   const notificationCards = NotificationData.slice(0, 4).map((elem, index) => (
     <li key={index}>
@@ -127,7 +101,7 @@ const DashboardHeader = () => {
                   <input
                     className="form-control"
                     type="text"
-                    placeholder="Search"
+                    placeholder="Search anything"
                   />
                   <button className="position-absolute" type="submit">
                     <i className="bi bi-search" />
@@ -154,23 +128,9 @@ const DashboardHeader = () => {
                       className="dropdown-item justify-content-center"
                       to="/notifications"
                     >
-                      View all notifications
+                      All notifications
                     </Link>
                   </li>
-                </Dropdown.Menu>
-              </Dropdown>
-
-              {/* User Dropdown */}
-              <Dropdown className="user-dropdown">
-                <Dropdown.Toggle className="user-btn" id="userDropdown">
-                  <img
-                    src={`${process.env.PUBLIC_URL}/img/core-img/user.png`}
-                    alt=""
-                  />
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu className="mt-3" align="end">
-                  {userDropdownList}
                 </Dropdown.Menu>
               </Dropdown>
 
@@ -178,14 +138,14 @@ const DashboardHeader = () => {
               <div className="menu-toggler ms-1 ms-sm-3" onClick={handleToggle}>
                 <i className="bi bi-list" />
               </div>
+              <Wallet />
 
               {/* Button */}
               <Link
                 className="btn btn-sm btn-danger rounded-pill ms-2 ms-sm-3 d-none d-sm-block"
-                to="/home1"
+                to="/"
               >
-                <i className="bi bi-eye me-1" />
-                Frontend
+                Back to Marketplace
               </Link>
             </div>
           </div>
@@ -231,14 +191,6 @@ const DashboardHeader = () => {
                   <span className="counter">{balanceCard[0].balance}</span>
                   <span className="ms-2">{balanceCard[0].balanceType}</span>
                 </h5>
-
-                {/* Recharge Button */}
-                <Link
-                  className="btn btn-warning rounded-pill btn-sm w-100 mt-3"
-                  to="#"
-                >
-                  Recharge
-                </Link>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import CollectionData from "../../data/collection/collection.json";
+import CollectionData from "../../data/collection.json";
 
 const CollectionContent = () => {
   const [count, setCount] = useState(9);

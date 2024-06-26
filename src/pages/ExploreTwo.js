@@ -8,7 +8,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import DiscoverNFTData from "../data/discover/discover-nft.json";
+import DiscoverNFTData from "../data/discover-nft.json";
 
 import $ from "jquery";
 

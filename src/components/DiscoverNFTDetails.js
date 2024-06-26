@@ -10,7 +10,7 @@ import "react-medium-image-zoom/dist/styles.css";
 import { Link, useParams } from "react-router-dom";
 import TinySlider from "tiny-slider-react";
 
-import DiscoverNFTData from "../data/discover/discover-nft.json";
+import DiscoverNFTData from "../data/discover-nft.json";
 import Breadcrumb from "./Breadcrumb";
 import CTA from "./CTA";
 import Divider from "./Divider";

@@ -19,7 +19,7 @@ import StudyGoal from "./pages/StudyGoal";
 import TopSeller from "./pages/TopSeller";
 
 import Author from "./pages/Author";
-import CreateNew from "./pages/CreateNew";
+import CreateNew from "./dashboard/CreateNew";
 
 import Blog from "./pages/Blog";
 
@@ -51,7 +51,7 @@ function App() {
         />
         <Route path="/author/:AUTHORUSERNAME" element={<Author />} />
         <Route path="/help-center/:CATAGORY" element={<CatagoryQuestions />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/activity" element={<Dashboard />} />
         <Route path="/my-collection" element={<DashboardCollection />} />
         <Route path="/notifications" element={<DashboardNotification />} />
         <Route path="/create-new" element={<CreateNew />} />

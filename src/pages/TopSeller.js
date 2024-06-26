@@ -6,7 +6,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import TopSellerData from "../data/topSeller/top-seller.json";
+import TopSellerData from "../data/top-seller.json";
 
 const TopSeller = () => {
   const TopSellerCards = TopSellerData.slice(0, 15).map((element, index) => (

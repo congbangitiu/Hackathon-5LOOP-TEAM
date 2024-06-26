@@ -1,10 +1,10 @@
-import {useState} from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import Tab from "react-bootstrap/Tab";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Tabs from "react-bootstrap/Tabs";
-import {Link} from "react-router-dom";
+import Tab from "react-bootstrap/Tab";
+import ScrollAnimation from "react-animate-on-scroll";
 
-import ActivityTableData from "../../../data/dashboard/activity-table-data.json";
+import ActivityTableData from "../../data/dashboard/activity-table-data.json";
 
 const ActivityTab = () => {
   const [key, setKey] = useState("today");
@@ -30,7 +30,7 @@ const ActivityTab = () => {
                         <tr key={index}>
                           <th scope="row">
                             <Link
-                              className="btn btn-minimal text-dark hover-primary"
+                              className="btn btn-minimal text-gray hover-primary"
                               to="#"
                             >
                               <img
@@ -69,7 +69,7 @@ const ActivityTab = () => {
                         <tr key={index}>
                           <th scope="row">
                             <Link
-                              className="btn btn-minimal text-dark hover-primary"
+                              className="btn btn-minimal text-gray hover-primary"
                               to="#"
                             >
                               <img
@@ -108,7 +108,7 @@ const ActivityTab = () => {
                         <tr key={index}>
                           <th scope="row">
                             <Link
-                              className="btn btn-minimal text-dark hover-primary"
+                              className="btn btn-minimal text-gray hover-primary"
                               to="#"
                             >
                               <img
