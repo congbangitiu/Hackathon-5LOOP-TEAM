@@ -1,11 +1,11 @@
-import {useEffect, useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import Breadcrumb from "../components/breadcrumb/Breadcrumb";
-import Divider from "../components/divider/Divider";
+import Breadcrumb from "../components/Breadcrumb";
+import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import DiscoverNFTData from "../data/discover/discover-nft.json";
@@ -203,7 +203,7 @@ const ExploreTwo = () => {
       <Header />
 
       <Breadcrumb
-        breadcrumbTitle="Explore study NFT pass"
+        breadcrumbTitle="Explore all NFT pass"
         breadcrumbNav={[
           {
             navText: "Home",

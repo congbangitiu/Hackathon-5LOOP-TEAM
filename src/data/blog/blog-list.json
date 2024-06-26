@@ -17,8 +17,8 @@
   },
   {
     "id": 2,
-    "image": "img/bg-img/24.jpg",
-    "largeImage": "img/bg-img/24.jpg",
+    "image": "img/bg-img/7.jpg",
+    "largeImage": "img/bg-img/7.jpg",
     "title": "Guide to selling NFT Pass on NFT-BStudy.",
     "postDate": "May 14, 2024",
     "excerpt": "Master the art of selling your educational NFT Pass.",
@@ -33,8 +33,8 @@
   },
   {
     "id": 3,
-    "image": "img/bg-img/22.jpg",
-    "largeImage": "img/bg-img/22.jpg",
+    "image": "img/bg-img/18.jpg",
+    "largeImage": "img/bg-img/18.jpg",
     "title": "10 tips for avoiding scams and staying safe in NFT-BStudy.",
     "postDate": "May 11, 2024",
     "excerpt": "Stay safe with these essential tips.",
@@ -65,8 +65,8 @@
   },
   {
     "id": 5,
-    "image": "img/bg-img/13.jpg",
-    "largeImage": "img/bg-img/13.jpg",
+    "image": "img/bg-img/19.jpg",
+    "largeImage": "img/bg-img/19.jpg",
     "title": "Platform tips for BetterStudy.",
     "postDate": "May 22, 2024",
     "excerpt": "Maximize your learning experience with these platform tips.",
@@ -77,6 +77,20 @@
       "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/15.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/16.jpg' alt='' /></div></div>",
 
       "<div class='col-10'><p>By following these tips, you can maximize your learning experience on BetterStudy and achieve your academic goals more effectively.</p></div>"
+    ]
+  },
+  {
+    "id": 6,
+    "image": "img/bg-img/32.jpg",
+    "largeImage": "img/bg-img/32.jpg",
+    "title": "Guide to Reducing Fees When Listing on NFT-BStudy",
+    "postDate": "June 27, 2024",
+    "excerpt": "Learn how to minimize listing fees and maximize your profits on NFT-BStudy.",
+    "category": "",
+    "body": [
+      "<div class='col-10'><p>Listing NFTs can incur various fees that can affect your overall profits. Here are some strategies to help you reduce fees when listing on NFT-BStudy.</p> <p>1. Batch listings: Group multiple NFTs together in a single listing to save on fees.</p> <p>2. Optimize listing times: List your NFTs during off-peak times when fees may be lower.</p> <p>3. Use platform promotions: Take advantage of any promotions or discounts offered by NFT-BStudy.</p> <h2 class='mb-3'>10 tips to minimize your listing fees.</h2> <p class='mb-4'>4. Choose the right blockchain: Select a blockchain with lower transaction fees.</p> <p>5. Stay informed: Keep up-to-date with changes in fee structures on NFT-BStudy.</p> <p>6. Leverage loyalty programs: Use any available loyalty programs to reduce fees.</p> <p>7. Utilize referral codes: Apply referral codes to get discounts on fees.</p> <p>8. Monitor gas prices: List your NFTs when gas prices are lower to save on fees.</p> <p>9. Optimize NFT sizes: Smaller file sizes can reduce storage and transaction fees.</p> <p>10. Keep experimenting: Continuously try different strategies to find the most cost-effective methods.</p> </div>",
+      "<div class='col-12'><div class='row g-4'><div class='col-6'><img class='mb-4' src='../img/bg-img/10.jpg' alt='' /></div><div class='col-6'><img class='mb-4' src='../img/bg-img/12.jpg' alt='' /></div></div>",
+      "<div class='col-10'><p>By implementing these tips, you can effectively reduce your listing fees on NFT-BStudy and maximize your profits.</p></div>"
     ]
   }
 ]

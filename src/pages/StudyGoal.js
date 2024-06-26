@@ -1,8 +1,8 @@
-import Breadcrumb from "../components/breadcrumb/Breadcrumb";
-import Divider from "../components/divider/Divider";
+import Breadcrumb from "../components/Breadcrumb";
+import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import NewsletterContent from "../components/newsletter/NewsletterContent";
+import NewsletterContent from "../components/NewsletterContent";
 
 const StudyGoal = () => {
   return (
@@ -23,7 +23,7 @@ const StudyGoal = () => {
 
       <NewsletterContent
         title="Create your perfect study goal plan"
-        subTitle="We will notify you based on Spaced repetition technique"
+        subTitle="We will notify you based on Spaced Repetition technique"
         formInfo={[
           {
             inputPlaceholder:
@@ -31,7 +31,7 @@ const StudyGoal = () => {
             helperText: "We'll never share your information with anyone.",
             helperIcon: "bi-lock",
             buttonColor: "primary",
-            buttonText: "Remind Me",
+            buttonText: "Create a Personalized Study Goal",
           },
         ]}
       />

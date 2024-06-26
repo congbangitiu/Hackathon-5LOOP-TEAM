@@ -2,7 +2,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import {Link} from "react-router-dom";
 
-import TopSellerData from "../../data/topSeller/top-seller.json";
+import TopSellerData from "../data/topSeller/top-seller.json";
 
 export default function TopSeller(props) {
   const { heading, buttonText, buttonURL } = props;

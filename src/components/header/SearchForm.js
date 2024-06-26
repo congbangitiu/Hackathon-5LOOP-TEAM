@@ -8,7 +8,11 @@ const SearchForm = () => {
           e.preventDefault();
         }}
       >
-        <input className="form-control" type="text" placeholder="Search" />
+        <input
+          className="form-control"
+          type="text"
+          placeholder="Search anything"
+        />
         <button className="position-absolute" type="submit">
           <i className="bi bi-search" />
         </button>

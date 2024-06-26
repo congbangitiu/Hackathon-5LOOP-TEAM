@@ -1,8 +1,7 @@
-import {useState} from "react";
-import {Link} from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-import BlogCardData from "../../data/blog/blog-list.json";
-import PopularBlogContent from "./PopularBlogContent";
+import BlogCardData from "../data/blog/blog-list.json";
 
 export default function BlogContent() {
   const [count, setCount] = useState(9);
@@ -73,10 +72,6 @@ export default function BlogContent() {
                 )}
               </button>
             </div>
-          </div>
-
-          <div className="col-12 col-sm-5 col-lg-4 col-xxl-3">
-            <PopularBlogContent title="Popular News" />
           </div>
         </div>
       </div>

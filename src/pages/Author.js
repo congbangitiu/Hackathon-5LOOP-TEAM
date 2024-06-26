@@ -1,13 +1,13 @@
-import {useEffect, useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import Modal from "react-bootstrap/Modal";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import CountUp from "react-countup";
 import TrackVisibility from "react-on-screen";
-import {Link, useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-import Divider from "../components/divider/Divider";
+import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import AuthorData from "../data/author/authors-data.json";

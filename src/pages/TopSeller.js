@@ -1,9 +1,9 @@
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import Breadcrumb from "../components/breadcrumb/Breadcrumb";
-import Divider from "../components/divider/Divider";
+import Breadcrumb from "../components/Breadcrumb";
+import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import TopSellerData from "../data/topSeller/top-seller.json";

@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import Modal from "react-bootstrap/Modal";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
@@ -7,15 +7,15 @@ import Tabs from "react-bootstrap/Tabs";
 import Tooltip from "react-bootstrap/Tooltip";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import {Link, useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import TinySlider from "tiny-slider-react";
 
-import DiscoverNFTData from "../../data/discover/discover-nft.json";
-import Breadcrumb from "../breadcrumb/Breadcrumb";
-import CTA from "../cta/CTA";
-import Divider from "../divider/Divider";
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
+import DiscoverNFTData from "../data/discover/discover-nft.json";
+import Breadcrumb from "./Breadcrumb";
+import CTA from "./CTA";
+import Divider from "./Divider";
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
 
 const DiscoverNFTDetails = () => {
   const discoverID = parseInt(useParams().DISCOVERID, 10);

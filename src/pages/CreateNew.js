@@ -1,6 +1,6 @@
-import Breadcrumb from "../components/breadcrumb/Breadcrumb";
+import Breadcrumb from "../components/Breadcrumb";
 import CreateNewContent from "../components/createNew/CreateNewContent";
-import Divider from "../components/divider/Divider";
+import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 

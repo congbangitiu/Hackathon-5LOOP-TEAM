@@ -1,6 +1,6 @@
-import {useEffect, useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import $ from "jquery";
 

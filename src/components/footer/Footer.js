@@ -44,7 +44,7 @@ export default function Footer() {
                 url: "/",
               },
             ]}
-            newsletterVisibility="visible" // try 'visible' or 'hidden'
+            newsletterVisibility="hidden" // try 'visible' or 'hidden'
           />
 
           {/* Footer Widget */}
@@ -55,12 +55,8 @@ export default function Footer() {
                 widgetTitle="Explore"
                 navList={[
                   {
-                    text: "Explore Pass",
+                    text: "Explore All NFT Pass",
                     url: "/explore",
-                  },
-                  {
-                    text: "Featured Pass",
-                    url: "/featured-items",
                   },
                   {
                     text: "Course Collections",
@@ -69,10 +65,6 @@ export default function Footer() {
                   {
                     text: "Top Creator",
                     url: "/top-creator",
-                  },
-                  {
-                    text: "Top Buyer",
-                    url: "/top-buyer",
                   },
                 ]}
               />
@@ -113,12 +105,12 @@ export default function Footer() {
                     url: "/blog",
                   },
                   {
-                    text: "Licenses Notice",
+                    text: "Licenses",
                     url: "/license",
                   },
                   {
-                    text: "Careers",
-                    url: "#",
+                    text: "Contact Us",
+                    url: "/contact",
                   },
                 ]}
               />
@@ -129,7 +121,7 @@ export default function Footer() {
 
       <div className="container">
         <div className="copywrite-wrapper d-lg-flex align-items-lg-center justify-content-lg-between">
-          {/* Copywrite Text */}
+          {/* Copyright Text */}
           <div className="copywrite-text text-center text-lg-start mb-3 mb-lg-0">
             <p className="mb-0">
               {new Date().getFullYear()} © All rights reserved by{" "}

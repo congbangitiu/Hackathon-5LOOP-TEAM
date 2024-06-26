@@ -1,11 +1,10 @@
-import {Link, useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
-import Breadcrumb from "../breadcrumb/Breadcrumb";
-import Divider from "../divider/Divider";
+import Breadcrumb from "../Breadcrumb";
+import Divider from "../Divider";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import HelpSearchForm from "./HelpSearchForm";
-import PopularQuestion from "./PopularQuestion";
 
 import HelpData from "../../data/helpCenter/help-all-questions.json";
 
@@ -64,10 +63,6 @@ const CatagoryQuestions = () => {
                 {questionCatagory} ({catagoryLength})
               </h4>
               {allQuestions}
-            </div>
-
-            <div className="col-12 col-lg-4">
-              <PopularQuestion heading="Popular Questions" />
             </div>
           </div>
         </div>

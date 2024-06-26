@@ -1,6 +1,6 @@
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function LeftWidget(props) {
   const {
@@ -70,7 +70,7 @@ export default function LeftWidget(props) {
               <input
                 className="form-control"
                 type="email"
-                placeholder="Enter email"
+                placeholder="Enter your email"
               />
               <button className="btn btn-warning px-3" type="submit">
                 Subscribe

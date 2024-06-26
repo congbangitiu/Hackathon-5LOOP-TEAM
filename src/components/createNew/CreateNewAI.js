@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 
 import $ from "jquery";
@@ -7,8 +7,8 @@ window.jQuery = window.$ = $;
 require("jquery-nice-select");
 
 const CreateNewContent = () => {
-  const [inputTitle, setInputTitle] = useState("OOAD IU #8543");
-  const [inputImage, setInputImage] = useState("img/bg-img/17.jpg");
+  const [inputTitle, setInputTitle] = useState("");
+  const [inputImage, setInputImage] = useState("");
   const ImagehandleChange = (event) => {
     setInputImage(URL.createObjectURL(event.target.files[0]));
   };
@@ -44,6 +44,11 @@ const CreateNewContent = () => {
                         onChange={ImagehandleChange}
                       />
                     </Form.Group>
+                    {inputImage && (
+                      <div className="mb-4">
+                        <img src={inputImage} alt="Preview" width="100%" />
+                      </div>
+                    )}
                   </div>
 
                   {/* Checkbox */}
@@ -76,6 +81,7 @@ const CreateNewContent = () => {
                         id="title"
                         type="text"
                         value={inputTitle}
+                        placeholder="Type your course here"
                         onChange={(e) => setInputTitle(e.target.value)}
                       />
                     </Form.Group>
@@ -88,12 +94,12 @@ const CreateNewContent = () => {
                       <Form.Control
                         id="description"
                         as="textarea"
-                        placeholder="Write short prompt to tell AI which part you need to focus more on"
+                        placeholder="Write short prompt to tell AI which part you need to focus more"
                       />
                     </Form.Group>
                   </div>
 
-                  {/* Catagory */}
+                  {/* Categories */}
                   <div className="col-12 col-md-6">
                     <h5>Categories</h5>
                     <select

@@ -1,15 +1,8 @@
 import ActivityTab from "../components/dashboard/activityTab/ActivityTab";
-import MonthlyVisitorChart from "../components/dashboard/charts/MonthlyVisitorChart";
-import PriceHistory from "../components/dashboard/charts/PriceHistory";
-import StatisticsChart from "../components/dashboard/charts/StatisticsChart";
-import StatisticsChartTwo from "../components/dashboard/charts/StatisticsChartTwo";
 import CreateNewButton from "../components/dashboard/createNew/CreateNewButton";
-import FeaturedCard from "../components/dashboard/featuredCard/FeaturedCard";
 import DashboardHeader from "../components/dashboard/header/DashboardHeader";
 import HeroCard from "../components/dashboard/hero/HeroCard";
-import TodaysPick from "../components/dashboard/todaysPick/TodaysPick";
 import TopAuthor from "../components/dashboard/topAuthor/TopAuthor";
-import TopBuyer from "../components/dashboard/topBuyer/TopBuyer";
 
 const Dashboard = () => {
   return (
@@ -41,41 +34,13 @@ const Dashboard = () => {
                     },
                   ]}
                 />
-
-                {/* Statistics Chart */}
-                <StatisticsChart title="Sales" subTitle="Last 10 days" />
-
-                {/* Statistics Chart */}
-                <StatisticsChartTwo title="Revenue" subTitle="Last 10 days" />
               </div>
             </div>
-
-            {/* Monthly Visitor Chart */}
-            <MonthlyVisitorChart title="Monthly Visitors" />
 
             {/* Activity Tab */}
             <ActivityTab />
 
-            <FeaturedCard
-              title="Top NFTs"
-              buttonText="View all NFTs"
-              buttonPath="/explore1"
-            />
-
-            <PriceHistory
-              title="Price History"
-              icon="img/core-img/ethereum.png"
-            />
-
-            <TodaysPick
-              title="Top Seller"
-              btnPath="/featured-items"
-              btnText="View all"
-            />
-
             <TopAuthor title="Top Authors" />
-
-            <TopBuyer title="Top Buyers" />
           </div>
         </div>
       </div>

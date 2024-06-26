@@ -1,7 +1,7 @@
-import {useState} from "react";
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import CreateNewButton from "./CreateNewButton";
 import NavDropDown from "./DropDown";
@@ -54,13 +54,13 @@ export default function Header() {
                 toggleIcon="bi-three-dots"
                 dropdownList={[
                   {
-                    text: "My Dashboard",
+                    text: "Dashboard",
                     url: "/dashboard",
                     icon: "bi-speedometer2",
                   },
                   {
-                    text: "My Collections",
-                    url: "/my-collections",
+                    text: "Collections",
+                    url: "/my-collection",
                     icon: "bi-collection",
                   },
                   {
@@ -68,18 +68,13 @@ export default function Header() {
                     url: "/notifications",
                     icon: "bi-bell",
                   },
-                  {
-                    text: "Settings",
-                    url: "/settings",
-                    icon: "bi-gear",
-                  },
                 ]}
               />
 
               {/* Create New Button */}
               <CreateNewButton
-                buttonColor="btn-warning"
-                buttonURL="/create-new"
+                buttonColor="btn-primary"
+                buttonURL=""
                 buttonText="Connect Wallet"
               />
             </div>

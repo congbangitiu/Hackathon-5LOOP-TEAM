@@ -20,7 +20,7 @@ const ContactContent = (props) => {
                   <div className="col-12">
                     <Form.Control
                       type="text"
-                      placeholder="Full Name"
+                      placeholder="Your Full Name"
                       id="name"
                       name="name"
                       required
@@ -30,7 +30,7 @@ const ContactContent = (props) => {
                   <div className="col-12">
                     <Form.Control
                       type="email"
-                      placeholder="Email Address"
+                      placeholder="Your Email Address"
                       id="email"
                       name="email"
                       required
@@ -40,7 +40,7 @@ const ContactContent = (props) => {
                   <div className="col-12">
                     <Form.Control
                       type="text"
-                      placeholder="Questions"
+                      placeholder="Your Questions"
                       id="questions"
                       name="questions"
                       required
@@ -52,7 +52,7 @@ const ContactContent = (props) => {
                       as="textarea"
                       id="message"
                       name="message"
-                      placeholder="Write in details"
+                      placeholder="Write your question details"
                     />
                   </div>
 
@@ -61,7 +61,7 @@ const ContactContent = (props) => {
                       className="btn btn-primary rounded-pill"
                       type="submit"
                     >
-                      Send now
+                      Send ticket
                     </button>
                   </div>
                 </div>

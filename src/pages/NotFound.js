@@ -1,7 +1,7 @@
-import Divider from "../components/divider/Divider";
+import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import NotFoundContent from "../components/notFound/NotFound";
+import NotFoundContent from "../components/NotFound";
 
 export default function NotFound() {
   return (
