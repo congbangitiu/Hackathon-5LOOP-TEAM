@@ -1,5 +1,5 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const HeroCard = (props) => {
   const { backgroundImage, heading, subHeading, buttonGroup } = props;

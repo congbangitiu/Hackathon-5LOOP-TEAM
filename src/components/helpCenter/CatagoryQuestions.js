@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 
 import Breadcrumb from "../breadcrumb/Breadcrumb";
 import Divider from "../divider/Divider";

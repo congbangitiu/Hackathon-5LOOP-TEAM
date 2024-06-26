@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,21 +12,17 @@ import DiscoverNFTDetails from "./components/discover/DiscoverNFTDetails";
 import FeaturedNFTDetails from "./components/featuredNFT/FeaturedNFTDetails";
 import Dashboard from "./dashboard/Dashboard";
 import DashboardCollection from "./dashboard/MyCollection";
-import DashboardWallet from "./dashboard/MyWallet";
 import DashboardNotificationDetails from "./dashboard/NotificationDetails";
 import DashboardNotification from "./dashboard/Notifications";
 import DashboardSettings from "./dashboard/Settings";
 import Collections from "./pages/Collections";
 import ExploreTwo from "./pages/ExploreTwo";
-import FeaturedItems from "./pages/FeaturedItems";
 import HomeTwo from "./pages/HomeTwo";
 import Newsletter from "./pages/Newsletter";
 import StudyGoal from "./pages/StudyGoal";
-import TopBuyer from "./pages/TopBuyer";
 import TopSeller from "./pages/TopSeller";
 
 import Author from "./pages/Author";
-import ConnectWallet from "./pages/ConnectWallet";
 import CreateNew from "./pages/CreateNew";
 
 import Blog from "./pages/Blog";
@@ -48,20 +44,13 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" index element={<HomeTwo />} />
-
         <Route path="/top-creator" element={<TopSeller />} />
-        <Route path="/top-buyer" element={<TopBuyer />} />
-
         <Route path="/explore" element={<ExploreTwo />} />
-        <Route path="/featured-items" element={<FeaturedItems />} />
         <Route path="/collections" element={<Collections />} />
-
         <Route path="/ai" element={<AI />} />
         <Route path="/study-goal" element={<StudyGoal />} />
-
         <Route path="/blog" element={<Blog />} />
         <Route path="/help-center" element={<HelpCenter />} />
-
         <Route
           path="/featured-items/:FEATUREDID"
           element={<FeaturedNFTDetails />}
@@ -77,26 +66,20 @@ function App() {
           path="/help-question-details/:CATAGORYID"
           element={<HelpQuestionDetails />}
         />
-
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/my-collection" element={<DashboardCollection />} />
-        <Route path="/my-wallet" element={<DashboardWallet />} />
         <Route path="/notifications" element={<DashboardNotification />} />
         <Route
           path="/notification-details/:NOTIFYID"
           element={<DashboardNotificationDetails />}
         />
         <Route path="/settings" element={<DashboardSettings />} />
-
         <Route path="/create-new" element={<CreateNew />} />
-        <Route path="/connect-wallet" element={<ConnectWallet />} />
-
         <Route path="/contact" element={<Contact />} />
         <Route path="/license" element={<License />} />
         <Route path="/newsletter" element={<Newsletter />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
 

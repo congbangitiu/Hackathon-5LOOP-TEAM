@@ -1,7 +1,7 @@
 import Form from "react-bootstrap/Form";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const BlogDetailsContent = (props) => {
   const { data } = props;

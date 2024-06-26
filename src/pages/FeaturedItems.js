@@ -1,8 +1,8 @@
-import { useState } from "react";
+import {useState} from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 import Divider from "../components/divider/Divider";

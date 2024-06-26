@@ -1,12 +1,10 @@
-import { useState } from "react";
+import {useState} from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
-import DiscoverNFTData from "../../data/discover/discover-nft.json";
-
-export default function DiscoverItems(props) {
+import DiscoverNFTData from "../../data/discover/discover-nft.json"; function DiscoverItems(props){
   const { title } = props;
 
   const filters = [
@@ -229,3 +227,4 @@ export default function DiscoverItems(props) {
     </div>
   );
 }
+

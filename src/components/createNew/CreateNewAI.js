@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import {useEffect, useRef, useState} from "react";
 import Form from "react-bootstrap/Form";
 
 import $ from "jquery";
+
 window.jQuery = window.$ = $;
 require("jquery-nice-select");
 

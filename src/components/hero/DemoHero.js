@@ -1,7 +1,5 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import { Link } from "react-router-dom";
-
-export default function DemoHero(props) {
+import {Link} from "react-router-dom"; function DemoHero(props){
   const { title, subTitle, btnInfo, heroThumbnail } = props;
 
   return (
@@ -73,3 +71,4 @@ export default function DemoHero(props) {
     </div>
   );
 }
+

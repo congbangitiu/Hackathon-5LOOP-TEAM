@@ -1,8 +1,8 @@
-import { useState } from "react";
+import {useState} from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import ActivityTableData from "../../../data/dashboard/activity-table-data.json";
 

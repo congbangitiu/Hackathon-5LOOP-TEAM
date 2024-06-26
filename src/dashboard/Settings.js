@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import {useEffect, useRef, useState} from "react";
 import Form from "react-bootstrap/Form";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -7,6 +7,7 @@ import CreateNewButton from "../components/dashboard/createNew/CreateNewButton";
 import DashboardHeader from "../components/dashboard/header/DashboardHeader";
 
 import $ from "jquery";
+
 window.jQuery = window.$ = $;
 require("jquery-nice-select");
 

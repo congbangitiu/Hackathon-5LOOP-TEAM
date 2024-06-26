@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import Modal from "react-bootstrap/Modal";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
@@ -7,7 +7,7 @@ import Tabs from "react-bootstrap/Tabs";
 import Tooltip from "react-bootstrap/Tooltip";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { Link, useParams } from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import TinySlider from "tiny-slider-react";
 
 import DiscoverNFTData from "../../data/discover/discover-nft.json";

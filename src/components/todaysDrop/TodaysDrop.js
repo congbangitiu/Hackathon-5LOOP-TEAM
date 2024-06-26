@@ -1,6 +1,6 @@
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import TodaysDropData from "../../data/todaysDrop/todays-drop.json";
 

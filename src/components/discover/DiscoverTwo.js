@@ -1,11 +1,12 @@
-import { useEffect, useRef } from "react";
+import {useEffect, useRef} from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import DiscoverNFTData from "../../data/discover/discover-nft.json";
 
 import $ from "jquery";
+
 window.jQuery = window.$ = $;
 require("jquery-nice-select");
 
@@ -239,4 +240,4 @@ const DiscoverTwo = (props) => {
   );
 };
 
-export default DiscoverTwo;
+

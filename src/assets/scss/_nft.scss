@@ -378,7 +378,7 @@
 }
 
 .table> :not(:first-child) {
-    border-top: 0px solid currentColor;
+    border-top: 0 solid currentColor;
 }
 
 .activity-table,
@@ -575,11 +575,10 @@
         transform: translateY(-50%) rotate(0);
         line-height: 26px;
         text-align: center;
-        border: 2px solid;
         content: "\f282";
         font-family: bootstrap-icons !important;
         font-size: 12px !important;
-        border-color: rgba(194, 212, 248, 0.2);
+        border: 2px solid rgba(194, 212, 248, 0.2);
         color: #c2d4f8;
     }
 
@@ -592,10 +591,9 @@
         border-radius: 0.75rem;
         -webkit-box-shadow: 0 1rem 3rem rgba(15, 30, 150, 0.175);
         box-shadow: 0 1rem 3rem rgba(15, 30, 150, 0.175);
-        border: 2px solid;
         width: 100%;
         background-color: #0C153B;
-        border-color: rgba(194, 212, 248, 0.15);
+        border: 2px solid rgba(194, 212, 248, 0.15);
         margin-bottom: 1rem;
 
         .option {

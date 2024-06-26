@@ -1,7 +1,7 @@
-import { useState } from "react";
+import {useState} from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import CreateNewButton from "./CreateNewButton";
 import NavDropDown from "./DropDown";

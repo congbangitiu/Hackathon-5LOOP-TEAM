@@ -1,11 +1,12 @@
-import { useEffect, useRef } from "react";
+import {useEffect, useRef} from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import PopularNFTData from "../../data/popularNFT/popular-nft.json";
 
 import $ from "jquery";
+
 window.jQuery = window.$ = $;
 require("jquery-nice-select");
 

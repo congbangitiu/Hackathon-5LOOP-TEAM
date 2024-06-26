@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import {useParams} from "react-router-dom";
 
 import BlogDetailsContent from "../components/blog/BlogDetails";
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";

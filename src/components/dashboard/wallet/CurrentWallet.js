@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const CurrentWallet = (props) => {
   const { title, name, image, btnInfo } = props;

@@ -1,6 +1,4 @@
-import featureData from "../../data/templateFeature/template-feature.json";
-
-export default function TemplateFeature() {
+import featureData from "../../data/templateFeature/template-feature.json"; function TemplateFeature(){
   const featureCards = featureData.map((elem, index) => (
     <div className="col-12 col-sm-6 col-xl-3" key={index}>
       <div className="card about-card shadow-sm">
@@ -25,3 +23,4 @@ export default function TemplateFeature() {
     </div>
   );
 }
+

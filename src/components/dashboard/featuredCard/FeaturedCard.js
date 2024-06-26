@@ -2,7 +2,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Dropdown from "react-bootstrap/Dropdown";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import FeaturedNFTData from "../../../data/featuredNFT/featured-nft.json";
 

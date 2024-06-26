@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import {useState} from "react";
+import {Link} from "react-router-dom";
 
 import BlogCardData from "../../data/blog/blog-list.json";
 import PopularBlogContent from "./PopularBlogContent";

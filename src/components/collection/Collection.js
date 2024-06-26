@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
-import CollectionData from "../../data/collection/collection.json";
-
-export default function Collection(props) {
+import CollectionData from "../../data/collection/collection.json"; function Collection(props){
   const { heading, buttonText, buttonURL, buttonColor } = props;
 
   const CollectionDataSlice = CollectionData.slice(0, 3);
@@ -88,3 +86,4 @@ export default function Collection(props) {
     </div>
   );
 }
+

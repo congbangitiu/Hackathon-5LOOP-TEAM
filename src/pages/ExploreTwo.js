@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import {useEffect, useRef, useState} from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 import Divider from "../components/divider/Divider";
@@ -11,6 +11,7 @@ import Header from "../components/header/Header";
 import DiscoverNFTData from "../data/discover/discover-nft.json";
 
 import $ from "jquery";
+
 window.jQuery = window.$ = $;
 require("jquery-nice-select");
 

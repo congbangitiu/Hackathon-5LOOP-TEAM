@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 
 import HelpData from "../../data/helpCenter/help-all-questions.json";
 import Breadcrumb from "../breadcrumb/Breadcrumb";

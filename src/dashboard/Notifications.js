@@ -1,7 +1,7 @@
-import { useState } from "react";
+import {useState} from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import CreateNewButton from "../components/dashboard/createNew/CreateNewButton";
 import DashboardHeader from "../components/dashboard/header/DashboardHeader";

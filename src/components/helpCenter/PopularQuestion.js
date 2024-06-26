@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import HelpData from "../../data/helpCenter/help-all-questions.json";
 

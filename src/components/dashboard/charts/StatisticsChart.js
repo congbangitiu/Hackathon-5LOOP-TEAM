@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import Chart from "react-apexcharts";
 
@@ -32,7 +32,7 @@ const StatisticsChart = (props) => {
         },
         y: {
           title: {
-            formatter: function (seriesName) {
+            formatter: function () {
               return "";
             },
           },

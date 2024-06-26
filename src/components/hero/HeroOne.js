@@ -1,7 +1,5 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import { Link } from "react-router-dom";
-
-export default function HeroOne(props) {
+import {Link} from "react-router-dom"; function HeroOne(props){
   const { heading, subHeading, buttonGroup, welcomeImage } = props;
 
   return (
@@ -75,3 +73,4 @@ export default function HeroOne(props) {
     </div>
   );
 }
+

@@ -1,12 +1,10 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import TinySlider from "tiny-slider-react";
 
-import FeaturedNFTData from "../../data/featuredNFT/featured-nft.json";
-
-export default function FeaturedNFT(props) {
+import FeaturedNFTData from "../../data/featuredNFT/featured-nft.json"; function FeaturedNFT(props){
   const { heading } = props;
 
   const featuredNFTSettings = {
@@ -214,3 +212,4 @@ export default function FeaturedNFT(props) {
     </div>
   );
 }
+
