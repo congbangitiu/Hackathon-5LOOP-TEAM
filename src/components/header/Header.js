@@ -1,9 +1,8 @@
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-
-import CreateNewButton from "./CreateNewButton";
 import NavDropDown from "./DropDown";
 import FuntoNavbar from "./Nav";
 import SearchForm from "./SearchForm";
@@ -54,8 +53,8 @@ export default function Header() {
                 toggleIcon="bi-three-dots"
                 dropdownList={[
                   {
-                    text: "Dashboard",
-                    url: "/dashboard",
+                    text: "Activity",
+                    url: "/activity",
                     icon: "bi-speedometer2",
                   },
                   {
@@ -71,12 +70,7 @@ export default function Header() {
                 ]}
               />
 
-              {/* Create New Button */}
-              <CreateNewButton
-                buttonColor="btn-primary"
-                buttonURL="/activity"
-                buttonText="Visit Dashboard"
-              />
+              <WalletMultiButton className="btn btn-ghost mr-4" />
             </div>
           </Navbar.Collapse>
         </Container>

@@ -1,17 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import ScrollTop from "./components/header/ScrollTop";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import Wallet from "./components/Wallet";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ScrollTop />
-      <App />
+      <Wallet children={<App />} />
     </BrowserRouter>
   </React.StrictMode>
 );

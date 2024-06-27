@@ -1,11 +1,10 @@
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-
 import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
+import { Link, NavLink } from "react-router-dom";
 import NotificationData from "../../data/dashboard/notification-data.json";
 import useStickyHeader from "../header/StickyHeader";
-import Wallet from "../WalletButton";
 
 const DashboardHeader = () => {
   const BrandLogo = "img/core-img/db-logo.png";
@@ -138,8 +137,7 @@ const DashboardHeader = () => {
               <div className="menu-toggler ms-1 ms-sm-3" onClick={handleToggle}>
                 <i className="bi bi-list" />
               </div>
-              <Wallet />
-
+              <WalletMultiButton className="btn btn-ghost mr-4" />
               {/* Button */}
               <Link
                 className="btn btn-sm btn-danger rounded-pill ms-2 ms-sm-3 d-none d-sm-block"
