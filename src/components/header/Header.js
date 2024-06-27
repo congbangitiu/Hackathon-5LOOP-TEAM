@@ -58,6 +58,11 @@ export default function Header() {
                     icon: "bi-speedometer2",
                   },
                   {
+                    text: "Create New",
+                    url: "/create-new",
+                    icon: "bi-tools",
+                  },
+                  {
                     text: "Collections",
                     url: "/my-collection",
                     icon: "bi-collection",

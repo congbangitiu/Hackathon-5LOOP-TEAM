@@ -18,7 +18,7 @@ import HomeTwo from "./pages/HomeTwo";
 import StudyGoal from "./pages/StudyGoal";
 import TopSeller from "./pages/TopSeller";
 
-import CreateNew from "./dashboard/CreateNew";
+import CreateNew from "./pages/CreateNew";
 import Author from "./pages/Author";
 
 import Blog from "./pages/Blog";

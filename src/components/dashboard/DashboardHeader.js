@@ -45,18 +45,12 @@ const DashboardHeader = () => {
     },
     {
       id: 2,
-      path: "/create-new",
-      icon: "bi-hammer",
-      text: "Creator Studio",
-    },
-    {
-      id: 3,
       path: "/my-collection",
       icon: "bi-columns-gap",
       text: "My Collections",
     },
     {
-      id: 4,
+      id: 3,
       path: "/notifications",
       icon: "bi-bell",
       text: "Notifications",
