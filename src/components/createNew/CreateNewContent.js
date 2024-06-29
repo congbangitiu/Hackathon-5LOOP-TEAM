@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
+import { storage } from "../../firebase";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 import $ from "jquery";
 
@@ -8,11 +10,126 @@ window.jQuery = window.$ = $;
 require("jquery-nice-select");
 
 const CreateNewContent = () => {
-  const [inputTitle, setInputTitle] = useState("OOAD IU #8543");
-  const [inputPrice, setInputPrice] = useState("0.324 SOL");
+  const [inputTitle, setInputTitle] = useState("");
+  const [inputPrice, setInputPrice] = useState("");
+  const [inputDescription, setInputDescription] = useState("");
+  const [inputRoyality, setInputRoyality] = useState("");
+  const [inputNoOfCopies, setInputNoOfCopies] = useState("");
   const [inputImage, setInputImage] = useState("img/bg-img/17.jpg");
-  const ImagehandleChange = (event) => {
-    setInputImage(URL.createObjectURL(event.target.files[0]));
+  const [file, setFile] = useState(null);
+  const [uploadProgress, setUploadProgress] = useState(0);
+
+  const [fileValid, setFileValid] = useState(true);
+  const [priceValid, setPriceValid] = useState(true);
+  const [titleValid, setTitleValid] = useState(true);
+  const [descriptionValid, setDescriptionValid] = useState(true);
+  const [royalityValid, setRoyalityValid] = useState(true);
+  const [noOfCopiesValid, setNoOfCopiesValid] = useState(true);
+  const [termsAgreed, setTermsAgreed] = useState(false);
+  const [previewImageFileTypeValid, setPreviewImageFileTypeValid] = useState(true);
+
+  const handleFileChange = (event) => {
+    if (event.target.files.length > 0) {
+      setFile(event.target.files[0]);
+      setFileValid(true);
+    } else {
+      setFile(null);
+      setFileValid(false);
+    }
+  };
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file && file.type.startsWith('image/')) {
+      const fileReader = new FileReader();
+      fileReader.onload = () => {
+        setInputImage(fileReader.result);
+        setPreviewImageFileTypeValid(true);
+      };
+      fileReader.readAsDataURL(file);
+    } else {
+      setInputImage("img/bg-img/17.jpg");
+      setPreviewImageFileTypeValid(false);
+    }
+  };
+
+  const handleUpload = async (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    if (!file) {
+      setFileValid(false);
+      return;
+    }
+
+    let validSubmission = true;
+
+    const isPositiveNumber = /^[0-9]*\.?[0-9]+$/;
+    const isPositiveInteger = /^\d+$/;
+
+    if (!isPositiveNumber.test(inputPrice.trim()) || parseFloat(inputPrice.trim()) <= 0) {
+      setPriceValid(false);
+      validSubmission = false;
+    } else {
+      setPriceValid(true);
+    }
+
+    if (!inputTitle.trim()) {
+      setTitleValid(false);
+      validSubmission = false;
+    } else {
+      setTitleValid(true);
+    }
+
+    if (!inputDescription.trim()) {
+      setDescriptionValid(false);
+      validSubmission = false;
+    } else {
+      setDescriptionValid(true);
+    }
+
+    if (!isPositiveNumber.test(inputRoyality.trim()) || parseFloat(inputRoyality.trim()) <= 0) {
+      setRoyalityValid(false);
+      validSubmission = false;
+    } else {
+      setRoyalityValid(true);
+    }
+
+    if (!isPositiveInteger.test(inputNoOfCopies.trim()) || parseInt(inputNoOfCopies.trim(), 10) <= 0) {
+      setNoOfCopiesValid(false);
+      validSubmission = false;
+    } else {
+      setNoOfCopiesValid(true);
+    }
+
+    if (!termsAgreed) {
+      alert("You must agree to the terms and conditions to proceed.");
+      validSubmission = false;
+    }
+
+    if (!validSubmission) return;
+
+    if (file) {
+      const storageRef = ref(storage, `files/${file.name}`);
+      const uploadTask = uploadBytesResumable(storageRef, file);
+
+      uploadTask.on('state_changed',
+        (snapshot) => {
+          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          setUploadProgress(progress);
+        },
+        (error) => {
+          console.error('Error uploading file: ', error);
+        },
+        () => {
+          // Upload completed successfully, get download URL
+          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+            console.log('File available at: ', downloadURL);
+          }).catch((error) => {
+            console.error('Error getting download URL: ', error);
+          });
+        }
+      );
+    }
   };
 
   const selectCata = useRef();
@@ -30,7 +147,7 @@ const CreateNewContent = () => {
             <div className="create-new-form border shadow-sm p-4 p-sm-5">
               <h2 className="mb-4">Create New Study NFT Pass</h2>
 
-              <Form>
+              <Form onSubmit={handleUpload}>
                 <div className="row align-items-center">
                   {/* Upload Files */}
                   <div className="col-12">
@@ -43,8 +160,36 @@ const CreateNewContent = () => {
                         id="formFileMultiple"
                         type="file"
                         multiple
-                        onChange={ImagehandleChange}
+                        onChange={handleFileChange}
+                        isInvalid={!fileValid}
                       />
+                      {!fileValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please select a file to upload.
+                        </Form.Control.Feedback>
+                      )}
+                    </Form.Group>
+                  </div>
+
+                  {/* Upload Preview Image */}
+                  <div className="col-12">
+                    <Form.Group className="mb-4">
+                      <Form.Label className="mb-2 fz-16">
+                        Upload Preview Image
+                      </Form.Label>
+                      <Form.Control
+                        className="bg-transparent"
+                        id="formImageMultiple"
+                        type="file"
+                        multiple
+                        accept="image/*"
+                        onChange={handleImageChange}
+                      />
+                      {!previewImageFileTypeValid && (
+                        <Form.Text className="text-danger">
+                          Please upload a valid image file (e.g., JPEG, PNG).
+                        </Form.Text>
+                      )}
                     </Form.Group>
                   </div>
 
@@ -77,9 +222,16 @@ const CreateNewContent = () => {
                       <Form.Control
                         id="title"
                         type="text"
+                        placeholder="Enter a title"
                         value={inputTitle}
                         onChange={(e) => setInputTitle(e.target.value)}
+                        isInvalid={!titleValid}
                       />
+                      {!titleValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please enter title.
+                        </Form.Control.Feedback>
+                      )}
                     </Form.Group>
                   </div>
 
@@ -93,24 +245,39 @@ const CreateNewContent = () => {
                         id="description"
                         as="textarea"
                         placeholder="Write short description"
+                        value={inputDescription}
+                        onChange={(e) => setInputDescription(e.target.value)}
+                        isInvalid={!descriptionValid}
                       />
+                      {!descriptionValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please enter a description.
+                        </Form.Control.Feedback>
+                      )}
                     </Form.Group>
                   </div>
 
                   {/* Price */}
                   <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
-                      <Form.Label className="mb-2 fz-16">Price</Form.Label>
+                      <Form.Label className="mb-2 fz-16">Price (SOL)</Form.Label>
                       <Form.Control
                         id="price"
                         type="text"
+                        placeholder="Enter a price in SOL"
                         value={inputPrice}
                         onChange={(e) => setInputPrice(e.target.value)}
+                        isInvalid={!priceValid}
                       />
+                      {!priceValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please enter a valid price.
+                        </Form.Control.Feedback>
+                      )}
                     </Form.Group>
                   </div>
 
-                  {/* Catagory */}
+                  {/* Category */}
                   <div className="col-12 col-md-6">
                     <h5>Categories</h5>
                     <select
@@ -126,39 +293,47 @@ const CreateNewContent = () => {
                   </div>
 
                   {/* Starting Date */}
-                  <div className="col-12 col-sm-6">
+                  {/* <div className="col-12 col-sm-6">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
                         Starting Date
                       </Form.Label>
                       <Form.Control id="startingDate" type="date" />
                     </Form.Group>
-                  </div>
+                  </div> */}
 
                   {/* Ending Date */}
-                  <div className="col-12 col-sm-6">
+                  {/* <div className="col-12 col-sm-6">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
                         Ending Date
                       </Form.Label>
                       <Form.Control id="endingDate" type="date" />
                     </Form.Group>
-                  </div>
+                  </div> */}
 
                   {/* Royality */}
-                  <div className="col-12 col-lg-4">
+                  <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
-                      <Form.Label className="mb-2 fz-16">Royality</Form.Label>
+                      <Form.Label className="mb-2 fz-16">Royality (%)</Form.Label>
                       <Form.Control
                         id="royality"
                         type="text"
-                        placeholder="5%"
+                        placeholder="Enter a royality in %"
+                        value={inputRoyality}
+                        onChange={(e) => setInputRoyality(e.target.value)}
+                        isInvalid={!royalityValid}
                       />
+                      {!royalityValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please enter a valid royality.
+                        </Form.Control.Feedback>
+                      )}
                     </Form.Group>
                   </div>
 
                   {/* No of Copies */}
-                  <div className="col-12 col-sm-6 col-lg-4">
+                  <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
                         No of copies
@@ -166,18 +341,26 @@ const CreateNewContent = () => {
                       <Form.Control
                         id="noOfcopies"
                         type="text"
-                        placeholder="13"
+                        placeholder="Enter a number of copies"
+                        value={inputNoOfCopies}
+                        onChange={(e) => setInputNoOfCopies(e.target.value)}
+                        isInvalid={!noOfCopiesValid}
                       />
+                      {!noOfCopiesValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please enter a valid number.
+                        </Form.Control.Feedback>
+                      )}
                     </Form.Group>
                   </div>
 
                   {/* Size */}
-                  <div className="col-12 col-sm-6 col-lg-4">
+                  {/* <div className="col-12 col-sm-6 col-lg-4">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">Size</Form.Label>
                       <Form.Control id="size" type="text" placeholder="20MB" />
                     </Form.Group>
-                  </div>
+                  </div> */}
 
                   {/* Agree with Terms */}
                   <div className="col-12 col-md-8">
@@ -186,7 +369,8 @@ const CreateNewContent = () => {
                       type="checkbox"
                       label="I agree to all terms & conditions."
                       id="rememberMe"
-                      defaultChecked
+                      checked={termsAgreed}
+                      onChange={() => setTermsAgreed(!termsAgreed)}
                     />
                   </div>
 
@@ -194,6 +378,7 @@ const CreateNewContent = () => {
                   <div className="col-12 col-md-4">
                     <button
                       className="btn btn-primary rounded-pill w-100"
+                      onClick={handleUpload}
                       type="submit"
                     >
                       Create
@@ -209,7 +394,7 @@ const CreateNewContent = () => {
             <div className="nft-card card shadow-sm">
               <div className="card-body">
                 <div className="img-wrap">
-                  <img src={inputImage} alt="" />
+                  <img src={inputImage} alt="Preview" />
 
                   {/* Badge */}
                   <div className="badge bg-dark position-absolute">
@@ -223,7 +408,7 @@ const CreateNewContent = () => {
                   <div className="col-8">
                     <span className="d-block fz-12">
                       <i className="bi bi-arrow-up" />
-                      Floor price {inputPrice}
+                      Floor price {inputPrice} SOL
                     </span>
                   </div>
                   <div className="col-4 text-end">
@@ -264,7 +449,7 @@ const CreateNewContent = () => {
                   <div className="col-4">
                     <div className="price text-end">
                       <span className="fz-12 d-block">Current Bid</span>
-                      <h6 className="mb-0">{inputPrice}</h6>
+                      <h6 className="mb-0">{inputPrice} SOL</h6>
                     </div>
                   </div>
                 </div>
