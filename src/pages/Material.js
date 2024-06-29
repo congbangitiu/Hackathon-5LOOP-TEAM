@@ -30,7 +30,7 @@ const Material = () => {
       <iframe
         title="darkblock"
         allow="fullscreen"
-        src={`https://app.darkblock.io/platform/sol/embed/viewer/${TOKEN_ID}`}
+        // src={`https://app.darkblock.io/platform/sol/embed/viewer/${TOKEN_ID}`}
       ></iframe>
 
       <Divider />
