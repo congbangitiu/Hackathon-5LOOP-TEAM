@@ -33,6 +33,7 @@ import CatagoryQuestions from "./components/helpCenter/CatagoryQuestions";
 import AI from "./pages/AI";
 import HelpCenter from "./pages/HelpCenter";
 import MintNFT from "./pages/MintNFT";
+import Material from "./pages/Material";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           path="/discover-items/:DISCOVERID"
           element={<DiscoverNFTDetails />}
         />
+        <Route path="/material/:ITEMID" element={<Material />} />
         <Route path="/author/:AUTHORUSERNAME" element={<Author />} />
         <Route path="/help-center/:CATAGORY" element={<CatagoryQuestions />} />
         <Route path="/activity" element={<Dashboard />} />
