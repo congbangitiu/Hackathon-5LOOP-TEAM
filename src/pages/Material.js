@@ -1,15 +1,8 @@
-import { useState } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
-import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { Link, useParams } from "react-router-dom";
-import TinySlider from "tiny-slider-react";
+import { useParams } from "react-router-dom";
 
 import Divider from "../components//Divider";
 import Breadcrumb from "../components/Breadcrumb";
-import CTA from "../components/CTA";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import DiscoverNFTData from "../data/discover-nft.json";
