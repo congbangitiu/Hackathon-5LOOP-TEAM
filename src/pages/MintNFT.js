@@ -7,14 +7,13 @@ function MintNFT() {
   const [mssg, setMssg] = useState("");
 
   const callback = (signature, result) => {
-    console.log("Signature ", signature);
     console.log("result ", result);
 
     try {
       if (signature.err === null) {
-        setMssg("Minting successful. You can check your wallet");
+        setMssg(`Txn Success`);
       } else {
-        setMssg("Signature Failed");
+        setMssg("Txn Failed");
       }
     } catch (error) {
       setMssg("Signature Failed, but check your wallet");

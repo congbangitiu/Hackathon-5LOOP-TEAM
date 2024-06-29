@@ -15,7 +15,8 @@ const Wallet = ({ children }) => {
   const network = WalletAdapterNetwork.Devnet;
 
   // You can also provide a custom RPC endpoint.
-  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+  // const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+  const endpoint = `https://devnet-rpc.shyft.to?api_key=${process.env.REACT_APP_API_KEY}`;
 
   const wallets = useMemo(() => [], [network]);
 

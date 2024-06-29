@@ -8,10 +8,10 @@ import Header from "../components/header/Header";
 import DiscoverNFTData from "../data/discover-nft.json";
 
 const Material = () => {
-  const discoverID = parseInt(useParams().DISCOVERID, 10);
-  const discoverDetailsData = DiscoverNFTData.filter(
-    (item) => item.id === discoverID
-  );
+  // const discoverID = parseInt(useParams().DISCOVERID, 10);
+  // const discoverDetailsData = DiscoverNFTData.filter(
+  //   (item) => item.id === discoverID
+  // );
 
   return (
     <>
