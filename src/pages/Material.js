@@ -28,11 +28,10 @@ const Material = () => {
       />
       {/* Check if NFT Pass is correct for current URL http://localhost:3000/material/1 then only show this if have */}
       <iframe
-        src="https://firebasestorage.googleapis.com/v0/b/nft-bstudy.appspot.com/o/pdf%2Freport%20(1).pdf?alt=media&token=91959344-86d4-4fa2-9362-8562df36c6b8#toolbar=0"
-        type="application/pdf"
-        width="100%"
-        title="Embedded PDF Viewer"
-      />
+        title="darkblock"
+        allow="fullscreen"
+        src={`https://app.darkblock.io/platform/sol/embed/viewer/${TOKEN_ID}`}
+      ></iframe>
 
       <Divider />
 
