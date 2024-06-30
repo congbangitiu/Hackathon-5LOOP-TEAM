@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import { storage } from "../../firebase";
-import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import axios from "axios";
+// import { storage } from "../../firebase";
+// import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 import $ from "jquery";
 
@@ -18,6 +19,7 @@ const CreateNewContent = () => {
   const [inputImage, setInputImage] = useState("img/bg-img/17.jpg");
   const [file, setFile] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
+  const [termsAgreed, setTermsAgreed] = useState(false);
 
   const [fileValid, setFileValid] = useState(true);
   const [priceValid, setPriceValid] = useState(true);
@@ -25,18 +27,33 @@ const CreateNewContent = () => {
   const [descriptionValid, setDescriptionValid] = useState(true);
   const [royalityValid, setRoyalityValid] = useState(true);
   const [noOfCopiesValid, setNoOfCopiesValid] = useState(true);
-  const [termsAgreed, setTermsAgreed] = useState(false);
-  const [previewImageFileTypeValid, setPreviewImageFileTypeValid] =
-    useState(true);
+  const [previewImageFileTypeValid, setPreviewImageFileTypeValid] = useState(true);
 
   const handleFileChange = (event) => {
     if (event.target.files.length > 0) {
-      setFile(event.target.files[0]);
+      const file = event.target.files[0];
+      setFile(file);
       setFileValid(true);
+
+      if (file.type === 'application/pdf') {
+        computeSHA256(file);
+      }
     } else {
       setFile(null);
       setFileValid(false);
     }
+  };
+
+  const computeSHA256 = (file) => {
+    const reader = new FileReader();
+    reader.onload = async (event) => {
+        const arrayBuffer = event.target.result;
+        const hashBuffer = await crypto.subtle.digest('SHA-256', arrayBuffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        console.log('SHA256 Hash:', hashHex);
+    };
+    reader.readAsArrayBuffer(file);
   };
 
   const handleImageChange = (event) => {
@@ -118,31 +135,50 @@ const CreateNewContent = () => {
 
     if (!validSubmission) return;
 
-    if (file) {
-      const storageRef = ref(storage, `files/${file.name}`);
-      const uploadTask = uploadBytesResumable(storageRef, file);
+    // if (file) {
+    //   const storageRef = ref(storage, `files/${file.name}`);
+    //   const uploadTask = uploadBytesResumable(storageRef, file);
 
-      uploadTask.on(
-        "state_changed",
-        (snapshot) => {
-          const progress =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          setUploadProgress(progress);
-        },
-        (error) => {
-          console.error("Error uploading file: ", error);
-        },
-        () => {
-          // Upload completed successfully, get download URL
-          getDownloadURL(uploadTask.snapshot.ref)
-            .then((downloadURL) => {
-              console.log("File available at: ", downloadURL);
-            })
-            .catch((error) => {
-              console.error("Error getting download URL: ", error);
-            });
-        }
-      );
+    //   uploadTask.on('state_changed',
+    //     (snapshot) => {
+    //       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+    //       setUploadProgress(progress);
+    //     },
+    //     (error) => {
+    //       console.error('Error uploading file: ', error);
+    //     },
+    //     () => {
+    //       // Upload completed successfully, get download URL
+    //       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+    //         console.log('File available at: ', downloadURL);
+    //       }).catch((error) => {
+    //         console.error('Error getting download URL: ', error);
+    //       });
+    //     }
+    //   );
+    // }
+
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('name', inputTitle);
+    formData.append('darkblock_description', inputDescription);
+    // formData.append('nft_contract', 'Your_NFT_Contract_Address');
+    formData.append('nft_token', 'Your_NFT_Token_ID');
+    formData.append('creator_address', 'HA9LMqhmy2cUsxfTvmnd2X5Zh4fuyizEhCEZsQJXrM2o');
+    formData.append('nft_platform', 'Solana');
+    formData.append('nft_standard', 'Metaplex');
+    formData.append('apiKey', 'Your_API_Key');
+
+    try {
+      const response = await axios.post('https://api.darkblock.io/v1/darkblock/upgrade', formData, {
+        headers: formData.getHeaders()
+      });
+      const data = response.data;
+      console.log('File uploaded successfully:', data);
+      setUploadProgress(100);
+    } catch (error) {
+      console.error('Error uploading file:', error);
+      setUploadProgress(0);
     }
   };
 
