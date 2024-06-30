@@ -6,20 +6,33 @@ import { Buffer } from "buffer";
 import Divider from "./components/Divider";
 window.Buffer = window.Buffer || Buffer;
 
-const SendTransactionButton = ({ encodedTransaction, callback, text }) => {
+const SendTransactionButton = ({
+  encodedTransaction,
+  message,
+  callback,
+  text,
+}) => {
   const [ret, setRet] = useState("");
+  const [signature, setSignature] = useState("");
   const { connection } = useConnection();
-  const { publicKey, signTransaction } = useWallet();
+  const { publicKey, signTransaction, signMessage } = useWallet();
 
   const onClick = useCallback(async () => {
     if (!publicKey) throw new WalletNotConnectedError();
-    const recoveredTransaction = Transaction.from(
-      Buffer.from(encodedTransaction, "base64")
-    );
-    const signedTx = await signTransaction(recoveredTransaction);
-    const ret = await connection.sendRawTransaction(signedTx.serialize());
-    setRet(ret);
-    connection.onSignature(ret, callback, "finalized");
+    if (!message) {
+      const recoveredTransaction = Transaction.from(
+        Buffer.from(encodedTransaction, "base64")
+      );
+      const signedTx = await signTransaction(recoveredTransaction);
+      const ret = await connection.sendRawTransaction(signedTx.serialize());
+      setRet(ret);
+      connection.onSignature(ret, callback, "finalized");
+    } else {
+      const data = new TextEncoder().encode(message);
+      console.log(data);
+      const signedMsg = await signMessage(data);
+      setSignature(signedMsg);
+    }
   }, [publicKey, signTransaction, connection, encodedTransaction, callback]);
 
   return (
@@ -41,7 +54,7 @@ const SendTransactionButton = ({ encodedTransaction, callback, text }) => {
           Follow on explorer
         </a>
       ) : (
-        <p></p>
+        <p>{signature}</p>
       )}
     </>
   );

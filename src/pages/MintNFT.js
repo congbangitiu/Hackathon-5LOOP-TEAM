@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import SendTransactionButton from "../web3helper";
 import Header from "../components/header/Header";
+import Divider from "../components/Divider";
 
 function MintNFT() {
   const [txn, setTxn] = useState("");
+  const [msg, setMsg] = useState("");
   const [mssg, setMssg] = useState("");
 
   const callback = (signature, result) => {
@@ -36,11 +38,24 @@ function MintNFT() {
               placeholder="Encoded Transaction from Shyft"
               onChange={(e) => setTxn(e.target.value)}
             />
+            <label className="form-label">Message to sign:</label>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Message"
+              onChange={(e) => setMsg(e.target.value)}
+            />
           </div>
           <SendTransactionButton
             key={txn}
             text="Send Transaction"
             encodedTransaction={txn}
+            callback={callback}
+          />{" "}
+          <SendTransactionButton
+            key={msg}
+            text="Sign Message"
+            message={msg}
             callback={callback}
           />
         </div>
