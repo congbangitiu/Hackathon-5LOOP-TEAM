@@ -1,7 +1,19 @@
 import Form from "react-bootstrap/Form";
+import Alert from "react-bootstrap/Alert";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactContent = (props) => {
   const { contactTitle, contactSubTitle, mapIframeSource } = props;
+  const [state, handleSubmit] = useForm("xblrjjvr");
+
+
+  if (state.succeeded) {
+    return (
+      <Alert variant="" style={{ backgroundColor: 'transparent', fontSize: '45px', fontWeight: 'bold'}} className="text-center">
+        Thanks for contacting us!
+      </Alert>
+    );
+}
 
   return (
     <div className="contact-wrapper">
@@ -15,7 +27,7 @@ const ContactContent = (props) => {
               <p className="mb-5">{contactSubTitle}</p>
 
               {/* Form */}
-              <Form>
+              <Form onSubmit={handleSubmit}>
                 <div className="row g-4">
                   <div className="col-12">
                     <Form.Control
@@ -60,6 +72,7 @@ const ContactContent = (props) => {
                     <button
                       className="btn btn-primary rounded-pill"
                       type="submit"
+                      disabled={state.submitting}
                     >
                       Send ticket
                     </button>
