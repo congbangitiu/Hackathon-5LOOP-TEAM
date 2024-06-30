@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@darkblock.io/sol-widget": "^0.2.62",
+    "@formspree/react": "^2.5.1",
     "@solana/wallet-adapter-react-ui": "^0.9.35",
     "autoprefixer": "10.4.5",
     "axios": "^1.7.2",
