@@ -18,8 +18,8 @@ import HomeTwo from "./pages/HomeTwo";
 import StudyGoal from "./pages/StudyGoal";
 import TopSeller from "./pages/TopSeller";
 
-import CreateNew from "./pages/CreateNew";
 import Author from "./pages/Author";
+import CreateNew from "./pages/CreateNew";
 
 import Blog from "./pages/Blog";
 
@@ -32,8 +32,8 @@ import Terms from "./pages/Terms";
 import CatagoryQuestions from "./components/helpCenter/CatagoryQuestions";
 import AI from "./pages/AI";
 import HelpCenter from "./pages/HelpCenter";
-import MintNFT from "./pages/MintNFT";
 import Material from "./pages/Material";
+import Test from "./pages/Test";
 
 function App() {
   return (
@@ -62,7 +62,8 @@ function App() {
         <Route path="/license" element={<License />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
-        <Route path="/test" element={<MintNFT />} />
+        <Route path="/test" element={<Test />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
 

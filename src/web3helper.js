@@ -1,12 +1,12 @@
-import React, { useCallback, useState } from "react";
 import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import { Transaction } from "@solana/web3.js";
+import { LAMPORTS_PER_SOL, Transaction } from "@solana/web3.js";
 import { Buffer } from "buffer";
-import Divider from "./components/Divider";
+import React, { useCallback, useState } from "react";
 window.Buffer = window.Buffer || Buffer;
 
 const SendTransactionButton = ({
+  className,
   encodedTransaction,
   message,
   callback,
@@ -19,7 +19,7 @@ const SendTransactionButton = ({
 
   const onClick = useCallback(async () => {
     if (!publicKey) throw new WalletNotConnectedError();
-    if (!message) {
+    if (encodedTransaction) {
       const recoveredTransaction = Transaction.from(
         Buffer.from(encodedTransaction, "base64")
       );
@@ -27,36 +27,72 @@ const SendTransactionButton = ({
       const ret = await connection.sendRawTransaction(signedTx.serialize());
       setRet(ret);
       connection.onSignature(ret, callback, "finalized");
-    } else {
+    } else if (message) {
       const data = new TextEncoder().encode(message);
       console.log(data);
       const signedMsg = await signMessage(data);
       setSignature(signedMsg);
+    } else {
+      const [latestBlockhash, signature] = await Promise.all([
+        connection.getLatestBlockhash(),
+        connection.requestAirdrop(publicKey, 1 * LAMPORTS_PER_SOL),
+      ]);
+      const sigResult = await connection.confirmTransaction(
+        { signature, ...latestBlockhash },
+        "confirmed"
+      );
+      if (sigResult) {
+        alert("Airdrop Completed");
+      } else {
+        alert("Please try again");
+      }
     }
-  }, [publicKey, signTransaction, connection, encodedTransaction, callback]);
+
+    // const signTxn = async () => {
+    //   try {
+    //     const signature = await signAndSendTransaction(
+    //       connection,
+    //       encodedTransaction,
+    //       wallet
+    //     );
+    //     console.log(signature);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // };
+  }, [
+    publicKey,
+    signTransaction,
+    connection,
+    encodedTransaction,
+    callback,
+    message,
+    signMessage,
+  ]);
 
   return (
-    <>
-      <button
-        className="btn btn-primary rounded-pill"
-        onClick={onClick}
-        disabled={!publicKey}
-      >
-        {text}
-      </button>
-      <Divider />
-      {ret ? (
-        <a
-          href={`https://solscan.io/tx/${ret}?cluster=testnet`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Follow on explorer
-        </a>
-      ) : (
-        <p>{signature}</p>
-      )}
-    </>
+    <div className="container">
+      <div class="row py-1">
+        <div class="col">
+          <button className={className} onClick={onClick} disabled={!publicKey}>
+            {text}
+          </button>
+        </div>{" "}
+        <div class="col-6">
+          {ret ? (
+            <a
+              href={`https://solscan.io/tx/${ret}?cluster=testnet`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Follow on explorer
+            </a>
+          ) : (
+            <p className="text-break">{signature}</p>
+          )}
+        </div>
+      </div>
+    </div>
   );
 };
 

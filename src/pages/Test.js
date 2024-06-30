@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import SendTransactionButton from "../web3helper";
 import Header from "../components/header/Header";
-import Divider from "../components/Divider";
+import SendTransactionButton from "../web3helper";
 
-function MintNFT() {
+function Test() {
   const [txn, setTxn] = useState("");
   const [msg, setMsg] = useState("");
   const [mssg, setMssg] = useState("");
@@ -47,12 +46,14 @@ function MintNFT() {
             />
           </div>
           <SendTransactionButton
+            className="btn btn-primary rounded-pill"
             key={txn}
             text="Send Transaction"
             encodedTransaction={txn}
             callback={callback}
           />{" "}
           <SendTransactionButton
+            className="btn btn-primary rounded-pill"
             key={msg}
             text="Sign Message"
             message={msg}
@@ -65,4 +66,4 @@ function MintNFT() {
   );
 }
 
-export default MintNFT;
+export default Test;

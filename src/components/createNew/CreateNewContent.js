@@ -26,7 +26,8 @@ const CreateNewContent = () => {
   const [royalityValid, setRoyalityValid] = useState(true);
   const [noOfCopiesValid, setNoOfCopiesValid] = useState(true);
   const [termsAgreed, setTermsAgreed] = useState(false);
-  const [previewImageFileTypeValid, setPreviewImageFileTypeValid] = useState(true);
+  const [previewImageFileTypeValid, setPreviewImageFileTypeValid] =
+    useState(true);
 
   const handleFileChange = (event) => {
     if (event.target.files.length > 0) {
@@ -40,7 +41,7 @@ const CreateNewContent = () => {
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
-    if (file && file.type.startsWith('image/')) {
+    if (file && file.type.startsWith("image/")) {
       const fileReader = new FileReader();
       fileReader.onload = () => {
         setInputImage(fileReader.result);
@@ -66,7 +67,10 @@ const CreateNewContent = () => {
     const isPositiveNumber = /^[0-9]*\.?[0-9]+$/;
     const isPositiveInteger = /^\d+$/;
 
-    if (!isPositiveNumber.test(inputPrice.trim()) || parseFloat(inputPrice.trim()) <= 0) {
+    if (
+      !isPositiveNumber.test(inputPrice.trim()) ||
+      parseFloat(inputPrice.trim()) <= 0
+    ) {
       setPriceValid(false);
       validSubmission = false;
     } else {
@@ -87,14 +91,20 @@ const CreateNewContent = () => {
       setDescriptionValid(true);
     }
 
-    if (!isPositiveNumber.test(inputRoyality.trim()) || parseFloat(inputRoyality.trim()) <= 0) {
+    if (
+      !isPositiveNumber.test(inputRoyality.trim()) ||
+      parseFloat(inputRoyality.trim()) <= 0
+    ) {
       setRoyalityValid(false);
       validSubmission = false;
     } else {
       setRoyalityValid(true);
     }
 
-    if (!isPositiveInteger.test(inputNoOfCopies.trim()) || parseInt(inputNoOfCopies.trim(), 10) <= 0) {
+    if (
+      !isPositiveInteger.test(inputNoOfCopies.trim()) ||
+      parseInt(inputNoOfCopies.trim(), 10) <= 0
+    ) {
       setNoOfCopiesValid(false);
       validSubmission = false;
     } else {
@@ -112,21 +122,25 @@ const CreateNewContent = () => {
       const storageRef = ref(storage, `files/${file.name}`);
       const uploadTask = uploadBytesResumable(storageRef, file);
 
-      uploadTask.on('state_changed',
+      uploadTask.on(
+        "state_changed",
         (snapshot) => {
-          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          const progress =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           setUploadProgress(progress);
         },
         (error) => {
-          console.error('Error uploading file: ', error);
+          console.error("Error uploading file: ", error);
         },
         () => {
           // Upload completed successfully, get download URL
-          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            console.log('File available at: ', downloadURL);
-          }).catch((error) => {
-            console.error('Error getting download URL: ', error);
-          });
+          getDownloadURL(uploadTask.snapshot.ref)
+            .then((downloadURL) => {
+              console.log("File available at: ", downloadURL);
+            })
+            .catch((error) => {
+              console.error("Error getting download URL: ", error);
+            });
         }
       );
     }
@@ -260,7 +274,9 @@ const CreateNewContent = () => {
                   {/* Price */}
                   <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
-                      <Form.Label className="mb-2 fz-16">Price (SOL)</Form.Label>
+                      <Form.Label className="mb-2 fz-16">
+                        Price (SOL)
+                      </Form.Label>
                       <Form.Control
                         id="price"
                         type="text"
@@ -315,7 +331,9 @@ const CreateNewContent = () => {
                   {/* Royality */}
                   <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
-                      <Form.Label className="mb-2 fz-16">Royality (%)</Form.Label>
+                      <Form.Label className="mb-2 fz-16">
+                        Royality (%)
+                      </Form.Label>
                       <Form.Control
                         id="royality"
                         type="text"

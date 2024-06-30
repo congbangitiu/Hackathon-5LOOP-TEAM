@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import { Link, NavLink } from "react-router-dom";
 import NotificationData from "../../data/dashboard/notification-data.json";
 import useStickyHeader from "../header/StickyHeader";
+import SendTransactionButton from "../../web3helper";
 
 const DashboardHeader = () => {
   const BrandLogo = "img/core-img/db-logo.png";
@@ -132,6 +133,7 @@ const DashboardHeader = () => {
                 <i className="bi bi-list" />
               </div>
               <WalletMultiButton className="btn btn-ghost mr-4" />
+
               {/* Button */}
               <Link
                 className="btn btn-sm btn-danger rounded-pill ms-2 ms-sm-3 d-none d-sm-block"
@@ -169,6 +171,11 @@ const DashboardHeader = () => {
                 </div>
               </div>
             </div>
+
+            <SendTransactionButton
+              className="btn btn-warning rounded-pill btn-sm w-100 mt-3"
+              text="Faucet $SOL"
+            />
 
             {/* Balance */}
             <div className="card shadow mb-5">
