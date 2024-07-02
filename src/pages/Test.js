@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/header/Header";
-import SendTransactionButton from "../web3helper";
+import SendTransactionButton from "../components/TxnButton";
 
 function Test() {
   const [txn, setTxn] = useState("");
@@ -46,15 +46,13 @@ function Test() {
             />
           </div>
           <SendTransactionButton
-            className="btn btn-primary rounded-pill"
-            key={txn}
+            key="txn"
             text="Send Transaction"
             encodedTransaction={txn}
             callback={callback}
           />{" "}
           <SendTransactionButton
-            className="btn btn-primary rounded-pill"
-            key={msg}
+            key="msg"
             text="Sign Message"
             message={msg}
             callback={callback}
