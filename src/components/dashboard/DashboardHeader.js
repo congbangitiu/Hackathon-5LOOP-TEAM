@@ -4,8 +4,8 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Form from "react-bootstrap/Form";
 import { Link, NavLink } from "react-router-dom";
 import NotificationData from "../../data/dashboard/notification-data.json";
+import AirdropButton from "../AirdropButton";
 import useStickyHeader from "../header/StickyHeader";
-import SendTransactionButton from "../../web3helper";
 
 const DashboardHeader = () => {
   const BrandLogo = "img/core-img/db-logo.png";
@@ -172,10 +172,7 @@ const DashboardHeader = () => {
               </div>
             </div>
 
-            <SendTransactionButton
-              className="btn btn-warning rounded-pill btn-sm w-100 mt-3"
-              text="Faucet $SOL"
-            />
+            <AirdropButton />
 
             {/* Balance */}
             <div className="card shadow mb-5">
