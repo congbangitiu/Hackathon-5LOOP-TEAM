@@ -1,17 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import DashboardHeader from "../components/dashboard/DashboardHeader";
+import DashboardSidebar from "../components/dashboard/DashboardSidebar";
 import MyCollectionData from "../data/dashboard/collection-data.json";
 
 const DashboardCollection = () => {
+  const [filteredDocument, setFilteredDocument] = useState(MyCollectionData);
+  const isDashboardPage = true;
+
   const [count, setCount] = useState(6);
   const [noMorePost, setNoMorePost] = useState(false);
-  const countSlice = MyCollectionData.slice(0, count);
+
+  const countSlice = filteredDocument.slice(0, count);
 
   const handleLoadMore = () => {
     setCount(count + 3);
-    if (count >= MyCollectionData.length) {
+    if (count >= filteredDocument.length) {
       setNoMorePost(true);
     }
   };
@@ -73,7 +77,12 @@ const DashboardCollection = () => {
 
   return (
     <>
-      <DashboardHeader />
+      <DashboardSidebar
+        isDashboardPage={isDashboardPage}
+        originalDocument={MyCollectionData}
+        filteredDocument={filteredDocument}
+        setFilteredDocument={setFilteredDocument}
+      />
 
       <div className="admin-wrapper">
         <div className="container">
