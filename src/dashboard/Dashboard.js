@@ -1,13 +1,26 @@
+import { useState } from "react";
+
 import ActivityTab from "../components/dashboard/ActivityTab";
-import DashboardHeader from "../components/dashboard/DashboardHeader";
+import DashboardSidebar from "../components/dashboard/DashboardSidebar";
+
+import ActivityData from "../data/dashboard/activity-table-data.json";
 
 const Dashboard = () => {
+  const [filteredDocument, setFilteredDocument] = useState(ActivityData);
+  // const [isDashboardPages, setIsDashboardPages] = useState(true);
+  const isDashboardPage = true;
+
   return (
     <>
-      <DashboardHeader />
+      <DashboardSidebar
+        isDashboardPage={isDashboardPage}
+        originalDocument={ActivityData}
+        filteredDocument={filteredDocument}
+        setFilteredDocument={setFilteredDocument}
+      />
       <div className="admin-wrapper">
         <div className="container">
-          <ActivityTab />
+          <ActivityTab filteredDocument={filteredDocument} />
         </div>
       </div>
     </>

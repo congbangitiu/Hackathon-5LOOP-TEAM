@@ -3,13 +3,16 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { Link } from "react-router-dom";
 
-import DashboardHeader from "../components/dashboard/DashboardHeader";
+import DashboardSidebar from "../components/dashboard/DashboardSidebar";
 import NotificationData from "../data/dashboard/notification-data.json";
 
 const DashboardNotification = () => {
+  const [filteredDocument, setFilteredDocument] = useState(NotificationData);
+  const isDashboardPage = true;
+
   const [key, setKey] = useState("today");
 
-  const NotificationToday = NotificationData.filter(
+  const NotificationToday = filteredDocument.filter(
     (item) => item.tag === "today"
   );
   const notificationTodayCards = NotificationToday.map((elem, index) => (
@@ -26,7 +29,7 @@ const DashboardNotification = () => {
     </li>
   ));
 
-  const NotificationWeek = NotificationData.filter(
+  const NotificationWeek = filteredDocument.filter(
     (item) => item.tag === "week"
   );
   const notificationWeekCards = NotificationWeek.map((elem, index) => (
@@ -43,7 +46,7 @@ const DashboardNotification = () => {
     </li>
   ));
 
-  const notificationAllCards = NotificationData.map((elem, index) => (
+  const notificationAllCards = filteredDocument.map((elem, index) => (
     <li key={index}>
       <Link to={`/notification-details/${elem.id}`}>
         <i
@@ -57,9 +60,32 @@ const DashboardNotification = () => {
     </li>
   ));
 
+  const timeline = [
+    {
+      eventKey: "today",
+      title: "Today",
+      cards: notificationTodayCards,
+    },
+    {
+      eventKey: "week",
+      title: "7 Day",
+      cards: notificationWeekCards,
+    },
+    {
+      eventKey: "all",
+      title: "All",
+      cards: notificationAllCards,
+    },
+  ];
+
   return (
     <>
-      <DashboardHeader />
+      <DashboardSidebar
+        isDashboardPage={isDashboardPage}
+        originalDocument={NotificationData}
+        filteredDocument={filteredDocument}
+        setFilteredDocument={setFilteredDocument}
+      />
 
       <div className="admin-wrapper">
         <div className="container">
@@ -71,29 +97,15 @@ const DashboardNotification = () => {
                 onSelect={(k) => setKey(k)}
                 className="border-0 mb-3 dashboard-tabs"
               >
-                <Tab eventKey="today" title="Today">
-                  <div className="notification-content-wrap">
-                    <ul className="notification-list ps-0 mb-0">
-                      {notificationTodayCards}
-                    </ul>
-                  </div>
-                </Tab>
-
-                <Tab eventKey="week" title="7 Days">
-                  <div className="notification-content-wrap">
-                    <ul className="notification-list ps-0 mb-0">
-                      {notificationWeekCards}
-                    </ul>
-                  </div>
-                </Tab>
-
-                <Tab eventKey="all" title="All">
-                  <div className="notification-content-wrap">
-                    <ul className="notification-list ps-0 mb-0">
-                      {notificationAllCards}
-                    </ul>
-                  </div>
-                </Tab>
+                {timeline.map((tl, index) => (
+                  <Tab key={index} eventKey={tl.eventKey} title={tl.title}>
+                    <div className="notification-content-wrap">
+                      <ul className="notification-list ps-0 mb-0">
+                        {tl.cards}
+                      </ul>
+                    </div>
+                  </Tab>
+                ))}
               </Tabs>
             </div>
           </div>

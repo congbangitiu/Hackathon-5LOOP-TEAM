@@ -1,9 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import { Link } from "react-router-dom";
-
-import PopularNFTData from "../data/popular-nft.json";
 
 import $ from "jquery";
 
@@ -11,7 +9,7 @@ window.jQuery = window.$ = $;
 require("jquery-nice-select");
 
 export default function PopularCollection(props) {
-  const { title } = props;
+  const { title, filteredDocument } = props;
 
   const selectPopular = useRef();
 
@@ -19,7 +17,7 @@ export default function PopularCollection(props) {
     $(selectPopular.current).niceSelect();
   }, []);
 
-  const PopularNFTCards = PopularNFTData.slice(0, 9).map((elem, index) => (
+  const PopularNFTCards = filteredDocument.slice(0, 9).map((elem, index) => (
     <div key={index} className="col-12 col-sm-10 col-md-5 col-xl-4">
       <div className="nft-card card shadow-sm">
         <div className="card-body">
