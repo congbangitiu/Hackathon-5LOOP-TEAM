@@ -51,7 +51,7 @@ const SendTransactionButton = ({
             {text}
           </button>
         </div>
-        {log && (
+        {(hash || signature) && (
           <div className="col-6">
             {hash ? (
               <a
