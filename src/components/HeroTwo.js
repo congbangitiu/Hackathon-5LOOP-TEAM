@@ -10,7 +10,7 @@ const HeroTwo = (props) => {
         <div className="row justify-content-center">
           <div className="col-12 col-md-10 col-xl-8">
             <div className="welcome-content text-center">
-              <ScrollAnimation
+              {/* <ScrollAnimation
                 animateIn="fadeInUp"
                 delay={400}
                 animateOnce={true}
@@ -39,7 +39,19 @@ const HeroTwo = (props) => {
                   <i className={`me-2 bi ${buttonInfo[0].btnIcon}`} />
                   {buttonInfo[0].btnText}
                 </Link>
-              </ScrollAnimation>
+              </ScrollAnimation> */}
+              <h2 dangerouslySetInnerHTML={{ __html: heading }}></h2>
+              <p
+                className="mb-4"
+                dangerouslySetInnerHTML={{ __html: subHeading }}
+              ></p>
+              <Link
+                className={`btn mt-4 btn-${buttonInfo[0].btnColor} rounded-pill`}
+                to={buttonInfo[0].btnURL}
+              >
+                <i className={`me-2 bi ${buttonInfo[0].btnIcon}`} />
+                {buttonInfo[0].btnText}
+              </Link>
             </div>
           </div>
         </div>
