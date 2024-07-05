@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SubHeader from "./SubHeader";
 import { useWallet } from "@solana/wallet-adapter-react";
+import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
 
 const DashboardSidebar = (props) => {
   const {
@@ -14,32 +15,44 @@ const DashboardSidebar = (props) => {
 
   const [currentBalance, setCurrentBalance] = useState(0);
   const [currentAddress, setCurrentAddress] = useState("");
-  const wallet = useWallet();
+  const { publicKey } = useWallet();
 
   const [isActive, setActive] = useState(false);
 
   useEffect(() => {
-    if (wallet.publicKey) setCurrentAddress(wallet.publicKey.toBase58());
-    fetch(
-      `https://api.shyft.to/sol/v1/wallet/balance?network=devnet&wallet=${currentAddress}`,
-      {
-        method: "GET",
-        headers: {
-          "x-api-key": process.env.REACT_APP_API_KEY,
-        },
+    if (publicKey) {
+      const address = publicKey.toBase58();
+      setCurrentAddress(address);
+
+      if (address) {
+        fetch(
+          `https://api.shyft.to/sol/v1/wallet/balance?network=devnet&wallet=${address}`,
+          {
+            method: "GET",
+            headers: {
+              "x-api-key": process.env.REACT_APP_API_KEY,
+            },
+          }
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            if (
+              data.success &&
+              data.result &&
+              data.result.balance !== undefined
+            ) {
+              setCurrentBalance(data.result.balance);
+            } else {
+              console.error("Invalid response structure", data);
+            }
+          })
+          .catch((error) => console.log(error));
       }
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success && data.result && data.result.balance !== undefined) {
-          setCurrentBalance(data.result.balance);
-          console.log(data.result.balance);
-        } else {
-          console.error("Invalid response structure", data);
-        }
-      })
-      .catch((error) => console.log(error));
-  }, [wallet]);
+    } else {
+      setCurrentAddress("");
+      setCurrentBalance(0);
+    }
+  }, [publicKey]);
 
   const userInfo = [
     {
