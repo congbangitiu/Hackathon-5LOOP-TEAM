@@ -34,6 +34,7 @@ import AI from "./pages/AI";
 import HelpCenter from "./pages/HelpCenter";
 import Material from "./pages/Material";
 import Test from "./pages/Test";
+import ExploreCollection from "./pages/ExploreCollection";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/" index element={<HomeTwo />} />
         <Route path="/top-creator" element={<TopSeller />} />
         <Route path="/explore" element={<ExploreTwo />} />
+        <Route path="/explore/:id" element={<ExploreCollection />} />
         <Route path="/collections" element={<Collections />} />
         <Route path="/ai" element={<AI />} />
         <Route path="/study-goal" element={<StudyGoal />} />
@@ -51,6 +53,7 @@ function App() {
           path="/discover-items/:DISCOVERID"
           element={<DiscoverNFTDetails />}
         />
+
         <Route path="/material/:ITEMID" element={<Material />} />
         <Route path="/author/:AUTHORUSERNAME" element={<Author />} />
         <Route path="/help-center/:CATAGORY" element={<CatagoryQuestions />} />

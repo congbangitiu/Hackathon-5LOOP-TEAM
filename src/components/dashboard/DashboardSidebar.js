@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 
 import { NavLink } from "react-router-dom";
 import SubHeader from "./SubHeader";
-import { useWallet } from "@solana/wallet-adapter-react";
-import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
+
+import truncateText from "./../../utils/truncateText";
+import truncateNumber from "../../utils/truncateNumber";
 
 const DashboardSidebar = (props) => {
   const {
@@ -11,48 +12,11 @@ const DashboardSidebar = (props) => {
     originalDocument = [],
     filteredDocument = [],
     setFilteredDocument = () => {},
+    currentBalance,
+    currentAddress = [],
   } = props;
 
-  const [currentBalance, setCurrentBalance] = useState(0);
-  const [currentAddress, setCurrentAddress] = useState("");
-  const { publicKey } = useWallet();
-
   const [isActive, setActive] = useState(false);
-
-  useEffect(() => {
-    if (publicKey) {
-      const address = publicKey.toBase58();
-      setCurrentAddress(address);
-
-      if (address) {
-        fetch(
-          `https://api.shyft.to/sol/v1/wallet/balance?network=devnet&wallet=${address}`,
-          {
-            method: "GET",
-            headers: {
-              "x-api-key": process.env.REACT_APP_API_KEY,
-            },
-          }
-        )
-          .then((response) => response.json())
-          .then((data) => {
-            if (
-              data.success &&
-              data.result &&
-              data.result.balance !== undefined
-            ) {
-              setCurrentBalance(data.result.balance);
-            } else {
-              console.error("Invalid response structure", data);
-            }
-          })
-          .catch((error) => console.log(error));
-      }
-    } else {
-      setCurrentAddress("");
-      setCurrentBalance(0);
-    }
-  }, [publicKey]);
 
   const userInfo = [
     {
@@ -122,7 +86,7 @@ const DashboardSidebar = (props) => {
                 />
                 <div className="ms-3">
                   <h6 className="lh-1 text-dark fz-18">
-                    {userInfo[0].username}
+                    {truncateText(userInfo[0].username, 3)}
                   </h6>
                   <span className="badge bg-primary fz-12">
                     {userInfo[0].userType}
@@ -141,7 +105,9 @@ const DashboardSidebar = (props) => {
                     src={`${process.env.PUBLIC_URL}/${balanceCard[0].icon}`}
                     alt=""
                   />
-                  <span className="counter">{balanceCard[0].balance}</span>
+                  <span className="counter">
+                    {truncateNumber(balanceCard[0].balance, 2)}
+                  </span>
                   <span className="ms-2">{balanceCard[0].balanceType}</span>
                 </h5>
               </div>
