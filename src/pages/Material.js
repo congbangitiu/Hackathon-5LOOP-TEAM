@@ -1,18 +1,11 @@
 import "react-medium-image-zoom/dist/styles.css";
-import { useParams } from "react-router-dom";
 
 import Divider from "../components//Divider";
 import Breadcrumb from "../components/Breadcrumb";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import DiscoverNFTData from "../data/discover-nft.json";
 
-const Material = () => {
-  // const discoverID = parseInt(useParams().DISCOVERID, 10);
-  // const discoverDetailsData = DiscoverNFTData.filter(
-  //   (item) => item.id === discoverID
-  // );
-
+const Material = ({ TOKEN_ID }) => {
   return (
     <>
       <Header />
@@ -26,11 +19,11 @@ const Material = () => {
           },
         ]}
       />
-      {/* Check if NFT Pass is correct for current URL http://localhost:3000/material/1 then only show this if have */}
+
       <iframe
         title="darkblock"
         allow="fullscreen"
-        // src={`https://app.darkblock.io/platform/sol/embed/viewer/${TOKEN_ID}`}
+        src={`https://app.darkblock.io/platform/sol-devnet/embed/viewer/${TOKEN_ID}`}
       ></iframe>
 
       <Divider />
