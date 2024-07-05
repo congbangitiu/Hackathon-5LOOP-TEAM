@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
+import { useWallet } from "@solana/wallet-adapter-react";
 import { NavLink } from "react-router-dom";
 import SubHeader from "./SubHeader";
-import { useWallet } from "@solana/wallet-adapter-react";
-import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
 
 const DashboardSidebar = (props) => {
   const {
