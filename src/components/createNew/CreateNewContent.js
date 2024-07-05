@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import axios from "axios";
-// import { storage } from "../../firebase";
-// import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+// import axios from "axios";
+import { storage } from "../../firebase";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 import $ from "jquery";
 
@@ -28,6 +28,23 @@ const CreateNewContent = () => {
   const [royalityValid, setRoyalityValid] = useState(true);
   const [noOfCopiesValid, setNoOfCopiesValid] = useState(true);
   const [previewImageFileTypeValid, setPreviewImageFileTypeValid] = useState(true);
+
+  const subjects = [
+    "Object-Oriented Programming",
+    "Data Structures and Algorithms",
+    "Data Science and Data Visualization",
+    "Principle of Database Management",
+    "Data Mining",
+    "Data Analysis",
+    "Machine Learning Platforms",
+    "Calculus 1",
+    "Introduction to Data Science",
+    "Digital Logic Design",
+    "Mobile Application Development",
+    "Computer Network",
+    "Computer Architecture",
+    "Web Application Development",
+  ];
 
   const handleFileChange = (event) => {
     if (event.target.files.length > 0) {
@@ -65,6 +82,7 @@ const CreateNewContent = () => {
         setPreviewImageFileTypeValid(true);
       };
       fileReader.readAsDataURL(file);
+      setFile(file);
     } else {
       setInputImage("img/bg-img/17.jpg");
       setPreviewImageFileTypeValid(false);
@@ -135,57 +153,66 @@ const CreateNewContent = () => {
 
     if (!validSubmission) return;
 
-    // if (file) {
-    //   const storageRef = ref(storage, `files/${file.name}`);
-    //   const uploadTask = uploadBytesResumable(storageRef, file);
+    if (file) {
+      const storageRef = ref(storage, `images/${file.name}`);
+      const uploadTask = uploadBytesResumable(storageRef, file);
 
-    //   uploadTask.on('state_changed',
-    //     (snapshot) => {
-    //       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-    //       setUploadProgress(progress);
-    //     },
-    //     (error) => {
-    //       console.error('Error uploading file: ', error);
-    //     },
-    //     () => {
-    //       // Upload completed successfully, get download URL
-    //       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-    //         console.log('File available at: ', downloadURL);
-    //       }).catch((error) => {
-    //         console.error('Error getting download URL: ', error);
-    //       });
-    //     }
-    //   );
-    // }
-
-    const formData = new FormData();
-    formData.append('file', file);
-    formData.append('name', inputTitle);
-    formData.append('darkblock_description', inputDescription);
-    // formData.append('nft_contract', 'Your_NFT_Contract_Address');
-    formData.append('nft_token', 'Your_NFT_Token_ID');
-    formData.append('creator_address', 'HA9LMqhmy2cUsxfTvmnd2X5Zh4fuyizEhCEZsQJXrM2o');
-    formData.append('nft_platform', 'Solana');
-    formData.append('nft_standard', 'Metaplex');
-    formData.append('apiKey', 'Your_API_Key');
-
-    try {
-      const response = await axios.post('https://api.darkblock.io/v1/darkblock/upgrade', formData, {
-        headers: formData.getHeaders()
-      });
-      const data = response.data;
-      console.log('File uploaded successfully:', data);
-      setUploadProgress(100);
-    } catch (error) {
-      console.error('Error uploading file:', error);
-      setUploadProgress(0);
+      uploadTask.on('state_changed',
+        (snapshot) => {
+          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          setUploadProgress(progress);
+        },
+        (error) => {
+          console.error('Error uploading file: ', error);
+        },
+        () => {
+          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+            console.log('File available at: ', downloadURL);
+          }).catch((error) => {
+            console.error('Error getting download URL: ', error);
+          });
+        }
+      );
     }
+
+    // const formData = new FormData();
+    // formData.append('file', file);
+    // formData.append('name', inputTitle);
+    // formData.append('darkblock_description', inputDescription);
+    // // formData.append('nft_contract', 'Your_NFT_Contract_Address');
+    // formData.append('nft_token', 'Your_NFT_Token_ID');
+    // formData.append('creator_address', 'HA9LMqhmy2cUsxfTvmnd2X5Zh4fuyizEhCEZsQJXrM2o');
+    // formData.append('nft_platform', 'Solana');
+    // formData.append('nft_standard', 'Metaplex');
+    // formData.append('apiKey', 'Your_API_Key');
+
+    // try {
+    //   const response = await axios.post('https://api.darkblock.io/v1/darkblock/upgrade', formData, {
+    //     headers: formData.getHeaders()
+    //   });
+    //   const data = response.data;
+    //   console.log('File uploaded successfully:', data);
+    //   setUploadProgress(100);
+    // } catch (error) {
+    //   console.error('Error uploading file:', error);
+    //   setUploadProgress(0);
+    // }
   };
 
-  const selectCata = useRef();
+  const levelsSelect = useRef(null);
+  const subjectsSelect = useRef(null);
+  const categoriesSelect = useRef(null);
 
   useEffect(() => {
-    $(selectCata.current).niceSelect();
+    if (levelsSelect.current) {
+      $(levelsSelect.current).niceSelect();
+    }
+    if (subjectsSelect.current) {
+      $(subjectsSelect.current).niceSelect();
+    }
+    if (categoriesSelect.current) {
+      $(categoriesSelect.current).niceSelect();
+    }
   }, []);
 
   return (
@@ -203,7 +230,7 @@ const CreateNewContent = () => {
                   <div className="col-12">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
-                        Upload Files
+                        Upload Files*
                       </Form.Label>
                       <Form.Control
                         className="bg-transparent"
@@ -225,7 +252,7 @@ const CreateNewContent = () => {
                   <div className="col-12">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
-                        Upload Preview Image
+                        Upload Preview Image*
                       </Form.Label>
                       <Form.Control
                         className="bg-transparent"
@@ -268,7 +295,7 @@ const CreateNewContent = () => {
                   {/* Title */}
                   <div className="col-12">
                     <Form.Group className="mb-4">
-                      <Form.Label className="mb-2 fz-16">Title</Form.Label>
+                      <Form.Label className="mb-2 fz-16">Title*</Form.Label>
                       <Form.Control
                         id="title"
                         type="text"
@@ -289,7 +316,7 @@ const CreateNewContent = () => {
                   <div className="col-12">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
-                        Description
+                        Description*
                       </Form.Label>
                       <Form.Control
                         id="description"
@@ -307,11 +334,41 @@ const CreateNewContent = () => {
                     </Form.Group>
                   </div>
 
+                  {/* Levels */}
+                  <div className="col-12 col-md-6">
+                    <h5>Levels*</h5>
+                    <select
+                      ref={levelsSelect}
+                      className="filter-select bg-gray w-100 mb-4"
+                    >
+                      <option value="" disabled selected>Select a level</option>
+                      <option value="Simple">Simple</option>
+                      <option value="Intermediate">Intermediate</option>
+                      <option value="Hard">Hard</option>
+                    </select>
+                  </div>
+
+                  {/* Subjects */}
+                  <div className="col-12 col-md-6">
+                    <h5>Subjects*</h5>
+                    <select
+                      ref={subjectsSelect}
+                      className="filter-select bg-gray w-100 mb-4"
+                    >
+                      <option value="" disabled selected>Select a subject</option>
+                      {subjects.sort().map((subject, index) => (
+                        <option key={index} value={subject}>
+                          {subject}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
                   {/* Price */}
                   <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
-                        Price (SOL)
+                        Price (SOL)*
                       </Form.Label>
                       <Form.Control
                         id="price"
@@ -331,16 +388,17 @@ const CreateNewContent = () => {
 
                   {/* Category */}
                   <div className="col-12 col-md-6">
-                    <h5>Categories</h5>
+                    <h5>Categories*</h5>
                     <select
-                      ref={selectCata}
+                      ref={categoriesSelect}
                       className="filter-select bg-gray w-100 mb-4"
                     >
-                      <option value={1}>Slide</option>
-                      <option value={2}>Exam Papers</option>
-                      <option value={3}>Exercises</option>
-                      <option value={4}>Books</option>
-                      <option value={5}>Records</option>
+                      <option value="" disabled selected>Select a category</option>
+                      <option value="Slide">Slide</option>
+                      <option value="Exam Papers">Exam Papers</option>
+                      <option value="Exercises">Exercises</option>
+                      <option value="Books">Books</option>
+                      <option value="Records">Records</option>
                     </select>
                   </div>
 
@@ -368,7 +426,7 @@ const CreateNewContent = () => {
                   <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
-                        Royality (%)
+                        Royality (%)*
                       </Form.Label>
                       <Form.Control
                         id="royality"
@@ -390,7 +448,7 @@ const CreateNewContent = () => {
                   <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
-                        No of copies
+                        No of copies*
                       </Form.Label>
                       <Form.Control
                         id="noOfcopies"
