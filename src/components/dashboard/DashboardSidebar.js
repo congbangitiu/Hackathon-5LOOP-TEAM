@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import { NavLink } from "react-router-dom";
 import SubHeader from "./SubHeader";
+import { useWallet } from "@solana/wallet-adapter-react";
 
 const DashboardSidebar = (props) => {
   const {
@@ -12,12 +13,15 @@ const DashboardSidebar = (props) => {
   } = props;
 
   const [currentBalance, setCurrentBalance] = useState(0);
+  const [currentAddress, setCurrentAddress] = useState("");
+  const wallet = useWallet();
 
   const [isActive, setActive] = useState(false);
 
   useEffect(() => {
+    if (wallet.publicKey) setCurrentAddress(wallet.publicKey.toBase58());
     fetch(
-      "https://api.shyft.to/sol/v1/wallet/balance?network=devnet&wallet=4FDoxjfuapy9HRAVSwkLiqekgM4hohcomKPNSfFn7dKA",
+      `https://api.shyft.to/sol/v1/wallet/balance?network=devnet&wallet=${currentAddress}`,
       {
         method: "GET",
         headers: {
@@ -29,17 +33,18 @@ const DashboardSidebar = (props) => {
       .then((data) => {
         if (data.success && data.result && data.result.balance !== undefined) {
           setCurrentBalance(data.result.balance);
+          console.log(data.result.balance);
         } else {
           console.error("Invalid response structure", data);
         }
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, [wallet]);
 
   const userInfo = [
     {
       thumbnail: "img/bg-img/u2.jpg",
-      username: "Designing W.",
+      username: currentAddress,
       userType: "Premium User",
     },
   ];
@@ -49,7 +54,7 @@ const DashboardSidebar = (props) => {
       title: "Current balance",
       icon: "img/core-img/solana-icon.svg",
       balance: currentBalance,
-      balanceType: "SOL",
+      balanceType: "$SOL",
     },
   ];
 
