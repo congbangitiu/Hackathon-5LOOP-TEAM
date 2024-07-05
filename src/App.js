@@ -63,7 +63,6 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/test" element={<Test />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
 
