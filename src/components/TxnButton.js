@@ -34,8 +34,9 @@ const SendTransactionButton = ({
     } else if (message) {
       const data = new TextEncoder().encode(message);
       console.log(data);
-      const signedMsg = await wallet.signMessage(data);
-      setSignature(signedMsg);
+      const signedMsg = await wallet.signMessage(data, "utf8");
+      const hexSign = btoa(String.fromCharCode.apply(null, signedMsg));
+      setSignature(hexSign);
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
 
