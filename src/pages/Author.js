@@ -329,7 +329,7 @@ const Author = () => {
       <div
         className="author-top-content bg-img bg-overlay"
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/${authorData.bgImage})`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/${authorData?.bgImage})`,
         }}
       >
         <div className="container">
@@ -340,7 +340,7 @@ const Author = () => {
                   <div className="author-thumbnail">
                     <img
                       className="rounded"
-                      src={`${process.env.PUBLIC_URL}/${authorData.thumbnail}`}
+                      src={`${process.env.PUBLIC_URL}/${authorData?.thumbnail}`}
                       alt=""
                     />
                     <i className="bi bi-patch-check-fill" />
@@ -349,18 +349,18 @@ const Author = () => {
                 <div className="col-12 col-sm-10 col-md-7 col-lg-9">
                   <div className="author-data">
                     <h3 className="mb-2 author-name text-white">
-                      {authorData.name}
+                      {authorData?.name}
                       <Link
-                        className={`btn btn-${authorData.followBtnInfo[0].style} btn-sm rounded-pill align-top ms-2 px-3 py-1`}
+                        className={`btn btn-${authorData?.followBtnInfo[0]?.style} btn-sm rounded-pill align-top ms-2 px-3 py-1`}
                         to=""
                       >
-                        {authorData.followBtnInfo[0].text}
+                        {authorData?.followBtnInfo[0]?.text}
                       </Link>
                     </h3>
                     <div className="btn btn-minimal d-inline-block mb-3 text-white">
-                      @{authorData.username}
+                      @{authorData?.username}
                     </div>
-                    <p className="mb-0">{authorData.shortDesc}</p>
+                    <p className="mb-0">{authorData?.shortDesc}</p>
                   </div>
                 </div>
               </div>
@@ -379,7 +379,7 @@ const Author = () => {
             <Dropdown className="author-dd">
               <Dropdown.Toggle
                 className="rounded-pill shadow-sm p-0"
-                id={`authorDetailsID${authorData.id}`}
+                id={`authorDetailsID${authorData?.id}`}
               >
                 <i className="bi bi-three-dots-vertical" />
               </Dropdown.Toggle>
@@ -425,7 +425,7 @@ const Author = () => {
                 <div className="card-body p-4 p-md-5 p-lg-4 p-xl-5">
                   <h5 className="mb-3">About this author</h5>
 
-                  {authorData.authorDesc.map((elem, index) => (
+                  {authorData?.authorDesc.map((elem, index) => (
                     <div
                       key={index}
                       dangerouslySetInnerHTML={{ __html: elem }}
@@ -459,7 +459,10 @@ const Author = () => {
                           {({ isVisible }) => (
                             <div>
                               {isVisible ? (
-                                <CountUp duration={2} end={authorData.owners} />
+                                <CountUp
+                                  duration={2}
+                                  end={authorData?.owners}
+                                />
                               ) : (
                                 0
                               )}
@@ -478,7 +481,7 @@ const Author = () => {
                               {isVisible ? (
                                 <CountUp
                                   duration={2}
-                                  end={authorData.followers}
+                                  end={authorData?.followers}
                                 />
                               ) : (
                                 0

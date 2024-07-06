@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import NotificationData from "../../data/dashboard/notification-data.json";
 import SearchForm from "../header/SearchForm";
