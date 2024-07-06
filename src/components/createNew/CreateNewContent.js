@@ -1,12 +1,13 @@
+import axios from "axios";
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import { storage } from "../../firebase";
-import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
-import $ from "jquery";
 import { useWallet } from "@solana/wallet-adapter-react";
+import $ from "jquery";
+import SendTransactionButton from "../TxnButton";
 import "./index.css";
 
 window.jQuery = window.$ = $;
@@ -27,7 +28,9 @@ const CreateNewContent = () => {
   const [inputSubject, setInputSubject] = useState("");
   const [inputCategory, setInputCategory] = useState("");
   const [jsonMetadataUrl, setJsonMetadataUrl] = useState("");
-  const [currentAddress, setCurrentAddress] = useState("");
+  // const [currentAddress, setCurrentAddress] = useState("");
+  const [isTransactionReady, setIsTransactionReady] = useState(false);
+  const [encodedTransaction, setEncodedTransaction] = useState("");
 
   const [fileValid, setFileValid] = useState(true);
   const [levelValid, setLevelValid] = useState(true);
@@ -252,7 +255,7 @@ const CreateNewContent = () => {
         metadata_uri: jsonMetadataUrl,
         max_supply: parseInt(inputNoOfCopies),
         receiver: receiverAddress,
-        fee_payer: "4dV2CNkdMV6zq2iVfBq7ysj97PgRtESE8SWyBi67Yp3D",
+        // fee_payer: "4dV2CNkdMV6zq2iVfBq7ysj97PgRtESE8SWyBi67Yp3D",
         service_charge: {
           receiver: "feeRcziyfouqaogKuibPdPHSKAvrYYVcqTGUvcfJLgW",
           amount: parseFloat(inputPrice*1/100)
@@ -264,6 +267,9 @@ const CreateNewContent = () => {
       })
       .then(response => {
         console.log('NFT created successfully:', response.data);
+        setJsonMetadataUrl(response.data.url);
+        setEncodedTransaction(response.data.result.encoded_transaction);
+        setIsTransactionReady(true);
       })
       .catch(error => {
         console.error('Error creating NFT:', error);
@@ -611,13 +617,22 @@ const CreateNewContent = () => {
 
                   {/* Submit Button */}
                   <div className="col-12 col-md-4">
-                    <button
-                      className="btn btn-primary rounded-pill w-100"
-                      onClick={handleUpload}
-                      type="submit"
-                    >
-                      Create
-                    </button>
+                    {!isTransactionReady ? (
+                      <button
+                        className="btn btn-primary rounded-pill w-100"
+                        onClick={handleUpload}
+                        type="submit"
+                      >
+                        Create
+                      </button>
+                    ) : (
+                      <SendTransactionButton
+                        encodedTransaction={encodedTransaction} 
+                        callback={() => console.log("Transaction completed")}
+                        text="Mint NFT"
+                        log={true}
+                      />
+                    )}
                   </div>
                 </div>
               </Form>
