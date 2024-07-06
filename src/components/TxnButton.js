@@ -1,9 +1,7 @@
-import { signAndSendTransaction } from "@shyft-to/js";
 import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import { Buffer } from "buffer";
 import React, { useCallback, useState } from "react";
-window.Buffer = window.Buffer || Buffer;
+import { signAndSendTransaction } from "@shyft-to/js";
 
 const SendTransactionButton = ({
   encodedTransaction,
@@ -41,8 +39,6 @@ const SendTransactionButton = ({
       return hexSign;
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
-
-  console.log(signature);
 
   return (
     <div className="container">

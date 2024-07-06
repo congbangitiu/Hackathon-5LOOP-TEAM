@@ -36,12 +36,14 @@ function Test() {
               className="form-control"
               placeholder="Encoded Transaction from Shyft"
               onChange={(e) => setTxn(e.target.value)}
+              log={true}
             />
             <label className="form-label">Message to sign:</label>
             <input
               type="text"
               className="form-control"
               placeholder="Message"
+              log={true}
               onChange={(e) => setMsg(e.target.value)}
             />
           </div>
