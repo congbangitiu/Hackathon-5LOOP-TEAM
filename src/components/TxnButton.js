@@ -37,6 +37,7 @@ const SendTransactionButton = ({
       const signedMsg = await wallet.signMessage(data, "utf8");
       const hexSign = btoa(String.fromCharCode.apply(null, signedMsg));
       setSignature(hexSign);
+      return hexSign;
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
 
@@ -52,7 +53,7 @@ const SendTransactionButton = ({
             {text}
           </button>
         </div>
-        {(hash || signature) && (
+        {log ? (
           <div className="col-6">
             {hash ? (
               <a
@@ -66,6 +67,8 @@ const SendTransactionButton = ({
               <p className="text-break">{signature}</p>
             )}
           </div>
+        ) : (
+          ""
         )}
       </div>
     </div>
