@@ -1,16 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-// import axios from "axios";
+import axios from "axios";
 import { storage } from "../../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 import $ from "jquery";
+import { useWallet } from "@solana/wallet-adapter-react";
+import "./index.css";
 
 window.jQuery = window.$ = $;
 require("jquery-nice-select");
 
 const CreateNewContent = () => {
+  const { publicKey } = useWallet();
   const [inputTitle, setInputTitle] = useState("");
   const [inputPrice, setInputPrice] = useState("");
   const [inputDescription, setInputDescription] = useState("");
@@ -20,8 +23,16 @@ const CreateNewContent = () => {
   const [file, setFile] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [termsAgreed, setTermsAgreed] = useState(false);
+  const [inputLevel, setInputLevel] = useState("");
+  const [inputSubject, setInputSubject] = useState("");
+  const [inputCategory, setInputCategory] = useState("");
+  const [jsonMetadataUrl, setJsonMetadataUrl] = useState("");
+  const [currentAddress, setCurrentAddress] = useState("");
 
   const [fileValid, setFileValid] = useState(true);
+  const [levelValid, setLevelValid] = useState(true);
+  const [subjectValid, setSubjectValid] = useState(true);
+  const [categoryValid, setCategoryValid] = useState(true);
   const [priceValid, setPriceValid] = useState(true);
   const [titleValid, setTitleValid] = useState(true);
   const [descriptionValid, setDescriptionValid] = useState(true);
@@ -52,9 +63,9 @@ const CreateNewContent = () => {
       setFile(file);
       setFileValid(true);
 
-      if (file.type === 'application/pdf') {
-        computeSHA256(file);
-      }
+      // if (file.type === 'application/pdf') {
+      //   computeSHA256(file);
+      // }
     } else {
       setFile(null);
       setFileValid(false);
@@ -89,6 +100,18 @@ const CreateNewContent = () => {
     }
   };
 
+  const handleLevelChange = (event) => {
+    setInputLevel(event.target.value);
+  };  
+
+  const handleSubjectChange = (event) => {
+    setInputSubject(event.target.value);
+  };
+
+  const handleCategoryChange = (event) => {
+    setInputCategory(event.target.value);
+  };
+
   const handleUpload = async (event) => {
     event.preventDefault(); // Prevent default form submission
 
@@ -98,53 +121,19 @@ const CreateNewContent = () => {
     }
 
     let validSubmission = true;
-
     const isPositiveNumber = /^[0-9]*\.?[0-9]+$/;
     const isPositiveInteger = /^\d+$/;
 
-    if (
-      !isPositiveNumber.test(inputPrice.trim()) ||
-      parseFloat(inputPrice.trim()) <= 0
-    ) {
-      setPriceValid(false);
-      validSubmission = false;
-    } else {
-      setPriceValid(true);
-    }
+    setPriceValid(isPositiveNumber.test(inputPrice.trim()) && parseFloat(inputPrice.trim()) > 0);
+    setTitleValid(inputTitle.trim() !== "");
+    setDescriptionValid(inputDescription.trim() !== "");
+    setLevelValid(inputLevel.trim() !== "");
+    setSubjectValid(inputSubject.trim() !== "");
+    setCategoryValid(inputCategory.trim() !== "");
+    setRoyalityValid(isPositiveNumber.test(inputRoyality.trim()) && parseFloat(inputRoyality.trim()) > 0);
+    setNoOfCopiesValid(isPositiveInteger.test(inputNoOfCopies.trim()) && parseInt(inputNoOfCopies.trim(), 10) > 0);
 
-    if (!inputTitle.trim()) {
-      setTitleValid(false);
-      validSubmission = false;
-    } else {
-      setTitleValid(true);
-    }
-
-    if (!inputDescription.trim()) {
-      setDescriptionValid(false);
-      validSubmission = false;
-    } else {
-      setDescriptionValid(true);
-    }
-
-    if (
-      !isPositiveNumber.test(inputRoyality.trim()) ||
-      parseFloat(inputRoyality.trim()) <= 0
-    ) {
-      setRoyalityValid(false);
-      validSubmission = false;
-    } else {
-      setRoyalityValid(true);
-    }
-
-    if (
-      !isPositiveInteger.test(inputNoOfCopies.trim()) ||
-      parseInt(inputNoOfCopies.trim(), 10) <= 0
-    ) {
-      setNoOfCopiesValid(false);
-      validSubmission = false;
-    } else {
-      setNoOfCopiesValid(true);
-    }
+    validSubmission = priceValid && titleValid && descriptionValid && levelValid && subjectValid && categoryValid && royalityValid && noOfCopiesValid;
 
     if (!termsAgreed) {
       alert("You must agree to the terms and conditions to proceed.");
@@ -153,50 +142,89 @@ const CreateNewContent = () => {
 
     if (!validSubmission) return;
 
-    if (file) {
-      const storageRef = ref(storage, `images/${file.name}`);
-      const uploadTask = uploadBytesResumable(storageRef, file);
+    const storageRef = ref(storage, `images/${file.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file);
 
-      uploadTask.on('state_changed',
-        (snapshot) => {
-          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          setUploadProgress(progress);
-        },
-        (error) => {
-          console.error('Error uploading file: ', error);
-        },
-        () => {
-          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            console.log('File available at: ', downloadURL);
-          }).catch((error) => {
-            console.error('Error getting download URL: ', error);
-          });
+    uploadTask.on('state_changed',
+      (snapshot) => {
+        const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        setUploadProgress(progress);
+      },
+      (error) => {
+        console.error('Error uploading file: ', error);
+      },
+      async () => {
+        try {
+          const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+          // console.log('File available at: ', downloadURL);
+
+          // Additional JSON Data Upload
+          // const hashHex = await computeSHA256(file);
+          // if (publicKey) {
+          //   const address = publicKey.toBase58();
+          //   setCurrentAddress(address);
+          // }
+
+          const jsonData = {
+            name: inputTitle,
+            symbol: "NFTB",
+            description: inputDescription,
+            seller_fee_basis_points: parseInt(inputRoyality, 10),
+            image: downloadURL,
+            attributes: [
+              {
+                trait_type: "level",
+                value: inputLevel
+              },
+              {
+                trait_type: "subject",
+                value: inputSubject
+              },
+              {
+                trait_type: "category",
+                value: inputCategory
+              }
+            ],
+            properties: {
+              files: [
+                {
+                  uri: downloadURL,
+                  type: file.type,
+                }
+              ],
+              category: "image",
+              creators: [
+                {
+                  address: publicKey.toBase58(),
+                  share: 100
+                }
+              ]
+            },
+            // sha256: hashHex
+          };
+
+          const jsonBlob = new Blob([JSON.stringify(jsonData)], {type: 'application/json'});
+          const jsonRef = ref(storage, `json/${file.name.replace(/\.[^/.]+$/, "")}_data.json`);
+          const jsonUploadTask = uploadBytesResumable(jsonRef, jsonBlob);
+
+          jsonUploadTask.on('state_changed',
+            null,
+            error => console.error('Error uploading JSON file: ', error),
+            async () => {
+              try {
+                const jsonDownloadURL = await getDownloadURL(jsonUploadTask.snapshot.ref);
+                console.log('JSON File available at: ', jsonDownloadURL);
+                setJsonMetadataUrl(jsonDownloadURL);
+              } catch (error) {
+                console.error('Error handling file upload completion: ', error);
+              }
+            }
+          );
+        } catch (error) {
+          console.error('Error handling file upload completion: ', error);
         }
-      );
-    }
-
-    // const formData = new FormData();
-    // formData.append('file', file);
-    // formData.append('name', inputTitle);
-    // formData.append('darkblock_description', inputDescription);
-    // // formData.append('nft_contract', 'Your_NFT_Contract_Address');
-    // formData.append('nft_token', 'Your_NFT_Token_ID');
-    // formData.append('creator_address', 'HA9LMqhmy2cUsxfTvmnd2X5Zh4fuyizEhCEZsQJXrM2o');
-    // formData.append('nft_platform', 'Solana');
-    // formData.append('nft_standard', 'Metaplex');
-    // formData.append('apiKey', 'Your_API_Key');
-
-    // try {
-    //   const response = await axios.post('https://api.darkblock.io/v1/darkblock/upgrade', formData, {
-    //     headers: formData.getHeaders()
-    //   });
-    //   const data = response.data;
-    //   console.log('File uploaded successfully:', data);
-    //   setUploadProgress(100);
-    // } catch (error) {
-    //   console.error('Error uploading file:', error);
-    //   setUploadProgress(0);
-    // }
+      }
+    );
   };
 
   const levelsSelect = useRef(null);
@@ -204,16 +232,75 @@ const CreateNewContent = () => {
   const categoriesSelect = useRef(null);
 
   useEffect(() => {
-    if (levelsSelect.current) {
-      $(levelsSelect.current).niceSelect();
+    // if (publicKey) {
+    //   const address = publicKey.toBase58();
+    //   setCurrentAddress(address);
+    // }
+
+    if (jsonMetadataUrl && publicKey) {
+      const receiverAddress = publicKey.toBase58();
+      console.log(`Network: devnet`);
+      console.log(`Metadata URI: ${jsonMetadataUrl}`);
+      console.log(`Max Supply: ${inputNoOfCopies}`);
+      console.log(`Receiver: ${receiverAddress}`);
+      console.log(`Fee Payer: 4dV2CNkdMV6zq2iVfBq7ysj97PgRtESE8SWyBi67Yp3D`);
+      console.log(`Service Charge Receiver: feeRcziyfouqaogKuibPdPHSKAvrYYVcqTGUvcfJLgW`);
+      console.log(`Service Charge Amount: ${inputPrice}`);
+  
+      axios.post('https://api.shyft.to/sol/v1/nft/create_from_metadata', {
+        network: "devnet",
+        metadata_uri: jsonMetadataUrl,
+        max_supply: parseInt(inputNoOfCopies),
+        receiver: receiverAddress,
+        fee_payer: "4dV2CNkdMV6zq2iVfBq7ysj97PgRtESE8SWyBi67Yp3D",
+        service_charge: {
+          receiver: "feeRcziyfouqaogKuibPdPHSKAvrYYVcqTGUvcfJLgW",
+          amount: parseFloat(inputPrice*1/100)
+        }
+      }, {
+        headers: {
+          "x-api-key": "iMc0bMhpyLDW1Qit"
+      }
+      })
+      .then(response => {
+        console.log('NFT created successfully:', response.data);
+      })
+      .catch(error => {
+        console.error('Error creating NFT:', error);
+        if (error.response) {
+          console.error("Detailed API response error:", error.response.data);
+        }
+      });
     }
-    if (subjectsSelect.current) {
-      $(subjectsSelect.current).niceSelect();
-    }
-    if (categoriesSelect.current) {
-      $(categoriesSelect.current).niceSelect();
-    }
-  }, []);
+
+    const setupNiceSelect = (selectRef, changeHandler) => {
+      if (selectRef.current) {
+        $(selectRef.current).niceSelect();
+  
+        const handleChange = () => {
+          const selectedValue = $(selectRef.current).val();
+          changeHandler({ target: { value: selectedValue } });
+        };
+  
+        $(selectRef.current).on('change', handleChange);
+  
+        return () => {
+          $(selectRef.current).off('change', handleChange);
+          $(selectRef.current).niceSelect('destroy');
+        };
+      }
+    };
+  
+    const levelCleanup = setupNiceSelect(levelsSelect, handleLevelChange);
+    const subjectCleanup = setupNiceSelect(subjectsSelect, handleSubjectChange);
+    const categoryCleanup = setupNiceSelect(categoriesSelect, handleCategoryChange);
+  
+    return () => {
+      if (levelCleanup) levelCleanup();
+      if (subjectCleanup) subjectCleanup();
+      if (categoryCleanup) categoryCleanup();
+    };
+  }, [jsonMetadataUrl, publicKey, inputNoOfCopies, inputPrice]);
 
   return (
     <div className="create-new-wrapper">
@@ -252,7 +339,7 @@ const CreateNewContent = () => {
                   <div className="col-12">
                     <Form.Group className="mb-4">
                       <Form.Label className="mb-2 fz-16">
-                        Upload Preview Image*
+                        Upload Preview Image
                       </Form.Label>
                       <Form.Control
                         className="bg-transparent"
@@ -336,32 +423,56 @@ const CreateNewContent = () => {
 
                   {/* Levels */}
                   <div className="col-12 col-md-6">
-                    <h5>Levels*</h5>
-                    <select
-                      ref={levelsSelect}
-                      className="filter-select bg-gray w-100 mb-4"
-                    >
-                      <option value="" disabled selected>Select a level</option>
-                      <option value="Simple">Simple</option>
-                      <option value="Intermediate">Intermediate</option>
-                      <option value="Hard">Hard</option>
-                    </select>
+                    <Form.Group className="mb-4">
+                      <Form.Label className="mb-2 fz-16">Level*</Form.Label>
+                      <Form.Control
+                        id="level"
+                        as="select"
+                        value={inputLevel}
+                        onChange={handleLevelChange}
+                        ref={levelsSelect}
+                        isInvalid={!levelValid}
+                        className="filter-select bg-gray w-100 mb-4"
+                      >
+                        <option value="" disabled>Select a level</option>
+                        <option value="Simple">Simple</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Hard">Hard</option>
+                      </Form.Control>
+                      {!levelValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please select a level.
+                        </Form.Control.Feedback>
+                      )}
+                    </Form.Group>
                   </div>
 
                   {/* Subjects */}
                   <div className="col-12 col-md-6">
-                    <h5>Subjects*</h5>
-                    <select
-                      ref={subjectsSelect}
-                      className="filter-select bg-gray w-100 mb-4"
-                    >
-                      <option value="" disabled selected>Select a subject</option>
-                      {subjects.sort().map((subject, index) => (
-                        <option key={index} value={subject}>
-                          {subject}
-                        </option>
-                      ))}
-                    </select>
+                    <Form.Group className="mb-4">
+                      <Form.Label className="mb-2 fz-16">Subject*</Form.Label>
+                      <Form.Control
+                        id="subject"
+                        as="select"
+                        value={inputSubject}
+                        onChange={handleSubjectChange}
+                        ref={subjectsSelect}
+                        isInvalid={!subjectValid}
+                        className="filter-select bg-gray w-100 mb-4"
+                      >
+                        <option value="" disabled>Select a subject</option>
+                        {subjects.sort().map((subject, index) => (
+                          <option key={index} value={subject}>
+                            {subject}
+                          </option>
+                        ))}
+                      </Form.Control>
+                      {!subjectValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please select a subject.
+                        </Form.Control.Feedback>
+                      )}
+                    </Form.Group>
                   </div>
 
                   {/* Price */}
@@ -388,18 +499,30 @@ const CreateNewContent = () => {
 
                   {/* Category */}
                   <div className="col-12 col-md-6">
-                    <h5>Categories*</h5>
-                    <select
-                      ref={categoriesSelect}
-                      className="filter-select bg-gray w-100 mb-4"
-                    >
-                      <option value="" disabled selected>Select a category</option>
-                      <option value="Slide">Slide</option>
-                      <option value="Exam Papers">Exam Papers</option>
-                      <option value="Exercises">Exercises</option>
-                      <option value="Books">Books</option>
-                      <option value="Records">Records</option>
-                    </select>
+                    <Form.Group className="mb-4">
+                      <Form.Label className="mb-2 fz-16">Categories*</Form.Label>
+                      <Form.Control
+                        as="select"
+                        value={inputCategory}
+                        onChange={handleCategoryChange}
+                        isInvalid={!categoryValid}
+                        className="filter-select bg-gray w-100 mb-4"
+                        id="category"
+                        ref={categoriesSelect}
+                      >
+                        <option value="" disabled>Select a category</option>
+                        <option value="Slide">Slide</option>
+                        <option value="Exam Papers">Exam Papers</option>
+                        <option value="Exercises">Exercises</option>
+                        <option value="Books">Books</option>
+                        <option value="Records">Records</option>
+                      </Form.Control>
+                      {!categoryValid && (
+                        <Form.Control.Feedback type="invalid">
+                          Please select a category.
+                        </Form.Control.Feedback>
+                      )}
+                    </Form.Group>
                   </div>
 
                   {/* Starting Date */}

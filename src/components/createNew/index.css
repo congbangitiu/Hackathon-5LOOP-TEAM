@@ -1,0 +1,9 @@
+.filter-select {
+    display: flex;
+    align-items: center;
+    height: 54px;
+}
+
+.filter-select select {
+    width: 100%;
+}
