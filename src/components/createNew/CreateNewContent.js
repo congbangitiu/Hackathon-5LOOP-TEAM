@@ -28,9 +28,10 @@ const CreateNewContent = () => {
   const [inputSubject, setInputSubject] = useState("");
   const [inputCategory, setInputCategory] = useState("");
   const [jsonMetadataUrl, setJsonMetadataUrl] = useState("");
-  // const [currentAddress, setCurrentAddress] = useState("");
   const [isTransactionReady, setIsTransactionReady] = useState(false);
+  const [isMintingComplete, setIsMintingComplete] = useState(false);
   const [encodedTransaction, setEncodedTransaction] = useState("");
+  const [mintNFT, setMintNFT] = useState("");
 
   const [fileValid, setFileValid] = useState(true);
   const [levelValid, setLevelValid] = useState(true);
@@ -262,13 +263,14 @@ const CreateNewContent = () => {
         }
       }, {
         headers: {
-          "x-api-key": "iMc0bMhpyLDW1Qit"
+          "x-api-key": process.env.REACT_APP_API_KEY
       }
       })
       .then(response => {
         console.log('NFT created successfully:', response.data);
         setJsonMetadataUrl(response.data.url);
         setEncodedTransaction(response.data.result.encoded_transaction);
+        setMintNFT(response.data.result.mint);
         setIsTransactionReady(true);
       })
       .catch(error => {
@@ -277,7 +279,7 @@ const CreateNewContent = () => {
           console.error("Detailed API response error:", error.response.data);
         }
       });
-    }
+    };
 
     const setupNiceSelect = (selectRef, changeHandler) => {
       if (selectRef.current) {
@@ -630,7 +632,7 @@ const CreateNewContent = () => {
                         encodedTransaction={encodedTransaction} 
                         callback={() => console.log("Transaction completed")}
                         text="Mint NFT"
-                        log={true}
+                        log={false}
                       />
                     )}
                   </div>
