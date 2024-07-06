@@ -17,7 +17,7 @@ import ExploreTwo from "./pages/ExploreTwo";
 import HomeTwo from "./pages/HomeTwo";
 import StudyGoal from "./pages/StudyGoal";
 import TopSeller from "./pages/TopSeller";
-
+import About from "./pages/About";
 import Author from "./pages/Author";
 import CreateNew from "./pages/CreateNew";
 
@@ -35,6 +35,7 @@ import HelpCenter from "./pages/HelpCenter";
 import Material from "./pages/Material";
 import Test from "./pages/Test";
 import ExploreCollection from "./pages/ExploreCollection";
+import LiveAuction from "./components/LiveAuction";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/explore" element={<ExploreTwo />} />
         <Route path="/explore/:id" element={<ExploreCollection />} />
         <Route path="/collections" element={<Collections />} />
+        <Route path="/collections/ID" element={<LiveAuction />} />
         <Route path="/ai" element={<AI />} />
         <Route path="/study-goal" element={<StudyGoal />} />
         <Route path="/blog" element={<Blog />} />
@@ -53,7 +55,6 @@ function App() {
           path="/discover-items/:DISCOVERID"
           element={<DiscoverNFTDetails />}
         />
-
         <Route path="/material/:ITEMID" element={<Material />} />
         <Route path="/author/:AUTHORUSERNAME" element={<Author />} />
         <Route path="/help-center/:CATAGORY" element={<CatagoryQuestions />} />
@@ -66,6 +67,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 

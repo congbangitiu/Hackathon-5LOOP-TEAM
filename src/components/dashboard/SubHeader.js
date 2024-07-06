@@ -1,16 +1,12 @@
 import { useState } from "react";
-
-import { Link } from "react-router-dom";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import { useState } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "react-router-dom";
+import Dropdown from "react-bootstrap/Dropdown";
 import NotificationData from "../../data/dashboard/notification-data.json";
 import SearchForm from "../header/SearchForm";
-
 import useStickyHeader from "../header/StickyHeader";
-const BrandLogo = "img/core-img/db-logo.png";
 
+const BrandLogo = "img/core-img/db-logo.png";
 
 const SubHeader = (props) => {
   const {

@@ -2,10 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const CollectionContent = (props) => {
-  const {
-    filteredDocument = [],
-    setFilteredDocument = () => {},
-  } = props;
+  const { filteredDocument = [], setFilteredDocument = () => {} } = props;
 
   const [count, setCount] = useState(9);
   const [noMorePost, setNoMorePost] = useState(false);
