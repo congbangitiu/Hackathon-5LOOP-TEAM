@@ -1,20 +1,96 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import DashboardHeader from "../components/dashboard/DashboardHeader";
+import DashboardSidebar from "../components/dashboard/DashboardSidebar";
 import MyCollectionData from "../data/dashboard/collection-data.json";
 
+import { useWallet } from "@solana/wallet-adapter-react";
+
 const DashboardCollection = () => {
+  const [currentAddress, setCurrentAddress] = useState("");
+  const [myCollection, setMyCollection] = useState([]);
+  const [currentBalance, setCurrentBalance] = useState(0);
+  const isDashboardPage = true;
+  const { publicKey } = useWallet();
+
   const [count, setCount] = useState(6);
   const [noMorePost, setNoMorePost] = useState(false);
-  const countSlice = MyCollectionData.slice(0, count);
 
   const handleLoadMore = () => {
     setCount(count + 3);
-    if (count >= MyCollectionData.length) {
+    if (count >= filteredDocument.length) {
       setNoMorePost(true);
     }
   };
+
+  const fetchWalletBalance = () => {
+    if (publicKey) {
+      const address = publicKey.toBase58();
+      setCurrentAddress(address);
+
+      if (address) {
+        fetch(
+          `https://api.shyft.to/sol/v1/wallet/balance?network=devnet&wallet=${address}`,
+          {
+            method: "GET",
+            headers: {
+              "x-api-key": process.env.REACT_APP_API_KEY,
+            },
+          }
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            if (
+              data.success &&
+              data.result &&
+              data.result.balance !== undefined
+            ) {
+              setCurrentBalance(data.result.balance);
+            } else {
+              console.error("Invalid response structure", data);
+            }
+          })
+          .catch((error) => console.log(error));
+      }
+    } else {
+      setCurrentAddress("");
+      setCurrentBalance(0);
+    }
+  };
+
+  const fetchMyCollection = () => {
+    if (publicKey) {
+      const address = publicKey.toBase58();
+      setCurrentAddress(address);
+
+      fetch(
+        `https://api.shyft.to/sol/v1/wallet/collections?network=devnet&tx_num=10&account=${address}`,
+        {
+          method: "GET",
+          headers: {
+            "x-api-key": process.env.REACT_APP_API_KEY,
+          },
+        }
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          if (data && data[0] && data[0].result) {
+            setMyCollection(data[0].result.collections);
+          } else {
+            console.error("Invalid response structure", data);
+          }
+        })
+        .catch((error) => console.log(error));
+    }
+  };
+
+  useEffect(() => {
+    fetchWalletBalance();
+    fetchMyCollection();
+  }, [publicKey]);
+
+  const [filteredDocument, setFilteredDocument] = useState(myCollection);
+  const countSlice = filteredDocument.slice(0, count);
 
   const CollectionCards = countSlice.map((elem, index) => (
     <div className="col-12 col-md-6 col-xxl-4" key={index}>
@@ -73,7 +149,15 @@ const DashboardCollection = () => {
 
   return (
     <>
-      <DashboardHeader />
+      <DashboardSidebar
+        isDashboardPage={isDashboardPage}
+        originalDocument={MyCollectionData} //myCollection
+        currentAddress={currentAddress}
+        setCurrentAddress={setCurrentAddress}
+        currentBalance={currentBalance}
+        filteredDocument={filteredDocument}
+        setFilteredDocument={setFilteredDocument}
+      />
 
       <div className="admin-wrapper">
         <div className="container">

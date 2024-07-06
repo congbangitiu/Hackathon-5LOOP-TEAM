@@ -8,7 +8,13 @@ import FuntoNavbar from "./Nav";
 import SearchForm from "./SearchForm";
 import useStickyHeader from "./StickyHeader";
 
-export default function Header() {
+export default function Header(props) {
+  const {
+    originalDocument = [],
+    filteredDocument = [],
+    setFilteredDocument = () => {},
+  } = props;
+
   const brandLogo = "img/core-img/logo.png";
   const darkLogo = "img/core-img/logo-white.png";
 
@@ -45,7 +51,11 @@ export default function Header() {
             {/* Header Meta */}
             <div className="header-meta d-flex align-items-center ms-lg-auto">
               {/* Search Form */}
-              <SearchForm />
+              <SearchForm
+                originalDocument={originalDocument}
+                filteredDocument={filteredDocument}
+                setFilteredDocument={setFilteredDocument}
+              />
 
               {/* User Dropdown */}
               <NavDropDown

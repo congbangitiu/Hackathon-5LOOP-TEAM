@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import { Link } from "react-router-dom";
@@ -9,6 +10,23 @@ import Header from "../components/header/Header";
 import TopSellerData from "../data/top-seller.json";
 
 const TopSeller = () => {
+  useEffect(() => {
+    fetch(
+      "https://api.shyft.to/sol/v1/marketplace/active_sellers?network=devnet&marketplace_address=JDn3zWPKcTd1qurNNjvr8YGYcVrdm8i7eHam7M6DQggo",
+      {
+        method: "GET",
+        headers: {
+          "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        // setFilteredDocument(data[0].result);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
   const TopSellerCards = TopSellerData.slice(0, 15).map((element, index) => (
     <div className="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4" key={index}>
       <div className="nft-card card seller-card shadow-sm">

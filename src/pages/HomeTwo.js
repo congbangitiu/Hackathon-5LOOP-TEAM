@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import CTA from "../components/CTA";
 import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
@@ -5,11 +6,35 @@ import Header from "../components/header/Header";
 import HeroTwo from "../components/HeroTwo";
 import PopularCollection from "../components/PopularCollection";
 import Process from "../components/Process";
+import PopularNFTData from "../data/popular-nft.json";
 
 export default function HomeTwo() {
+  const [filteredDocument, setFilteredDocument] = useState(PopularNFTData);
+
+  useEffect(() => {
+    fetch(
+      "https://api.shyft.to/sol/v2/marketplace/active_listings?network=devnet&marketplace_address=JDn3zWPKcTd1qurNNjvr8YGYcVrdm8i7eHam7M6DQggo&sort_by=list_date&sort_order=desc&size=9",
+      {
+        method: "GET",
+        headers: {
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setFilteredDocument(data[0].result);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <>
-      <Header />
+      <Header
+        originalDocument={PopularNFTData}
+        filteredDocument={filteredDocument}
+        setFilteredDocument={setFilteredDocument}
+      />
 
       <HeroTwo
         heading="Exchange for better study. Welcome to NFT-BStudy"
@@ -25,7 +50,11 @@ export default function HomeTwo() {
       />
       <Divider />
 
-      <PopularCollection title="Trending in the last" />
+      <PopularCollection
+        title="Trending in the last"
+        PopularNFTData={PopularNFTData}
+        filteredDocument={filteredDocument}
+      />
 
       <Divider />
 

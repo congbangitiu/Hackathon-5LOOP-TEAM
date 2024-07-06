@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import CollectionData from "../../data/collection.json";
+const CollectionContent = (props) => {
+  const { filteredDocument = [], setFilteredDocument = () => {} } = props;
 
-const CollectionContent = () => {
   const [count, setCount] = useState(9);
   const [noMorePost, setNoMorePost] = useState(false);
-  const countSlice = CollectionData.slice(0, count);
+  const countSlice = filteredDocument.slice(0, count);
 
   const handleLoadMore = () => {
     setCount(count + 3);
-    if (count >= CollectionData.length) {
+    if (count >= filteredDocument.length) {
       setNoMorePost(true);
     }
   };
@@ -56,13 +56,15 @@ const CollectionContent = () => {
               </h5>
             </div>
             <div className="col-4 text-end">
-              <Link
-                className="btn btn-minimal hover-primary"
-                to={elem.buttonURL}
-              >
-                {elem.buttonText}
-                <i className="ms-1 bi bi-arrow-right" />
-              </Link>
+              {elem.buttonURL && (
+                <Link
+                  className="btn btn-minimal hover-primary"
+                  to={elem.buttonURL}
+                >
+                  {elem.buttonText}
+                  <i className="ms-1 bi bi-arrow-right" />
+                </Link>
+              )}
             </div>
           </div>
         </div>
