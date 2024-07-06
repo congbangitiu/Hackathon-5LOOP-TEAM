@@ -27,6 +27,7 @@ const SendTransactionButton = ({
           wallet
         );
         setHash(signature);
+        console.log(signature);
       } catch (error) {
         console.error(error);
       }
@@ -42,7 +43,7 @@ const SendTransactionButton = ({
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
 
-  console.log(signature);
+  
 
   return (
     <div className="container">
