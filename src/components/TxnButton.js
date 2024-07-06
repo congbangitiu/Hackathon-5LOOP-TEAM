@@ -60,7 +60,7 @@ const SendTransactionButton = ({
           <div className="col-6">
             {hash ? (
               <a
-                href={`https://solscan.io/tx/${hash}?cluster=testnet`}
+                href={`https://solscan.io/tx/${hash}?cluster=devnet`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

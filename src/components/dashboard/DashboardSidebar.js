@@ -5,6 +5,7 @@ import SubHeader from "./SubHeader";
 
 import truncateNumber from "../../utils/truncateNumber";
 import truncateText from "./../../utils/truncateText";
+import AirdropButton from "../AirdropButton";
 
 const DashboardSidebar = (props) => {
   const {
@@ -96,6 +97,7 @@ const DashboardSidebar = (props) => {
             </div>
 
             {/* Balance */}
+            <AirdropButton />
             <div className="card shadow mb-5">
               <div className="card-body text-center p-4">
                 <h6 className="mb-1">{balanceCard[0].title}</h6>
