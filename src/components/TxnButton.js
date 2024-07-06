@@ -34,10 +34,15 @@ const SendTransactionButton = ({
     } else if (message) {
       const data = new TextEncoder().encode(message);
       console.log(data);
-      const signedMsg = await wallet.signMessage(data);
-      setSignature(signedMsg);
+      const signedMsg = await wallet.signMessage(data, "utf8");
+      const hexSign = btoa(String.fromCharCode.apply(null, signedMsg));
+      setSignature(hexSign);
+
+      return hexSign;
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
+
+  console.log(signature);
 
   return (
     <div className="container">
@@ -51,11 +56,11 @@ const SendTransactionButton = ({
             {text}
           </button>
         </div>
-        {(hash || signature) && (
+        {log ? (
           <div className="col-6">
             {hash ? (
               <a
-                href={`https://solscan.io/tx/${hash}?cluster=testnet`}
+                href={`https://solscan.io/tx/${hash}?cluster=devnet`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -65,6 +70,8 @@ const SendTransactionButton = ({
               <p className="text-break">{signature}</p>
             )}
           </div>
+        ) : (
+          ""
         )}
       </div>
     </div>
