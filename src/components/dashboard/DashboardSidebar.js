@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-import { useWallet } from "@solana/wallet-adapter-react";
 import { NavLink } from "react-router-dom";
 import SubHeader from "./SubHeader";
 
-import truncateText from "./../../utils/truncateText";
 import truncateNumber from "../../utils/truncateNumber";
+import truncateText from "./../../utils/truncateText";
 
 const DashboardSidebar = (props) => {
   const {
