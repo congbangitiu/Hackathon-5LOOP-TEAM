@@ -32,6 +32,25 @@ const Author = () => {
   const [modalShow2, setModalShow2] = useState(false);
   const [modalShow3, setModalShow3] = useState(false);
 
+  const [authorCollections, setAuthorCollections] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      `https://api.shyft.to/sol/v2/nft/read_all?network=devnet&address=${authorUsername}&size=9`,
+      {
+        method: "GET",
+        headers: {
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setAuthorCollections(data.result.nfts);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
   const selectSortBy = useRef();
   const selectCatagories = useRef();
 

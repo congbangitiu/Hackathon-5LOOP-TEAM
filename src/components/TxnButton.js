@@ -37,9 +37,12 @@ const SendTransactionButton = ({
       const signedMsg = await wallet.signMessage(data, "utf8");
       const hexSign = btoa(String.fromCharCode.apply(null, signedMsg));
       setSignature(hexSign);
+
       return hexSign;
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
+
+  console.log(signature);
 
   return (
     <div className="container">

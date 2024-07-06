@@ -1,6 +1,8 @@
 export default function AboutContent(props) {
     const { textSectionOrder, textSection, imageOrder, image } = props;
 
+    console.log(props);
+
     return(
         <div className="container">
             <div className="row g-4 g-xl-5 align-items-center justify-content-between">

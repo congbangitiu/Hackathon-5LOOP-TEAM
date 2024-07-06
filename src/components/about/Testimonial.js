@@ -43,16 +43,16 @@ export default function Testimonial(props) {
                 <div className="card-body p-4">
                     <div className="client-info d-flex align-items-center">
                         <div className="client-thumb rounded-circle me-1 position-relative">
-                            <img className="rounded-circle" src={`${process.env.PUBLIC_URL}/${item.image}`} alt={item.name} />
+                            <img className="rounded-circle" src={`${process.env.PUBLIC_URL}/${item?.image}`} alt={item?.name} />
                         </div>
                         <div className="client-name">
-                            <h6 className="fz-16 mb-0">{item.name}</h6>
-                            <p className="mb-0 fz-14">@{item.username}</p>
+                            <h6 className="fz-16 mb-0">{item?.name}</h6>
+                            <p className="mb-0 fz-14">@{item?.username}</p>
                         </div>
                     </div>
                     <div className="ratings text-warning mt-4 mb-3 fz-14">
                         {(() => {
-                            switch (item.ratings) {
+                            switch (item?.ratings) {
                                 case 1: return (
                                     <>
                                         <i className="bi bi-star-fill" />
@@ -146,7 +146,7 @@ export default function Testimonial(props) {
                             }
                         })()}
                     </div>
-                    <p className="text-dark mb-0 fw-bold">{item.testimonial}</p>
+                    <p className="text-dark mb-0 fw-bold">{item?.testimonial}</p>
                 </div>
             </div>
         </div>

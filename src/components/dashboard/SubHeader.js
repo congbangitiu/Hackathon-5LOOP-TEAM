@@ -5,7 +5,6 @@ import Dropdown from "react-bootstrap/Dropdown";
 import NotificationData from "../../data/dashboard/notification-data.json";
 import SearchForm from "../header/SearchForm";
 import useStickyHeader from "../header/StickyHeader";
-import { Link } from "react-router-dom";
 
 const BrandLogo = "img/core-img/db-logo.png";
 

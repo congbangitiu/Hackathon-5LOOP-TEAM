@@ -5,14 +5,14 @@ export default function AboutCard() {
         <div className="col-12 col-sm-6 col-xl-3" key={index} >
             <div className="card about-card shadow-sm">
                 <div className="card-body py-4">
-                    <div className={`icon bg-${elem.iconColor}`} >
-                        <i className={`bi ${elem.icon}`} />
+                    <div className={`icon bg-${elem?.iconColor}`} >
+                        <i className={`bi ${elem?.icon}`} />
                     </div>
                     <h4 className="mb-3">
-                        {elem.title}
+                        {elem?.title}
                     </h4>
                     <p className="mb-0">
-                        {elem.subTitle}
+                        {elem?.subTitle}
                     </p>
                 </div>
             </div>

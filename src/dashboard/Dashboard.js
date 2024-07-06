@@ -8,6 +8,7 @@ const Dashboard = () => {
   const [activityHistory, setActivityHistory] = useState([]);
   const [currentAddress, setCurrentAddress] = useState("");
   const [currentBalance, setCurrentBalance] = useState(0);
+  const [authorCollections, setAuthorCollections] = useState([]);
 
   const isDashboardPage = true;
   const { publicKey } = useWallet();
@@ -73,14 +74,30 @@ const Dashboard = () => {
     }
   };
 
+  const fetchWalletNFT = () => {
+    fetch(
+      `https://api.shyft.to/sol/v2/nft/read_all?network=devnet&address=${currentAddress}&size=9`,
+      {
+        method: "GET",
+        headers: {
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setAuthorCollections(data.result.nfts);
+      })
+      .catch((error) => console.log(error));
+  };
+
   useEffect(() => {
     fetchWalletBalance();
     fetchActivityHistory();
+    fetchWalletNFT();
   }, [publicKey]);
 
   const [filteredDocument, setFilteredDocument] = useState(activityHistory);
-
-  console.log(currentBalance);
 
   return (
     <>
