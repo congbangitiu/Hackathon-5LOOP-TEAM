@@ -187,7 +187,3 @@ Project Link: [https://github.com/Nhathuy1305/Hackathon-5LOOP-TEAM](https://gith
 [forks-url]: https://github.com/itzmealvin/PDM_mindfulNESS_PC/network/members
 [issues-shield]: https://img.shields.io/github/issues/itzmealvin/PDM_mindfulNESS_PC.svg?style=for-the-badge
 [issues-url]: https://github.com/itzmealvin/PDM_mindfulNESS_PC/issues
-
-```
-
-```
