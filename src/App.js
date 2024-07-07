@@ -20,6 +20,7 @@ import TopSeller from "./pages/TopSeller";
 
 import Author from "./pages/Author";
 import CreateNew from "./pages/CreateNew";
+import UpgradeNFT from "./pages/UpgradeNFT";
 
 import Blog from "./pages/Blog";
 
@@ -63,6 +64,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/upgrade-nft" element={<UpgradeNFT />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

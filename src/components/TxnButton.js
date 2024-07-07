@@ -39,7 +39,8 @@ const SendTransactionButton = ({
       const hexSign = btoa(String.fromCharCode.apply(null, signedMsg));
       setSignature(hexSign);
 
-      return hexSign;
+      // return hexSign
+      callback(hexSign);
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
 
