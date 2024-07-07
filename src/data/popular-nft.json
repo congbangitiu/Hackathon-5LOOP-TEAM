@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Summary Midterm IU #321",
-    "image": "img/bg-img/25.jpg",
+    "image": "img/course-img/OOP/3.jpg",
     "currentPrice": "0.06 SOL",
     "authorName": "StudyGenius",
     "authorAvater": "img/bg-img/u1.jpg",
@@ -34,7 +34,7 @@
   {
     "id": 2,
     "title": "Exercise Final IU #742",
-    "image": "img/bg-img/26.jpg",
+    "image": "img/course-img/DSA/3.png",
     "currentPrice": "0.01 SOL",
     "authorName": "EduWeb",
     "authorAvater": "img/bg-img/u2.jpg",
@@ -66,7 +66,7 @@
   {
     "id": 3,
     "title": "Note Midterm IU #983",
-    "image": "img/bg-img/27.jpg",
+    "image": "img/course-img/DSDV/2.jpg",
     "currentPrice": "0.06 SOL",
     "authorName": "AceAcademics",
     "authorAvater": "img/bg-img/u3.jpg",
@@ -97,7 +97,7 @@
   {
     "id": 4,
     "title": "Summary Final IU #453",
-    "image": "img/bg-img/28.jpg",
+    "image": "img/course-img/CA/2.jpg",
     "currentPrice": "0.61 SOL",
     "authorName": "SmartStudy",
     "authorAvater": "img/bg-img/u4.jpg",
@@ -128,7 +128,7 @@
   {
     "id": 5,
     "title": "Exercise Final IU #127",
-    "image": "img/bg-img/29.jpg",
+    "image": "img/course-img/Cal1/2.png",
     "currentPrice": "0.11 SOL",
     "authorName": "StudyGenius",
     "authorAvater": "img/bg-img/u1.jpg",
@@ -159,7 +159,7 @@
   {
     "id": 6,
     "title": "Note Midterm IU #334",
-    "image": "img/bg-img/30.jpg",
+    "image": "img/course-img/CN/1.jpg",
     "currentPrice": "0.13 SOL",
     "authorName": "EduWeb",
     "authorAvater": "img/bg-img/u2.jpg",
@@ -190,7 +190,7 @@
   {
     "id": 7,
     "title": "Summary Final IU #789",
-    "image": "img/bg-img/31.jpg",
+    "image": "img/course-img/Crit/2.jpg",
     "currentPrice": "0.11 SOL",
     "authorName": "AceAcademics",
     "authorAvater": "img/bg-img/u3.jpg",
@@ -221,7 +221,7 @@
   {
     "id": 8,
     "title": "Exercise Midterm IU #542",
-    "image": "img/bg-img/32.jpg",
+    "image": "img/course-img/DA/1.png",
     "currentPrice": "0.01 SOL",
     "authorName": "SmartStudy",
     "authorAvater": "img/bg-img/u4.jpg",
@@ -252,7 +252,7 @@
   {
     "id": 9,
     "title": "Note Final IU #643",
-    "image": "img/bg-img/33.jpg",
+    "image": "img/course-img/DM/1.webp",
     "currentPrice": "0.06 SOL",
     "authorName": "StudyGenius",
     "authorAvater": "img/bg-img/u1.jpg",
