@@ -19,6 +19,7 @@ const UpgradeNFT = () => {
   const [isTransactionReady, setIsTransactionReady] = useState(false);
   const [messageSigned, setMessageSigned] = useState(false);
   const [signature, setSignature] = useState("");
+  const [tokenAddress, setTokenAddress] = useState("");
 
   const computeSHA256 = (file) => {
     const reader = new FileReader();
@@ -76,6 +77,7 @@ const UpgradeNFT = () => {
 
       if (status === 200 && data.tx_id) {
         console.log('Upgrade successful:', JSON.stringify(data));
+        setTokenAddress(inputTitle);
         return data;
       } else {
         console.log('Upgrade failed:', JSON.stringify(data));
@@ -202,6 +204,13 @@ const UpgradeNFT = () => {
                     )}
                   </div>
                 </div>
+                {tokenAddress && (
+                  <div className="col-12 mt-3">
+                    <a href={`https://app.darkblock.io/platform/sol-devnet/embed/viewer/${tokenAddress}`} className="btn btn-success rounded-pill w-100" target="_blank">
+                      View Upgraded NFT
+                    </a>
+                  </div>
+                )}
               </Form>
             </div>
           </div>
