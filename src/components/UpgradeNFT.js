@@ -53,20 +53,35 @@ const UpgradeNFT = () => {
     form.append("darkblock_signature", signature);
     form.append("creator_address", publicKey.toString());
 
+    const apiKey = process.env.REACT_APP_DB_API_KEY;
+    const url = `https://api.darkblock.io/v1/darkblock/upgrade?apikey=${apiKey}`;
+
+    // console.log("Sending request with data:", {
+    //   nft_token: inputTitle,
+    //   nft_platform: "Solana-Devnet",
+    //   nft_standard: "Metaplex",
+    //   darkblock_signature: signature,
+    //   creator_address: publicKey.toString(),
+    //   file_details: {
+    //     name: file.name,
+    //     type: file.type,
+    //     size: file.size
+    //   }
+    // });
+
     try {
-      const response = await axios.post(
-        "https://api.darkblock.io/v1/darkblock/upgrade",
-        form,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-            apikey: process.env.REACT_APP_DB_API_KEY,
-          },
-        }
-      );
-      console.log("Response from API:", response.data);
+      const response = await axios.post(url, form);
+
+      const { data, status } = response;
+
+      if (status === 200 && data.tx_id) {
+        console.log('Upgrade successful:', JSON.stringify(data));
+        return data;
+      } else {
+        console.log('Upgrade failed:', JSON.stringify(data));
+      }
     } catch (error) {
-      console.error("Failed to send the request:", error);
+      console.error('Upgrade failed:', error.response ? error.response.data : error.message);
     }
   };
 
