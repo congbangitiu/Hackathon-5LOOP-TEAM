@@ -73,6 +73,11 @@ export default function Header(props) {
                     icon: "bi-tools",
                   },
                   {
+                    text: "Upgrade NFT",
+                    url: "/upgrade-nft",
+                    icon: "bi-tools",
+                  },
+                  {
                     text: "Collections",
                     url: "/my-collection",
                     icon: "bi-collection",
