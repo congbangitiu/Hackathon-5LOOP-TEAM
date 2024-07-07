@@ -1,7 +1,6 @@
 import axios from "axios";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
-
 import { useWallet } from "@solana/wallet-adapter-react";
 import $ from "jquery";
 import SendTransactionButton from "./TxnButton";
@@ -11,7 +10,7 @@ require("jquery-nice-select");
 
 const UpgradeNFT = () => {
   const { publicKey } = useWallet();
-  
+
   const [inputTitle, setInputTitle] = useState("");
   const [file, setFile] = useState(null);
   const [fileValid, setFileValid] = useState(true);
@@ -25,10 +24,12 @@ const UpgradeNFT = () => {
     const reader = new FileReader();
     reader.onload = async (event) => {
       const arrayBuffer = event.target.result;
-      const hashBuffer = await crypto.subtle.digest('SHA-256', arrayBuffer);
+      const hashBuffer = await crypto.subtle.digest("SHA-256", arrayBuffer);
       const hashArray = Array.from(new Uint8Array(hashBuffer));
-      const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-      console.log('SHA256 Hash:', hashHex);
+      const hashHex = hashArray
+        .map((b) => b.toString(16).padStart(2, "0"))
+        .join("");
+      console.log("SHA256 Hash:", hashHex);
       setHash(hashHex);
       updateTransactionReady();
     };
@@ -40,13 +41,29 @@ const UpgradeNFT = () => {
       alert("Transaction is not ready.");
       return;
     }
-  
+    sendRequest();
+  };
+
+  const sendRequest = async () => {
+    const form = new FormData();
+    form.append("file", file);
+    form.append("nft_token", inputTitle);
+    form.append("nft_platform", "Solana-Devnet");
+    form.append("nft_standard", "Metaplex");
+    form.append("darkblock_signature", signature);
+    form.append("creator_address", publicKey.toString());
+
     try {
-      const response = await axios.post('https://api.darkblock.io/v1/darkblock/upgrade', {
-        token: inputTitle,
-        signature: signature,
-        publicKey: publicKey.toString()
-      });
+      const response = await axios.post(
+        "https://api.darkblock.io/v1/darkblock/upgrade",
+        form,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+            apikey: process.env.REACT_APP_DB_API_KEY,
+          },
+        }
+      );
       console.log("Response from API:", response.data);
     } catch (error) {
       console.error("Failed to send the request:", error);
@@ -55,6 +72,7 @@ const UpgradeNFT = () => {
 
   const handleSignMessage = (hexSign) => {
     setSignature(hexSign);
+    setMessageSigned(true);
     setIsTransactionReady(true);
   };
 
@@ -93,7 +111,6 @@ const UpgradeNFT = () => {
     console.log("Proceeding with transaction...");
   };
 
-
   return (
     <div className="create-new-wrapper">
       <div className="container">
@@ -130,7 +147,9 @@ const UpgradeNFT = () => {
                   {/* Token Address */}
                   <div className="col-12">
                     <Form.Group className="mb-4">
-                      <Form.Label className="mb-2 fz-16">Token Address*</Form.Label>
+                      <Form.Label className="mb-2 fz-16">
+                        Token Address*
+                      </Form.Label>
                       <Form.Control
                         id="title"
                         type="text"
@@ -152,7 +171,7 @@ const UpgradeNFT = () => {
                     {!messageSigned ? (
                       <SendTransactionButton
                         callback={handleSignMessage}
-                        text="Sign Message"
+                        text="Sign Upgrade"
                         message={`Solana-Devnet${inputTitle}${hash}`}
                         log={false}
                       />

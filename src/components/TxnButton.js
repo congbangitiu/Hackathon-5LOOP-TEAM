@@ -26,12 +26,13 @@ const SendTransactionButton = ({
           encodedTransaction,
           wallet
         );
+        console.log(await connection.getSignatureStatus(signature));
+        connection.onSignature(signature, callback, "finalized");
         setHash(signature);
         console.log(signature);
       } catch (error) {
         console.error(error);
       }
-      connection.onSignature(hash, callback, "finalized");
     } else if (message) {
       const data = new TextEncoder().encode(message);
       console.log(data);
@@ -43,8 +44,6 @@ const SendTransactionButton = ({
       callback(hexSign);
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
-
-  
 
   return (
     <div className="container">
