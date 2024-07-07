@@ -21,12 +21,10 @@ import HomeTwo from "./pages/HomeTwo";
 import StudyGoal from "./pages/StudyGoal";
 import TopSeller from "./pages/TopSeller";
 
-import Author from "./pages/Author";
-import CreateNew from "./pages/CreateNew";
 import UpgradeNFT from "./pages/UpgradeNFT";
 
-import CollectionDetails from "./pages/CollectionDetails";
 import Blog from "./pages/Blog";
+import CollectionDetails from "./pages/CollectionDetails";
 
 import Contact from "./pages/Contact";
 import License from "./pages/License";
