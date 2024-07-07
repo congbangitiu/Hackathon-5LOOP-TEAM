@@ -2,10 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const CollectionContent = (props) => {
-  const {
-    filteredDocument = [],
-    setFilteredDocument = () => {},
-  } = props;
+  const { filteredDocument = [], setFilteredDocument = () => {} } = props;
 
   const [count, setCount] = useState(9);
   const [noMorePost, setNoMorePost] = useState(false);
@@ -22,7 +19,7 @@ const CollectionContent = (props) => {
     <div className="col-12 col-sm-6 col-lg-4" key={index}>
       <div className="catagory-card card shadow-sm">
         <div className="card-body">
-          <div className="row gx-1">
+          <div className="row gx-1" style={{ height: "350px" }}>
             <div className="col-6">
               <img
                 className="rounded"
@@ -49,7 +46,7 @@ const CollectionContent = (props) => {
             </div>
           </div>
 
-          <div className="row gx-2 mt-3">
+          <div className="row gx-2 mt-3" style={{ height: "50px" }}>
             <div className="col-8">
               <h5 className="mb-0 d-flex align-items-center">
                 {elem.name}
@@ -62,7 +59,7 @@ const CollectionContent = (props) => {
               {elem.buttonURL && (
                 <Link
                   className="btn btn-minimal hover-primary"
-                  to={elem.buttonURL}
+                  to={`/collections/${elem.id}`}
                 >
                   {elem.buttonText}
                   <i className="ms-1 bi bi-arrow-right" />

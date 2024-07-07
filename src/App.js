@@ -12,7 +12,10 @@ import DiscoverNFTDetails from "./components/DiscoverNFTDetails";
 import Dashboard from "./dashboard/Dashboard";
 import DashboardCollection from "./dashboard/MyCollection";
 import DashboardNotification from "./dashboard/Notifications";
+import About from "./pages/About";
+import Author from "./pages/Author";
 import Collections from "./pages/Collections";
+import CreateNew from "./pages/CreateNew";
 import ExploreTwo from "./pages/ExploreTwo";
 import HomeTwo from "./pages/HomeTwo";
 import StudyGoal from "./pages/StudyGoal";
@@ -22,6 +25,7 @@ import Author from "./pages/Author";
 import CreateNew from "./pages/CreateNew";
 import UpgradeNFT from "./pages/UpgradeNFT";
 
+import CollectionDetails from "./pages/CollectionDetails";
 import Blog from "./pages/Blog";
 
 import Contact from "./pages/Contact";
@@ -32,6 +36,7 @@ import Terms from "./pages/Terms";
 
 import CatagoryQuestions from "./components/helpCenter/CatagoryQuestions";
 import AI from "./pages/AI";
+import ExploreCollection from "./pages/ExploreCollection";
 import HelpCenter from "./pages/HelpCenter";
 import Material from "./pages/Material";
 import Test from "./pages/Test";
@@ -43,7 +48,9 @@ function App() {
         <Route path="/" index element={<HomeTwo />} />
         <Route path="/top-creator" element={<TopSeller />} />
         <Route path="/explore" element={<ExploreTwo />} />
+        <Route path="/explore/:id" element={<ExploreCollection />} />
         <Route path="/collections" element={<Collections />} />
+        <Route path="/collections/:id" element={<CollectionDetails />} />
         <Route path="/ai" element={<AI />} />
         <Route path="/study-goal" element={<StudyGoal />} />
         <Route path="/blog" element={<Blog />} />
@@ -65,7 +72,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/test" element={<Test />} />
         <Route path="/upgrade-nft" element={<UpgradeNFT />} />
-
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 

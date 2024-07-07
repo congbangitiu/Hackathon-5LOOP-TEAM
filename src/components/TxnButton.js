@@ -45,6 +45,8 @@ const SendTransactionButton = ({
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
 
+  console.log(signature);
+
   return (
     <div className="container">
       <div className="row py-1">

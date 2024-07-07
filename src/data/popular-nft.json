@@ -27,7 +27,9 @@
       "<p>Perfect for quick review before the exam. Covers fundamental OOP principles.</p>",
       "<ul><li>Classes and Objects</li><li>Inheritance</li><li>Polymorphism</li><li>Encapsulation</li></ul>",
       "<p className='mb-0'>Gain a solid understanding of OOP to excel in your midterms.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
+
   },
   {
     "id": 2,
@@ -57,7 +59,9 @@
       "<p>Topics covered: arrays, linked lists, trees, graphs, sorting, and searching algorithms.</p>",
       "<ul><li>Array Operations</li><li>Tree Traversal</li><li>Graph Algorithms</li></ul>",
       "<p className='mb-0'>Enhance your problem-solving skills for the final exams.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
+
   },
   {
     "id": 3,
@@ -87,7 +91,8 @@
       "<p>Covers data cleaning, exploratory data analysis, and visualization best practices.</p>",
       "<ul><li>Python & R</li><li>Data Cleaning</li><li>Data Visualization</li></ul>",
       "<p className='mb-0'>Prepare thoroughly for your midterms with these detailed notes.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
   },
   {
     "id": 4,
@@ -117,7 +122,8 @@
       "<p>Covers essential database management principles and practices.</p>",
       "<ul><li>Relational Databases</li><li>SQL Queries</li><li>Database Design</li></ul>",
       "<p className='mb-0'>Prepare effectively for your final exams with this comprehensive summary.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
   },
   {
     "id": 5,
@@ -147,7 +153,8 @@
       "<p>Topics covered: classification, clustering, and association rule mining.</p>",
       "<ul><li>Classification</li><li>Clustering</li><li>Association Rule Mining</li></ul>",
       "<p className='mb-0'>Enhance your data mining skills and prepare thoroughly for the finals.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
   },
   {
     "id": 6,
@@ -177,7 +184,8 @@
       "<p>Covers essential topics for understanding digital logic design.</p>",
       "<ul><li>Logic Gates</li><li>Combinational Circuits</li><li>Sequential Circuits</li></ul>",
       "<p className='mb-0'>Prepare thoroughly for your midterms with these detailed notes.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
   },
   {
     "id": 7,
@@ -207,7 +215,8 @@
       "<p>Covers essential topics for understanding Calculus 1.</p>",
       "<ul><li>Limits</li><li>Derivatives</li><li>Integrals</li></ul>",
       "<p className='mb-0'>Prepare thoroughly for your final exams with this comprehensive summary.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
   },
   {
     "id": 8,
@@ -237,7 +246,8 @@
       "<p>Topics covered: user interface design, database integration, and network communication.</p>",
       "<ul><li>Android Development</li><li>iOS Development</li><li>App Architecture</li></ul>",
       "<p className='mb-0'>Enhance your skills and prepare thoroughly for your midterms.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
   },
   {
     "id": 9,
@@ -267,6 +277,7 @@
       "<p>Covers essential topics for understanding computer networks.</p>",
       "<ul><li>Network Layers</li><li>Protocols</li><li>Communication Models</li></ul>",
       "<p className='mb-0'>Prepare thoroughly for your final exams with these detailed notes.</p>"
-    ]
+    ],
+    "link":"https://drive.google.com/file/d/1zgmvAGSDbMP4xH0cFlH7wjVz5ZACLklQ/view"
   }
 ]

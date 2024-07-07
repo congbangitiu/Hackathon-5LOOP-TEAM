@@ -3,12 +3,12 @@
     "id": 1,
     "name": "Object-Oriented Programming",
     "totalItems": 258,
-    "firstImage": "img/bg-img/39.jpg",
-    "secondImage": "img/bg-img/6.jpg",
-    "thirdImage": "img/bg-img/38.jpg",
-    "fourthImage": "img/bg-img/10.jpg",
+    "firstImage": "img/course-img/OOP/1.jpg",
+    "secondImage": "img/course-img/OOP/2.jpg",
+    "thirdImage": "img/course-img/OOP/3.jpg",
+    "fourthImage": "img/course-img/OOP/4.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/1"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "thirdImage": "img/bg-img/34.jpg",
     "fourthImage": "img/bg-img/27.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/2"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "thirdImage": "img/bg-img/20.jpg",
     "fourthImage": "img/bg-img/36.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/3"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "thirdImage": "img/bg-img/38.jpg",
     "fourthImage": "img/bg-img/10.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/4"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "thirdImage": "img/bg-img/34.jpg",
     "fourthImage": "img/bg-img/27.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/5"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "thirdImage": "img/bg-img/20.jpg",
     "fourthImage": "img/bg-img/36.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/6"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "thirdImage": "img/bg-img/38.jpg",
     "fourthImage": "img/bg-img/10.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/7"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "thirdImage": "img/bg-img/34.jpg",
     "fourthImage": "img/bg-img/27.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/8"
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "thirdImage": "img/bg-img/20.jpg",
     "fourthImage": "img/bg-img/36.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/9"
   },
   {
     "id": 10,
@@ -107,7 +107,7 @@
     "thirdImage": "img/bg-img/38.jpg",
     "fourthImage": "img/bg-img/10.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/10"
   },
   {
     "id": 11,
@@ -118,7 +118,7 @@
     "thirdImage": "img/bg-img/34.jpg",
     "fourthImage": "img/bg-img/27.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/11"
   },
   {
     "id": 12,
@@ -129,29 +129,29 @@
     "thirdImage": "img/bg-img/20.jpg",
     "fourthImage": "img/bg-img/36.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/12"
   },
   {
     "id": 13,
-    "name": "Web App Development",
+    "name": "Web Application Development",
     "totalItems": 103,
     "firstImage": "img/bg-img/39.jpg",
     "secondImage": "img/bg-img/6.jpg",
     "thirdImage": "img/bg-img/38.jpg",
     "fourthImage": "img/bg-img/10.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/13"
   },
   {
     "id": 14,
-    "name": "Mobile App Development",
+    "name": "Mobile Application Development",
     "totalItems": 320,
     "firstImage": "img/bg-img/35.jpg",
     "secondImage": "img/bg-img/25.jpg",
     "thirdImage": "img/bg-img/34.jpg",
     "fourthImage": "img/bg-img/27.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/14"
   },
   {
     "id": 15,
@@ -162,7 +162,7 @@
     "thirdImage": "img/bg-img/20.jpg",
     "fourthImage": "img/bg-img/36.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/15"
   },
   {
     "id": 16,
@@ -173,6 +173,6 @@
     "thirdImage": "img/bg-img/38.jpg",
     "fourthImage": "img/bg-img/10.jpg",
     "buttonText": "View All",
-    "buttonURL": "/explore2"
+    "buttonURL": "/explore/16"
   }
 ]

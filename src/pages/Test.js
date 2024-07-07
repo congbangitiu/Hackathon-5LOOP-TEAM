@@ -50,12 +50,14 @@ function Test() {
             text="Send Transaction"
             encodedTransaction={txn}
             callback={callback}
+            log={true}
           />{" "}
           <SendTransactionButton
             key="msg"
             text="Sign Message"
             message={msg}
             callback={callback}
+            log={true}
           />
         </div>
       </div>

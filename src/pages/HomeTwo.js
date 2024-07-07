@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CTA from "../components/CTA";
 import Divider from "../components/Divider";
 import Footer from "../components/footer/Footer";
@@ -11,22 +11,22 @@ import PopularNFTData from "../data/popular-nft.json";
 export default function HomeTwo() {
   const [filteredDocument, setFilteredDocument] = useState(PopularNFTData);
 
-  // useEffect(() => {
-  //   fetch(
-  //     "https://api.shyft.to/sol/v2/marketplace/active_listings?network=testnet&marketplace_address=2oPmohnkW5MbhnmZg99sJ3Pm2cKNXdkFojykEnqrJFm8",
-  //     {
-  //       method: "GET",
-  //       headers: {
-  //         "x-api-key": process.env.REACT_APP_API_KEY,
-  //       },
-  //     }
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setFilteredDocument(data[0].result);
-  //     })
-  //     .catch((error) => console.log(error));
-  // }, []);
+  useEffect(() => {
+    fetch(
+      "https://api.shyft.to/sol/v2/marketplace/active_listings?network=devnet&marketplace_address=JDn3zWPKcTd1qurNNjvr8YGYcVrdm8i7eHam7M6DQggo&sort_by=list_date&sort_order=desc&size=9",
+      {
+        method: "GET",
+        headers: {
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setFilteredDocument(data[0].result);
+      })
+      .catch((error) => console.log(error));
+  }, []);
 
   return (
     <>

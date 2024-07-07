@@ -27,8 +27,8 @@ export default function Footer() {
             lightLogo="img/core-img/logo.png"
             darkLogo="img/core-img/logo-white.png"
             subText="The first study material NFT marketplace on Solana"
-            contactInfo="Call: +84 XX XXXXXXXX <br /> Email: betterstudy.official@gmail.com"
-            socialVisibility="visible" // try 'visible' or 'hidden'
+            contactInfo="Call: +84 37 6085702 <br /> Email: betterstudy.official@gmail.com"
+            socialVisibility="visible" // try 'visible' or 'hxidden'
             socialTitle="Visit our social"
             socialLists={[
               {
@@ -100,6 +100,10 @@ export default function Footer() {
               <FooterWidget
                 widgetTitle="About"
                 navList={[
+                  {
+                    text: "About",
+                    url: "/about",
+                  },
                   {
                     text: "Blog",
                     url: "/blog",

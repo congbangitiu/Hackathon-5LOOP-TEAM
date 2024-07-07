@@ -1,12 +1,12 @@
 import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import { LAMPORTS_PER_SOL } from "@solana/web3.js";
+import { useWallet } from "@solana/wallet-adapter-react";
+import { LAMPORTS_PER_SOL, Connection, clusterApiUrl } from "@solana/web3.js";
 import { Buffer } from "buffer";
 import React, { useCallback } from "react";
 window.Buffer = window.Buffer || Buffer;
 
 const AirdropButton = () => {
-  const { connection } = useConnection();
+  const connection = new Connection(clusterApiUrl("devnet"));
   const { publicKey } = useWallet();
 
   const onClick = useCallback(async () => {
@@ -14,7 +14,7 @@ const AirdropButton = () => {
     try {
       const [latestBlockhash, signature] = await Promise.all([
         connection.getLatestBlockhash(),
-        connection.requestAirdrop(publicKey, 1 * LAMPORTS_PER_SOL),
+        connection.requestAirdrop(publicKey, 3 * LAMPORTS_PER_SOL),
       ]);
 
       const sigResult = await connection.confirmTransaction(

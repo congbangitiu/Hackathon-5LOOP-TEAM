@@ -17,28 +17,36 @@ window.jQuery = window.$ = $;
 require("jquery-nice-select");
 
 const ExploreTwo = () => {
+  const selectCategories = useRef();
+  const selectItems = useRef();
+  const selectSortedBy = useRef();
+  const selectLevels = useRef();
+  const selectSubjects = useRef();
+  const selectToken = useRef();
+
   const [filteredDocument, setFilteredDocument] = useState(DiscoverNFTData);
 
-  // useEffect(() => {
-  //   fetch(
-  //     "https://api.shyft.to/sol/v2/marketplace/active_listings?network=testnet&marketplace_address=2oPmohnkW5MbhnmZg99sJ3Pm2cKNXdkFojykEnqrJFm8",
-  //     {
-  //       method: "GET",
-  //       headers: {
-  //         "x-api-key": process.env.REACT_APP_API_KEY,
-  //       },
-  //     }
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setFilteredDocument(data[0].result);
-  //     })
-  //     .catch((error) => console.log(error));
-  // }, []);
+  useEffect(() => {
+    fetch(
+      `https://api.shyft.to/sol/v2/marketplace/active_listings?network=devnet&marketplace_address=JDn3zWPKcTd1qurNNjvr8YGYcVrdm8i7eHam7M6DQggo&sort_by=list_date&sort_order=${
+        selectSortedBy.current.value || "desc"
+      }&size=9`,
+      {
+        method: "GET",
+        headers: {
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setFilteredDocument(data[0].result);
+      })
+      .catch((error) => console.log(error));
+  }, []);
 
   const [count, setCount] = useState(9);
   const [noMorePost, setNoMorePost] = useState(false);
-
 
   const countSlice = filteredDocument.slice(0, count);
 
@@ -48,13 +56,6 @@ const ExploreTwo = () => {
       setNoMorePost(true);
     }
   };
-
-  const selectCategories = useRef();
-  const selectItems = useRef();
-  const selectSortedBy = useRef();
-  const selectLevels = useRef();
-  const selectSubjects = useRef();
-  const selectToken = useRef();
 
   const subjects = [
     "Object-Oriented Programming",
@@ -309,8 +310,8 @@ const ExploreTwo = () => {
                 ref={selectSortedBy}
                 className="filter-select bg-gray w-100 mb-4"
               >
-                <option value="Newest to Oldest">Newest to Oldest</option>
-                <option value="Oldest to Newest">Oldest to Newest</option>
+                <option value="desc">Newest to Oldest</option>
+                <option value="asc">Oldest to Newest</option>
               </select>
 
               <h5>Levels</h5>
@@ -327,6 +328,7 @@ const ExploreTwo = () => {
               <select
                 ref={selectSubjects}
                 className="filter-select bg-gray w-100 mb-4"
+                style={{ maxHeight: "10rem", overflowY: "auto" }}
               >
                 {subjects.sort().map((subject, index) => (
                   <option key={index} value={subject}>
