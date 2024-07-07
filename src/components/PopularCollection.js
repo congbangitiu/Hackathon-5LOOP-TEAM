@@ -22,6 +22,8 @@ export default function PopularCollection(props) {
       key={index}
       href={elem.link}
       className="col-12 col-sm-10 col-md-5 col-xl-4"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <div className="nft-card card shadow-sm">
         <div className="card-body">
@@ -31,6 +33,7 @@ export default function PopularCollection(props) {
                 <img
                   src={`${process.env.PUBLIC_URL}/${elem.image}`}
                   alt={elem.title}
+                  style={{ aspectRatio: "1/1" }}
                 />
                 <div className="badge bg-danger position-absolute px-2 py-1">
                   #{elem.id}

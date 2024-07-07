@@ -116,6 +116,7 @@ const ExploreTwo = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/${elem.image}`}
                 alt={elem.title}
+                style={{ aspectRatio: "1/1", width: '100%' }}
               />
 
               {/* Badge */}

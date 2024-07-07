@@ -111,7 +111,7 @@
   {
     "id": 2,
     "title": "Note Final IU #245",
-    "image": "img/bg-img/14.jpg",
+    "image": "img/course-img/MAD/3.jpg",
     "catagory": "Object-Oriented Programming",
     "currentPrice": "2.961 SOL",
     "priceText": "Current Bid",
@@ -220,7 +220,7 @@
   {
     "id": 3,
     "title": "Exercise Midterm IU #876",
-    "image": "img/bg-img/15.jpg",
+    "image": "img/course-img/DSDV/2.jpg",
     "catagory": "Data Structures and Algorithms",
     "currentPrice": "0.06 SOL",
     "priceText": "Current Bid",
@@ -329,7 +329,7 @@
   {
     "id": 4,
     "title": "Summary Final IU #543",
-    "image": "img/bg-img/16.jpg",
+    "image": "img/course-img/OOAD/1.png",
     "catagory": "Mobile App Development",
     "currentPrice": "0.01 SOL",
     "priceText": "Current Bid",
@@ -438,7 +438,7 @@
   {
     "id": 5,
     "title": "Exercise Final IU #987",
-    "image": "img/bg-img/17.jpg",
+    "image": "img/course-img/PDM/1.png",
     "catagory": "Web App Development",
     "currentPrice": "0.861 SOL",
     "priceText": "Current Bid",
@@ -547,7 +547,7 @@
   {
     "id": 6,
     "title": "Summary Final IU #458",
-    "image": "img/bg-img/18.jpg",
+    "image": "img/course-img/Crit/2.jpg",
     "catagory": "Machine Learning Platforms",
     "currentPrice": "9.32 SOL",
     "priceText": "Current Bid",
