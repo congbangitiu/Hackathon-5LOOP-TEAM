@@ -3,7 +3,7 @@ import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import { storage } from "../../firebase";
+// import { storage } from "../../firebase";
 
 import { useWallet } from "@solana/wallet-adapter-react";
 import $ from "jquery";
@@ -42,7 +42,8 @@ const CreateNewContent = () => {
   const [descriptionValid, setDescriptionValid] = useState(true);
   const [royalityValid, setRoyalityValid] = useState(true);
   const [noOfCopiesValid, setNoOfCopiesValid] = useState(true);
-  const [previewImageFileTypeValid, setPreviewImageFileTypeValid] = useState(true);
+  const [previewImageFileTypeValid, setPreviewImageFileTypeValid] =
+    useState(true);
 
   const subjects = [
     "Object-Oriented Programming",
@@ -79,11 +80,13 @@ const CreateNewContent = () => {
   const computeSHA256 = (file) => {
     const reader = new FileReader();
     reader.onload = async (event) => {
-        const arrayBuffer = event.target.result;
-        const hashBuffer = await crypto.subtle.digest('SHA-256', arrayBuffer);
-        const hashArray = Array.from(new Uint8Array(hashBuffer));
-        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-        console.log('SHA256 Hash:', hashHex);
+      const arrayBuffer = event.target.result;
+      const hashBuffer = await crypto.subtle.digest("SHA-256", arrayBuffer);
+      const hashArray = Array.from(new Uint8Array(hashBuffer));
+      const hashHex = hashArray
+        .map((b) => b.toString(16).padStart(2, "0"))
+        .join("");
+      console.log("SHA256 Hash:", hashHex);
     };
     reader.readAsArrayBuffer(file);
   };
@@ -106,7 +109,7 @@ const CreateNewContent = () => {
 
   const handleLevelChange = (event) => {
     setInputLevel(event.target.value);
-  };  
+  };
 
   const handleSubjectChange = (event) => {
     setInputSubject(event.target.value);
@@ -128,16 +131,33 @@ const CreateNewContent = () => {
     const isPositiveNumber = /^[0-9]*\.?[0-9]+$/;
     const isPositiveInteger = /^\d+$/;
 
-    setPriceValid(isPositiveNumber.test(inputPrice.trim()) && parseFloat(inputPrice.trim()) > 0);
+    setPriceValid(
+      isPositiveNumber.test(inputPrice.trim()) &&
+        parseFloat(inputPrice.trim()) > 0
+    );
     setTitleValid(inputTitle.trim() !== "");
     setDescriptionValid(inputDescription.trim() !== "");
     setLevelValid(inputLevel.trim() !== "");
     setSubjectValid(inputSubject.trim() !== "");
     setCategoryValid(inputCategory.trim() !== "");
-    setRoyalityValid(isPositiveNumber.test(inputRoyality.trim()) && parseFloat(inputRoyality.trim()) > 0);
-    setNoOfCopiesValid(isPositiveInteger.test(inputNoOfCopies.trim()) && parseInt(inputNoOfCopies.trim(), 10) > 0);
+    setRoyalityValid(
+      isPositiveNumber.test(inputRoyality.trim()) &&
+        parseFloat(inputRoyality.trim()) > 0
+    );
+    setNoOfCopiesValid(
+      isPositiveInteger.test(inputNoOfCopies.trim()) &&
+        parseInt(inputNoOfCopies.trim(), 10) > 0
+    );
 
-    validSubmission = priceValid && titleValid && descriptionValid && levelValid && subjectValid && categoryValid && royalityValid && noOfCopiesValid;
+    validSubmission =
+      priceValid &&
+      titleValid &&
+      descriptionValid &&
+      levelValid &&
+      subjectValid &&
+      categoryValid &&
+      royalityValid &&
+      noOfCopiesValid;
 
     if (!termsAgreed) {
       alert("You must agree to the terms and conditions to proceed.");
@@ -146,89 +166,99 @@ const CreateNewContent = () => {
 
     if (!validSubmission) return;
 
-    const storageRef = ref(storage, `images/${file.name}`);
-    const uploadTask = uploadBytesResumable(storageRef, file);
+    // const storageRef = ref(storage, `images/${file.name}`);
+    // const uploadTask = uploadBytesResumable(storageRef, file);
 
-    uploadTask.on('state_changed',
-      (snapshot) => {
-        const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        setUploadProgress(progress);
-      },
-      (error) => {
-        console.error('Error uploading file: ', error);
-      },
-      async () => {
-        try {
-          const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
-          // console.log('File available at: ', downloadURL);
+    // uploadTask.on(
+    //   "state_changed",
+    //   (snapshot) => {
+    //     const progress =
+    //       (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+    //     setUploadProgress(progress);
+    //   },
+    //   (error) => {
+    //     console.error("Error uploading file: ", error);
+    //   },
+    //   async () => {
+    //     try {
+    //       const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+    //       // console.log('File available at: ', downloadURL);
 
-          // Additional JSON Data Upload
-          // const hashHex = await computeSHA256(file);
-          // if (publicKey) {
-          //   const address = publicKey.toBase58();
-          //   setCurrentAddress(address);
-          // }
+    //       // Additional JSON Data Upload
+    //       // const hashHex = await computeSHA256(file);
+    //       // if (publicKey) {
+    //       //   const address = publicKey.toBase58();
+    //       //   setCurrentAddress(address);
+    //       // }
 
-          const jsonData = {
-            name: inputTitle,
-            symbol: "NFTB",
-            description: inputDescription,
-            seller_fee_basis_points: parseInt(inputRoyality, 10),
-            image: downloadURL,
-            attributes: [
-              {
-                trait_type: "level",
-                value: inputLevel
-              },
-              {
-                trait_type: "subject",
-                value: inputSubject
-              },
-              {
-                trait_type: "category",
-                value: inputCategory
-              }
-            ],
-            properties: {
-              files: [
-                {
-                  uri: downloadURL,
-                  type: file.type,
-                }
-              ],
-              category: "image",
-              creators: [
-                {
-                  address: publicKey.toBase58(),
-                  share: 100
-                }
-              ]
-            },
-            // sha256: hashHex
-          };
+    //       const jsonData = {
+    //         name: inputTitle,
+    //         symbol: "NFTB",
+    //         description: inputDescription,
+    //         seller_fee_basis_points: parseInt(inputRoyality, 10),
+    //         image: downloadURL,
+    //         attributes: [
+    //           {
+    //             trait_type: "level",
+    //             value: inputLevel,
+    //           },
+    //           {
+    //             trait_type: "subject",
+    //             value: inputSubject,
+    //           },
+    //           {
+    //             trait_type: "category",
+    //             value: inputCategory,
+    //           },
+    //         ],
+    //         properties: {
+    //           files: [
+    //             {
+    //               uri: downloadURL,
+    //               type: file.type,
+    //             },
+    //           ],
+    //           category: "image",
+    //           creators: [
+    //             {
+    //               address: publicKey.toBase58(),
+    //               share: 100,
+    //             },
+    //           ],
+    //         },
+    //         // sha256: hashHex
+    //       };
 
-          const jsonBlob = new Blob([JSON.stringify(jsonData)], {type: 'application/json'});
-          const jsonRef = ref(storage, `json/${file.name.replace(/\.[^/.]+$/, "")}_data.json`);
-          const jsonUploadTask = uploadBytesResumable(jsonRef, jsonBlob);
+    //       const jsonBlob = new Blob([JSON.stringify(jsonData)], {
+    //         type: "application/json",
+    //       });
+    //       // const jsonRef = ref(
+    //       //   storage,
+    //       //   `json/${file.name.replace(/\.[^/.]+$/, "")}_data.json`
+    //       // );
+    //       // const jsonUploadTask = uploadBytesResumable(jsonRef, jsonBlob);
 
-          jsonUploadTask.on('state_changed',
-            null,
-            error => console.error('Error uploading JSON file: ', error),
-            async () => {
-              try {
-                const jsonDownloadURL = await getDownloadURL(jsonUploadTask.snapshot.ref);
-                console.log('JSON File available at: ', jsonDownloadURL);
-                setJsonMetadataUrl(jsonDownloadURL);
-              } catch (error) {
-                console.error('Error handling file upload completion: ', error);
-              }
-            }
-          );
-        } catch (error) {
-          console.error('Error handling file upload completion: ', error);
-        }
-      }
-    );
+    //       jsonUploadTask.on(
+    //         "state_changed",
+    //         null,
+    //         (error) => console.error("Error uploading JSON file: ", error),
+    //         async () => {
+    //           try {
+    //             const jsonDownloadURL = await getDownloadURL(
+    //               jsonUploadTask.snapshot.ref
+    //             );
+    //             console.log("JSON File available at: ", jsonDownloadURL);
+    //             setJsonMetadataUrl(jsonDownloadURL);
+    //           } catch (error) {
+    //             console.error("Error handling file upload completion: ", error);
+    //           }
+    //         }
+    //       );
+    //     } catch (error) {
+    //       console.error("Error handling file upload completion: ", error);
+    //     }
+    //   }
+    // );
   };
 
   const levelsSelect = useRef(null);
@@ -248,61 +278,71 @@ const CreateNewContent = () => {
       console.log(`Max Supply: ${inputNoOfCopies}`);
       console.log(`Receiver: ${receiverAddress}`);
       console.log(`Fee Payer: 4dV2CNkdMV6zq2iVfBq7ysj97PgRtESE8SWyBi67Yp3D`);
-      console.log(`Service Charge Receiver: feeRcziyfouqaogKuibPdPHSKAvrYYVcqTGUvcfJLgW`);
+      console.log(
+        `Service Charge Receiver: feeRcziyfouqaogKuibPdPHSKAvrYYVcqTGUvcfJLgW`
+      );
       console.log(`Service Charge Amount: ${inputPrice}`);
-  
-      axios.post('https://api.shyft.to/sol/v1/nft/create_from_metadata', {
-        network: "devnet",
-        metadata_uri: jsonMetadataUrl,
-        max_supply: parseInt(inputNoOfCopies),
-        receiver: receiverAddress,
-        // fee_payer: "4dV2CNkdMV6zq2iVfBq7ysj97PgRtESE8SWyBi67Yp3D",
-        service_charge: {
-          receiver: "feeRcziyfouqaogKuibPdPHSKAvrYYVcqTGUvcfJLgW",
-          amount: parseFloat(inputPrice*1/100)
-        }
-      }, {
-        headers: {
-          "x-api-key": process.env.REACT_APP_API_KEY
-      }
-      })
-      .then(response => {
-        console.log('NFT created successfully:', response.data);
-        setJsonMetadataUrl(response.data.url);
-        setEncodedTransaction(response.data.result.encoded_transaction);
-        setMintNFT(response.data.result.mint);
-        setIsTransactionReady(true);
-      })
-      .catch(error => {
-        console.error('Error creating NFT:', error);
-        if (error.response) {
-          console.error("Detailed API response error:", error.response.data);
-        }
-      });
-    };
+
+      axios
+        .post(
+          "https://api.shyft.to/sol/v1/nft/create_from_metadata",
+          {
+            network: "devnet",
+            metadata_uri: jsonMetadataUrl,
+            max_supply: parseInt(inputNoOfCopies),
+            receiver: receiverAddress,
+            // fee_payer: "4dV2CNkdMV6zq2iVfBq7ysj97PgRtESE8SWyBi67Yp3D",
+            service_charge: {
+              receiver: "feeRcziyfouqaogKuibPdPHSKAvrYYVcqTGUvcfJLgW",
+              amount: parseFloat((inputPrice * 1) / 100),
+            },
+          },
+          {
+            headers: {
+              "x-api-key": process.env.REACT_APP_API_KEY,
+            },
+          }
+        )
+        .then((response) => {
+          console.log("NFT created successfully:", response.data);
+          setJsonMetadataUrl(response.data.url);
+          setEncodedTransaction(response.data.result.encoded_transaction);
+          setMintNFT(response.data.result.mint);
+          setIsTransactionReady(true);
+        })
+        .catch((error) => {
+          console.error("Error creating NFT:", error);
+          if (error.response) {
+            console.error("Detailed API response error:", error.response.data);
+          }
+        });
+    }
 
     const setupNiceSelect = (selectRef, changeHandler) => {
       if (selectRef.current) {
         $(selectRef.current).niceSelect();
-  
+
         const handleChange = () => {
           const selectedValue = $(selectRef.current).val();
           changeHandler({ target: { value: selectedValue } });
         };
-  
-        $(selectRef.current).on('change', handleChange);
-  
+
+        $(selectRef.current).on("change", handleChange);
+
         return () => {
-          $(selectRef.current).off('change', handleChange);
-          $(selectRef.current).niceSelect('destroy');
+          $(selectRef.current).off("change", handleChange);
+          $(selectRef.current).niceSelect("destroy");
         };
       }
     };
-  
+
     const levelCleanup = setupNiceSelect(levelsSelect, handleLevelChange);
     const subjectCleanup = setupNiceSelect(subjectsSelect, handleSubjectChange);
-    const categoryCleanup = setupNiceSelect(categoriesSelect, handleCategoryChange);
-  
+    const categoryCleanup = setupNiceSelect(
+      categoriesSelect,
+      handleCategoryChange
+    );
+
     return () => {
       if (levelCleanup) levelCleanup();
       if (subjectCleanup) subjectCleanup();
@@ -442,7 +482,9 @@ const CreateNewContent = () => {
                         isInvalid={!levelValid}
                         className="filter-select bg-gray w-100 mb-4"
                       >
-                        <option value="" disabled>Select a level</option>
+                        <option value="" disabled>
+                          Select a level
+                        </option>
                         <option value="Simple">Simple</option>
                         <option value="Intermediate">Intermediate</option>
                         <option value="Hard">Hard</option>
@@ -468,7 +510,9 @@ const CreateNewContent = () => {
                         isInvalid={!subjectValid}
                         className="filter-select bg-gray w-100 mb-4"
                       >
-                        <option value="" disabled>Select a subject</option>
+                        <option value="" disabled>
+                          Select a subject
+                        </option>
                         {subjects.sort().map((subject, index) => (
                           <option key={index} value={subject}>
                             {subject}
@@ -508,7 +552,9 @@ const CreateNewContent = () => {
                   {/* Category */}
                   <div className="col-12 col-md-6">
                     <Form.Group className="mb-4">
-                      <Form.Label className="mb-2 fz-16">Categories*</Form.Label>
+                      <Form.Label className="mb-2 fz-16">
+                        Categories*
+                      </Form.Label>
                       <Form.Control
                         as="select"
                         value={inputCategory}
@@ -518,7 +564,9 @@ const CreateNewContent = () => {
                         id="category"
                         ref={categoriesSelect}
                       >
-                        <option value="" disabled>Select a category</option>
+                        <option value="" disabled>
+                          Select a category
+                        </option>
                         <option value="Slide">Slide</option>
                         <option value="Exam Papers">Exam Papers</option>
                         <option value="Exercises">Exercises</option>
@@ -629,7 +677,7 @@ const CreateNewContent = () => {
                       </button>
                     ) : (
                       <SendTransactionButton
-                        encodedTransaction={encodedTransaction} 
+                        encodedTransaction={encodedTransaction}
                         callback={() => console.log("Transaction completed")}
                         text="Mint NFT"
                         log={false}

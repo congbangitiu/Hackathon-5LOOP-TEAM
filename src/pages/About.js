@@ -30,25 +30,12 @@ export default function About() {
 
         <Divider />
 
-        <AboutContent
-          textSectionOrder="10"
-          textSection={[
-            "<h2 class='h2 fw-bold mb-3'>Digital arts are trends now. Welcome to the world of NFTs.</h2>",
-            "<p class='fz-18'>It's crafted with the latest trend of design coded with all modern approaches. It's a robust & multi-dimensional usable template.</p>",
-            "<a class='btn btn-primary rounded-pill mt-4' href='/#'>Know More</a>",
-          ]}
-          imageOrder="20"
-          image="img/illustrator/4.png"
-        />
-
-        <Divider />
-
         <CTA
           backgroundColor="primary" // try 'success', 'warning', 'danger', 'info' etc
           text="Resources for getting started with BStudy."
           buttonText="Get Started"
           buttonColor="warning"
-          buttonURL="#"
+          buttonURL="/help-center"
           buttonIcon=""
         />
 
@@ -57,8 +44,8 @@ export default function About() {
         <AboutContent
           textSectionOrder="20"
           textSection={[
-            "<h2 class='h2 fw-bold mb-3'>Digital arts are trends now. Welcome to the world of NFTs.</h2>",
-            "<p class='fz-18'>It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable template.</p>",
+            "<h2 class='h2 fw-bold mb-3'>Digital NFT PASS are trends now. Welcome to the world of NFT-BStudy.</h2>",
+            `<p class='fz-18'>NFT-BStudy is crafted with the latest Web3 technology with all modern approaches. It’s a robust and multi-dimensional platform, enabling users to buy, sell, and trade study materials as NFTs, ensuring authenticity and security. It's a great companion with  <a href="https://www.facebook.com/bstudy.official" target="_blank" rel="noopener noreferrer" >BStudy</a> - our flagship TA service and proud to be a part of BStudy Holdings</p>`,
             "<a class='btn btn-primary rounded-pill mt-4' href='/#'>Know More</a>",
           ]}
           imageOrder="10"

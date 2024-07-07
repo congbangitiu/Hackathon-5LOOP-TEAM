@@ -1,30 +1,30 @@
 [
-    {
-        "id": 1,
-        "title": "Trustworthy",
-        "subTitle": "It's crafted with the latest trend of design & coded with all modern approaches.",
-        "iconColor": "success",
-        "icon": "bi-shield-fill-check"
-    },
-    {
-        "id": 2,
-        "title": "Secure & Safe",
-        "subTitle": "It's crafted with the latest trend of design & coded with all modern approaches.",
-        "iconColor": "primary",
-        "icon": "bi-shield-lock"
-    },
-    {
-        "id": 3,
-        "title": "Loyal Customer",
-        "subTitle": "It's crafted with the latest trend of design & coded with all modern approaches.",
-        "iconColor": "info",
-        "icon": "bi-people-fill"
-    },
-    {
-        "id": 4,
-        "title": "Easy Wallet",
-        "subTitle": "It's crafted with the latest trend of design & coded with all modern approaches.",
-        "iconColor": "danger",
-        "icon": "bi-wallet2"
-    }
+  {
+    "id": 1,
+    "title": "Verifiable",
+    "subTitle": "Never having to trust, just verify with the Solana blockchain onn NFT-BStudy",
+    "iconColor": "success",
+    "icon": "bi-shield-fill-check"
+  },
+  {
+    "id": 2,
+    "title": "Secure & Safe",
+    "subTitle": "It's crafted with the latest security tool & measure with all modern approaches",
+    "iconColor": "primary",
+    "icon": "bi-shield-lock"
+  },
+  {
+    "id": 3,
+    "title": "Passive Income",
+    "subTitle": "With royalty fee, rest assured you will be paid what you done",
+    "iconColor": "info",
+    "icon": "bi-people-fill"
+  },
+  {
+    "id": 4,
+    "title": "Easy UI/UX",
+    "subTitle": "No Web3 before? No worry, our UX is intuitive and seamless for you to try",
+    "iconColor": "danger",
+    "icon": "bi-wallet2"
+  }
 ]
