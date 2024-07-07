@@ -37,9 +37,12 @@ const SendTransactionButton = ({
       const signedMsg = await wallet.signMessage(data, "utf8");
       const hexSign = btoa(String.fromCharCode.apply(null, signedMsg));
       setSignature(hexSign);
+
       return hexSign;
     }
   }, [connection, encodedTransaction, callback, message, hash, wallet]);
+
+  console.log(signature);
 
   return (
     <div className="container">
@@ -57,7 +60,7 @@ const SendTransactionButton = ({
           <div className="col-6">
             {hash ? (
               <a
-                href={`https://solscan.io/tx/${hash}?cluster=testnet`}
+                href={`https://solscan.io/tx/${hash}?cluster=devnet`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

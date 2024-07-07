@@ -11,13 +11,13 @@ const CoolFacts = (props) => {
                     <TrackVisibility once>
                         {({ isVisible }) => (
                             <div>
-                                {isVisible ? <CountUp duration={2} end={elem.value} /> : 0}
+                                {isVisible ? <CountUp duration={2} end={elem?.value} /> : 0}
                             </div>
                         )}
                     </TrackVisibility>
                 </h4>
                 <h6 className="mb-0">
-                    {elem.title}
+                    {elem?.title}
                 </h6>
             </div>
         </div>

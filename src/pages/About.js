@@ -45,7 +45,7 @@ export default function About() {
 
         <CTA
           backgroundColor="primary" // try 'success', 'warning', 'danger', 'info' etc
-          text="Resources for getting started with Funto."
+          text="Resources for getting started with BStudy."
           buttonText="Get Started"
           buttonColor="warning"
           buttonURL="#"
@@ -89,8 +89,6 @@ export default function About() {
         />
 
         <Divider />
-
-        <Testimonial testimonialTitle="Read some reviews from our beloved clients about our work." />
       </div>
 
       <Divider />

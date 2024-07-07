@@ -5,7 +5,7 @@ export default function Breadcrumb(props) {
 
   const breadcrumbNavList = breadcrumbNav.map((item, index) => (
     <li className="breadcrumb-item text-capitalize" key={index}>
-      <Link to={item.path}>{item.navText}</Link>
+      <Link to={item?.path}>{item?.navText}</Link>
     </li>
   ));
 
