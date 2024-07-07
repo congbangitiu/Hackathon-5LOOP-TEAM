@@ -9,6 +9,8 @@ import CollectionData from "../data/collection.json";
 export default function Collections() {
   const [filteredDocument, setFilteredDocument] = useState(CollectionData);
 
+  console.log(CollectionData[0].firstImage);
+
   useEffect(() => {
     fetch(
       "https://api.shyft.to/sol/v2/marketplace/active_listings?network=devnet&marketplace_address=JDn3zWPKcTd1qurNNjvr8YGYcVrdm8i7eHam7M6DQggo&size=9",

@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { Link } from "react-router-dom";
 
 import DashboardSidebar from "../components/dashboard/DashboardSidebar";
 import NotificationData from "../data/dashboard/notification-data.json";
+import { useWallet } from "@solana/wallet-adapter-react";
 
 const DashboardNotification = () => {
   const [filteredDocument, setFilteredDocument] = useState(NotificationData);
   const isDashboardPage = true;
+  const [currentAddress, setCurrentAddress] = useState("");
+  const [currentBalance, setCurrentBalance] = useState(0);
+  const { publicKey } = useWallet();
 
   const [key, setKey] = useState("today");
 
@@ -78,11 +82,52 @@ const DashboardNotification = () => {
     },
   ];
 
+  const fetchWalletBalance = () => {
+    if (publicKey) {
+      const address = publicKey.toBase58();
+      setCurrentAddress(address);
+
+      if (address) {
+        fetch(
+          `https://api.shyft.to/sol/v1/wallet/balance?network=devnet&wallet=${address}`,
+          {
+            method: "GET",
+            headers: {
+              "x-api-key": process.env.REACT_APP_API_KEY,
+            },
+          }
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            if (
+              data.success &&
+              data.result &&
+              data.result.balance !== undefined
+            ) {
+              setCurrentBalance(data.result.balance);
+            } else {
+              console.error("Invalid response structure", data);
+            }
+          })
+          .catch((error) => console.log(error));
+      }
+    } else {
+      setCurrentAddress("");
+      setCurrentBalance(0);
+    }
+  };
+
+  useEffect(() => {
+    fetchWalletBalance();
+  }, [publicKey]);
+
   return (
     <>
       <DashboardSidebar
         isDashboardPage={isDashboardPage}
         originalDocument={NotificationData}
+        currentAddress={currentAddress}
+        currentBalance={currentBalance}
         filteredDocument={filteredDocument}
         setFilteredDocument={setFilteredDocument}
       />

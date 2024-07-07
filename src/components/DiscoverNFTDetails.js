@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import Modal from "react-bootstrap/Modal";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
@@ -23,6 +23,8 @@ const DiscoverNFTDetails = () => {
     (item) => item.id === discoverID
   );
   const discoverData = discoverDetailsData[0];
+  const [listDetails, setListDetails] = useState([]);
+  const [readNFTs, setReadNFTs] = useState([]);
 
   const [modalShow, setModalShow] = useState(false);
   const [modalShow2, setModalShow2] = useState(false);
@@ -322,6 +324,45 @@ const DiscoverNFTDetails = () => {
       </div>
     </div>
   ));
+
+  const fetchListDetails = () => {
+    fetch(
+      `https://api.shyft.to/sol/v1/marketplace/list_details?network=devnet&marketplace_address=JDn3zWPKcTd1qurNNjvr8YGYcVrdm8i7eHam7M6DQggo&list_state=...`,
+      {
+        method: "GET",
+        headers: {
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setListDetails(data[0].result);
+      })
+      .catch((error) => console.log(error));
+  };
+
+  const fetchReadNFTs = () => {
+    fetch(
+      `https://api.shyft.to/sol/v1/nft/read?network=devnet&token_address=6ZoMYLVrF6FeaWZq4dh3JpyPwQ2fJy6ce9nTq5ga1qyE`,
+      {
+        method: "GET",
+        headers: {
+          "x-api-key": process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        setReadNFTs(data[0].result);
+      })
+      .catch((error) => console.log(error));
+  };
+
+  useEffect(() => {
+    fetchListDetails();
+    fetchReadNFTs();
+  }, [listDetails, readNFTs]);
 
   return (
     <>

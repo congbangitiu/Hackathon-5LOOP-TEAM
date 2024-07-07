@@ -20,7 +20,7 @@ import ExploreTwo from "./pages/ExploreTwo";
 import HomeTwo from "./pages/HomeTwo";
 import StudyGoal from "./pages/StudyGoal";
 import TopSeller from "./pages/TopSeller";
-import LiveBidding from "./pages/LiveBidding";
+import CollectionDetails from "./pages/CollectionDetails";
 import Blog from "./pages/Blog";
 
 import Contact from "./pages/Contact";
@@ -45,7 +45,7 @@ function App() {
         <Route path="/explore" element={<ExploreTwo />} />
         <Route path="/explore/:id" element={<ExploreCollection />} />
         <Route path="/collections" element={<Collections />} />
-        <Route path="/collections/ID" element={<LiveBidding />} />
+        <Route path="/collections/:id" element={<CollectionDetails />} />
         <Route path="/ai" element={<AI />} />
         <Route path="/study-goal" element={<StudyGoal />} />
         <Route path="/blog" element={<Blog />} />

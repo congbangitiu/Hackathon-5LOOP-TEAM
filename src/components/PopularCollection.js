@@ -18,7 +18,11 @@ export default function PopularCollection(props) {
   }, []);
 
   const PopularNFTCards = filteredDocument.slice(0, 9).map((elem, index) => (
-    <div key={index} className="col-12 col-sm-10 col-md-5 col-xl-4">
+    <a
+      key={index}
+      href={elem.link}
+      className="col-12 col-sm-10 col-md-5 col-xl-4"
+    >
       <div className="nft-card card shadow-sm">
         <div className="card-body">
           <div className="row align-items-center g-3">
@@ -95,7 +99,7 @@ export default function PopularCollection(props) {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   ));
 
   return (

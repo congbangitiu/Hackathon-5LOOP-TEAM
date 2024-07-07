@@ -97,6 +97,8 @@ const Dashboard = () => {
     fetchWalletNFT();
   }, [publicKey]);
 
+  console.log(authorCollections);
+
   const [filteredDocument, setFilteredDocument] = useState(activityHistory);
 
   return (
