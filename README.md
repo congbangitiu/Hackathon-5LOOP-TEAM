@@ -10,9 +10,9 @@
     NFT Marketplace Prototype for Solana Consumer Hack 16
     <br />
     <br />
-    <a href="https://github.com/itzmealvin/PDM_mindfulNESS_PC/issues">Report Bug</a>
+    <a href="https://github.com/congbangitiu/NFT-BSTUDY-5LOOP-TEAM/issues">Report Bug</a>
     ·
-    <a href="https://github.com/itzmealvin/PDM_mindfulNESS_PC/issues">Request Feature</a>
+    <a href="https://github.com/congbangitiu/NFT-BSTUDY-5LOOP-TEAM/issues">Request Feature</a>
   </h3>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -95,7 +95,7 @@ NFT-BStudy is a blockchain-based platform that enables the exchange of education
 - Maintain a high standard of security and user experience.
 - Continue to innovate and adapt to the evolving needs of the education and blockchain sectors.
 
-Please see the [open issues](https://github.com/itzmealvin/PDM_mindfulNESS_PC) for a full list of proposed features (
+Please see the [open issues](https://github.com/congbangitiu/NFT-BSTUDY-5LOOP-TEAM) for a full list of proposed features (
 and known issues).
 
 <!-- INSTALLATION -->
@@ -181,9 +181,9 @@ Project Link: [https://github.com/Nhathuy1305/Hackathon-5LOOP-TEAM](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/itzmealvin/PDM_mindfulNESS_PC.svg?style=for-the-badge
-[contributors-url]: https://github.com/itzmealvin/PDM_mindfulNESS_PC/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/itzmealvin/PDM_mindfulNESS_PC.svg?style=for-the-badge
-[forks-url]: https://github.com/itzmealvin/PDM_mindfulNESS_PC/network/members
-[issues-shield]: https://img.shields.io/github/issues/itzmealvin/PDM_mindfulNESS_PC.svg?style=for-the-badge
-[issues-url]: https://github.com/itzmealvin/PDM_mindfulNESS_PC/issues
+[contributors-shield]: https://img.shields.io/github/contributors/congbangitiu/NFT-BSTUDY-5LOOP-TEAM.svg?style=for-the-badge
+[contributors-url]: https://github.com/congbangitiu/NFT-BSTUDY-5LOOP-TEAM/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/congbangitiu/NFT-BSTUDY-5LOOP-TEAM.svg?style=for-the-badge
+[forks-url]: https://github.com/congbangitiu/NFT-BSTUDY-5LOOP-TEAM/network/members
+[issues-shield]: https://img.shields.io/github/issues/congbangitiu/NFT-BSTUDY-5LOOP-TEAM.svg?style=for-the-badge
+[issues-url]: https://github.com/congbangitiu/NFT-BSTUDY-5LOOP-TEAM/issues
