@@ -177,7 +177,7 @@ and known issues).
 
 BStudy Official by **[Email HERE](mailto:betterstudy.official@gmail.com)**
 
-Project Link: [https://github.com/Nhathuy1305/Hackathon-5LOOP-TEAM](https://github.com/Nhathuy1305/Hackathon-5LOOP-TEAM)
+Project Link: [https://github.com/congbangitiu/NFT-BSTUDY-5LOOP-TEAM.git](https://github.com/congbangitiu/NFT-BSTUDY-5LOOP-TEAM.git)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
